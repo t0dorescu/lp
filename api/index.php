@@ -25,7 +25,7 @@ class Api {
 
     // get
     public function test() {
-        echo 'hi';
+        echo 'hiiiiii!!';
     }
 
     // public function login() {
