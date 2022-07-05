@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>! JavaScript For Absolute Beginners - Get Started</title>
+  <title>JavaScript For Absolute Beginners - Get Started</title>
 
   <meta content="Coding is not easy, but I've made it fun! Learn to code JavaScript as an absolute beginner" name="description" />
   <meta content="javascript, learn coding, learn javascript, javascript course, javascript for beginners" name="keywords" />
@@ -425,7 +425,10 @@
                 <li class="na">❌ Matrix symbols rain effect</li>
                 <li class="na">❌ HTML canvas manipulation</li>
               </ul>
-              <a href="#pricing" class="btn-buy">Sign-up</a>
+              <a 
+                class="btn-buy"
+                onclick="initiateCheckout('junior')"
+              >Sign-up</a>
             </div>
           </div>
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
@@ -446,7 +449,10 @@
                 <li>✔️ Ultimate Vue 2/3 crash course</li>
                 <li>✔️ 3 Unique web dev projects</li>
               </ul>
-              <a href="#pricing" class="btn-buy">Get started</a>
+              <a 
+                class="btn-buy"
+                onclick="initiateCheckout('mid-level')"
+              >Get started</a>
             </div>
           </div>
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
@@ -463,7 +469,10 @@
                 <li>🎉 Screenrecording code-review of your projects</li>
                 <li>❤️ Lifetime friendship</li>
               </ul>
-              <a href="#pricing" class="btn-buy bg-secondary-color">Become a member</a>
+              <a 
+                class="btn-standard"
+                onclick="initiateCheckout('senior-level')"
+              >Become a member</a>
             </div>
           </div>
         </div>
@@ -997,6 +1006,7 @@
 
   <!-- Modals -->
   <?php include('php/templates/login-modal.php') ?>
+  <?php include('php/templates/register-modal.php') ?>
   <?php include('php/templates/forgot-password-modal.php') ?>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
