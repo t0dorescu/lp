@@ -25,7 +25,7 @@ class Api {
 
     // get
     public function test() {
-        echo 'hiiiiii!!';
+        echo 'hiaaa!';
     }
 
     // public function login() {
@@ -43,6 +43,16 @@ class Api {
 
     //     echo json_encode( array( 'token' => '' ) );
     // }
+
+    public function emailExists() {
+        $email = $_GET['email'];
+        $query = "select * from members where email = '". $email ."'";
+
+        $result = mysqli_query( $this->conn, $query );
+        $emailExists = $result->num_rows > 0;
+
+        echo json_encode( array( 'emailExists' => $emailExists ) );
+    }
 
     public function checkLogin() {
         $token = $_GET['params']['token'];

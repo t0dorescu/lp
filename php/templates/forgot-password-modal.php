@@ -28,10 +28,23 @@
           >Email me</button>
           <button 
             type="button"
-            class="btn btn-secondary"
+            class="btn btn-third"
             data-bs-dismiss="modal"
           >Close</button>
         </div>
       </div>
     </div>
 </div>
+
+<script>
+  const forgotPasswordModal = document.querySelector('#forgotPasswordModal')
+
+  function openForgotPasswordModal() {
+    new bootstrap.Modal(forgotPasswordModal).show()
+    loginModal.querySelector('.btn-close').click()
+  }
+
+  function forgotPassword() {
+    console.log('forgotPassword')
+  }
+</script>

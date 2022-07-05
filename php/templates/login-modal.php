@@ -43,14 +43,26 @@
           <button 
             type="button" 
             class="btn btn-standard"
-            onclick="signin()"
+            onclick="login()"
           >Sign-in</button>
           <button 
             type="button"
-            class="btn btn-secondary"
+            class="btn btn-third"
             data-bs-dismiss="modal"
           >Close</button>
         </div>
       </div>
     </div>
 </div>
+
+<script>
+  const loginModal = document.querySelector('#loginModal')
+
+  function openLoginModal() {
+    new bootstrap.Modal(loginModal).show()
+  }
+
+  function login() {
+    console.log('login')
+  }
+</script>
