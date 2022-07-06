@@ -3,8 +3,16 @@
 * URL: https://bootstrapmade.com/php-email-form/
 * Author: BootstrapMade.com
 */
+function sendTestEmail() {
+  document.querySelector('.php-email-form input[name="name"]').value = "Tudor Todorescu"
+  document.querySelector('.php-email-form input[name="email"]').value = "todorescu.consulting@gmail.com"
+  document.querySelector('.php-email-form input[name="subject"]').value = "I have a question regarding ..."
+  document.querySelector('.php-email-form textarea[name="message"]').value = "Here is the content and blabla"
+  document.querySelector('.php-email-form button.js_send_message').click()
+}
+
 (function () {
-  "use strict";
+  "use strict"; 
 
   let forms = document.querySelectorAll('.php-email-form');
 
@@ -24,6 +32,7 @@
       thisForm.querySelector('.loading').classList.add('d-block');
       thisForm.querySelector('.error-message').classList.remove('d-block');
       thisForm.querySelector('.sent-message').classList.remove('d-block');
+      thisForm.querySelector('.js_send_message').setAttribute('disabled','disabled');
 
       let formData = new FormData( thisForm );
 
@@ -55,18 +64,17 @@
       body: formData,
       headers: {'X-Requested-With': 'XMLHttpRequest'}
     })
-    .then(response => {
-      if( response.ok ) {
-        return response.text()
-      } else {
-        throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
-      }
-    })
+    .then(res => res.json())
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
-      if (data.trim() == 'OK') {
+      thisForm.querySelector('.js_send_message').classList.add('d-none');
+
+      if (data.valid === true) {
         thisForm.querySelector('.sent-message').classList.add('d-block');
         thisForm.reset(); 
+
+        ;[...document.querySelectorAll('.php-email-form input,.php-email-form textarea')].forEach( element => element.classList.add('d-none'))
+        document.querySelector('.php-email-form .gy-4').classList.remove('gy-4')
       } else {
         throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action); 
       }
@@ -80,6 +88,8 @@
     thisForm.querySelector('.loading').classList.remove('d-block');
     thisForm.querySelector('.error-message').innerHTML = error;
     thisForm.querySelector('.error-message').classList.add('d-block');
+    thisForm.querySelector('.js_send_message').removeAttribute('disabled');
+
   }
 
 })();

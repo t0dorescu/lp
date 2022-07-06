@@ -1,0 +1,11 @@
+
+<?php
+
+$mysql_host = 'localhost';
+$mysql_user = 'tod0resc1_project';
+$mysql_pass = ''************';';
+$mysql_db = 'tod0resc1_project';
+
+$emailoctopus_all_members = '********-****-****-****-*************';
+$emailoctopus_api_url = 'https://emailoctopus.com/api/1.6';
+$emailoctopus_api_key = '********-****-****-****-*************';

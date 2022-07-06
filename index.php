@@ -805,8 +805,8 @@
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                  <button type="submit">Send Message</button>
+                  <div class="sent-message text-thin">Your message has been sent. We will contact you shortly.</div>
+                  <button class="btn js_send_message" type="submit">Send Message</button>
                 </div>
               </div>
             </form>

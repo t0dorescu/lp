@@ -1,7 +1,0 @@
-<?php
-
-$host = 'localhost';
-$user = 'tod0resc1_project';
-$pass = '*****************';
-$db = 'tod0resc1_project';
-
