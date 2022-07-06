@@ -23,70 +23,40 @@ class Api {
         $this->conn = $conn;
     }
 
-    // get
-    public function test() {
-        echo 'hiaaa!';
-    }
-
-    // public function login() {
-    //     $email = $_GET['params']['email'];
-    //     $password = $_GET['params']['password'];
-
-    //     $query = "select * from users where email = '". $email ."' and password = '". $password ."'";
-    //     $result = mysqli_query( $this->conn, $query );
-
-    //     if ($result->num_rows > 0) {
-    //         $row = mysqli_fetch_assoc($result);
-    //         echo json_encode( array( 'token' => $row['token'] ) );
-    //         return;
-    //     }
-
-    //     echo json_encode( array( 'token' => '' ) );
-    // }
-
+    // GET
+    //////////////////////
     public function emailExists() {
-        $email = $_GET['email'];
+        if (!isset($_GET['params'])) {
+            echo json_encode( array( 'invalid' => true ) );
+            die;
+        }
+
+        $email = $_GET['params']['email'];
         $query = "select * from members where email = '". $email ."'";
-
-        $result = mysqli_query( $this->conn, $query );
-        $emailExists = $result->num_rows > 0;
-
-        echo json_encode( array( 'emailExists' => $emailExists ) );
-    }
-
-    public function checkLogin() {
-        $token = $_GET['params']['token'];
-        $query = "select * from users where token = '". $token ."'";
 
         $result = mysqli_query( $this->conn, $query );
         $valid = $result->num_rows > 0;
 
         echo json_encode( array( 'valid' => $valid ) );
     }
+    
+    // POST
+    //////////////////////
+    public function register() {
+        // echo json_encode( array( 'success' => false ) );die;
 
-    // post
-    public function saveElev() {
-        $query = "insert into elevi (
-            nume, 
-            prenume, 
-            clasa, 
-            anul
+        $query = "insert into members (
+            email, 
+            password,
+            plan
         )
         VALUES (
-            '".$_POST['nume']."', 
-            '".$_POST['prenume']."', 
-            '".$_POST['clasa']."', 
-            '".$_POST['anul']."'
+            '".$_POST['email']."', 
+            '".$_POST['password']."',
+            '".$_POST['plan']."'
         )";
 
         $success = mysqli_query($this->conn, $query);
         echo json_encode( array( 'success' => $success ) );
-    }
-
-    public function login() {
-        $email = $_GET['params']['email'];
-        $password = $_GET['params']['password'];
-
-        echo $email . ' - ' . $password;
     }
 }

@@ -6,7 +6,12 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form class="row">
+        <div class="alert alert-success d-none js_confirm_message" role="alert">
+          <strong>Congratulations!</strong> You've just registered your account. 
+          <br><br>
+          Please check your email inbox first to confirm your registration. <strong>(SPAM folder as well)</strong>
+        </div>
+        <form class="row js_form">
           <div class="input-group mb-3">
             <span class="input-group-text" id="email-addon">
               <i class="bi bi-envelope"></i>
@@ -51,6 +56,14 @@
             />
             <div class="invalid-feedback d-none">Passwords don't match, please verify and try again</div>
           </div>
+          <div class="input-group mb-3">
+            <input id="formError" class="form-control d-none" />
+            <div class="invalid-feedback d-none">
+              Something went wrong while trying to register. We are sorry for the inconvenience. 
+              <br /><br />
+              Please email us at <a href="mailTo:support@todorescu.com" class="text-decoration-underline color-secondary">support@todorescu.com</a> for manual registration.
+            </div>
+          </div>
         </form>
       </div>
       <div class="modal-footer">
@@ -73,67 +86,93 @@
 <script>
   const registerModal = document.querySelector('#registerModal')
   
+  addEventListener('DOMContentLoaded', () => {
+    eventInputs(registerModal)
+    populateData()
+  })
+
+  function populateData() {
+    registerModal.querySelector('#inputEmail').value = `test@test${Math.random().toFixed(5).slice(2)}.com`
+    registerModal.querySelector('#inputPassword').value = `Doasz${Math.random().toFixed(5).slice(2)}&`
+    registerModal.querySelector('#inputConfirmPassword').value = registerModal.querySelector('#inputPassword').value
+  }
 
   function openRegisterModal() {
     new bootstrap.Modal(registerModal).show()
   }
   
   async function register() {
-    registerModal.querySelector('.js_spinner').classList.remove('d-none')
-    registerModal.querySelector('.js_register').classList.add('d-none')
-    
-    let isValid = true
+    toggleElements( registerModal, '.js_spinner', '.js_register', true)
+    const status = { isValid: true }
 
-    const inputEmail = registerModal.querySelector('#inputEmail')
-    const inputPassword = registerModal.querySelector('#inputPassword')
-    const inputConfirmPassword = registerModal.querySelector('#inputConfirmPassword')
+    const [
+      [ inputEmail, email ],
+      [ inputPassword, password ],
+      [ inputConfirmPassword, confirmPassword ],
+      [ formError ],
+    ] = queryInputs( registerModal, [
+      '#inputEmail',
+      '#inputPassword',
+      '#inputConfirmPassword',
+      '#formError',
+    ])
 
-    const email = inputEmail.trim()
-    const password = inputPassword.trim()
-    const confirmPassword = inputConfirmPassword.trim()
-
-    ;[ ...registerModal.querySelectorAll('.invalid-feedback')].forEach( element => element.classList.add('d-none') )
-    ;[ ...registerModal.querySelectorAll('.form-control')].forEach( element => element.classList.remove('is-invalid','is-valid') )
-
+    resetFormInputs(registerModal)
+   
     if (!isValidEmail(email)) {
-      isValid = false
-      inputEmail.classList.add('is-invalid')
-      inputEmail.parentElement.querySelectorAll('.invalid-feedback')[0].classList.remove('d-none')
+      invalidInput(status, inputEmail, 0)
     }
-    else if ((await (await fetch(`https://todorescu.com/lp/api/?method=emailExists&email=${email}`)).json()).emailExists) {
-      isValid = false
-      inputEmail.classList.add('is-invalid')
-      inputEmail.parentElement.querySelectorAll('.invalid-feedback')[1].classList.remove('d-none')
+    else if ((await Api.get( 'emailExists', { email })).valid) {
+      invalidInput(status, inputEmail, 1)
     }
     else {
-      inputEmail.classList.add('is-valid')
+      validInput(inputEmail)
     }
 
+    ////////
+    
     if (password.length < 8) {
-      isValid = false
-      inputPassword.classList.add('is-invalid')
-      inputPassword.parentElement.querySelectorAll('.invalid-feedback')[0].classList.remove('d-none')
+      invalidInput(status, inputPassword, 0)
     }
     else if (!isValidPassword(password)) {
-      isValid = false
-      inputPassword.classList.add('is-invalid')
-      inputPassword.parentElement.querySelectorAll('.invalid-feedback')[1].classList.remove('d-none')
+      invalidInput(status, inputPassword, 1)
     }
     else {
-      inputPassword.classList.add('is-valid')
-    }
-
-    if ( confirmPassword.length > 0 && password !== confirmPassword ) {
-      isValid = false
-      inputConfirmPassword.classList.add('is-invalid')
-      inputConfirmPassword.parentElement.querySelectorAll('.invalid-feedback')[0].classList.remove('d-none')
-    } 
-    else {
-      inputConfirmPassword.classList.add('is-valid')
+      validInput(inputPassword)
     }
     
+    ////////
+    
+    if ( confirmPassword.length === 0 ) {
+      invalidInput(status, inputConfirmPassword)
+    }
+    else if ( password !== confirmPassword ) {
+      invalidInput(status, inputConfirmPassword, 0)
+    } 
+    else {
+      validInput(inputConfirmPassword)
+    }
+    
+    /////////
 
-    registerModal.querySelector('.js_spinner').classList.add('d-none')
-    registerModal.querySelector('.js_register').classList.remove('d-none')
+    if (status.isValid) {
+      const data = {
+        email: email.toLowerCase(), 
+        password: CryptoJS.MD5( password ).toString(), 
+        plan: localStorage.getItem('plan') || ''
+      }
+
+      if (!(await Api.post( 'register', data)).success) {
+        invalidInput(status, formError, 0)
+        diableInputs(registerModal)
+        disableButton('.js_register')
+      } 
+      else {
+        toggleElements( registerModal, '.js_confirm_message', '.js_form', true)
+        disableButton('.js_register')
+      }
+    }
+    
+    toggleElements( registerModal, '.js_spinner', '.js_register', false)
   }
 </script>

@@ -921,10 +921,13 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/crypto-js/crypto-js.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/config/config.js"></script>
   <script src="assets/js/utils/utils.js"></script>
+  <script src="assets/js/services/api.js"></script>
 
   <!-- Cookie consent -->
   <script src="assets/vendor/cookieconsent/cookieconsent.js"></script>

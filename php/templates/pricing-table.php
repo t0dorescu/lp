@@ -25,7 +25,7 @@
                     <a 
                     class="btn-buy"
                     onclick="startCheckout('free')"
-                    >Try now</a>
+                    >Try it now</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
@@ -72,7 +72,7 @@
                     <a 
                     class="btn-buy"
                     onclick="startCheckout('mid-level')"
-                    >Get started</a>
+                    >Enroll</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
@@ -101,7 +101,7 @@
 
 <script>
     function startCheckout(plan) {
-        console.log('plan', plan)
+        localStorage.setItem('plan', plan)
         openRegisterModal()
     }
 </script>
