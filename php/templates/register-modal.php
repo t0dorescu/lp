@@ -2,7 +2,10 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title color-secondary-color">Register your account first</h5>
+        <h5 class="modal-title color-secondary-color">
+          <img src="assets/img/tudor-todorescu.jpg" style="height: 35px; vertical-align: bottom;"> 
+          Register your account first
+        </h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -45,7 +48,7 @@
             />
             <div class="invalid-feedback d-none">Please provide a valid last name of at least 2 charcters long</div>
           </div>
-          <div class="input-group mb-3 mt-3">
+          <div class="input-group mb-3 mt-5">
             <span class="input-group-text" id="email-addon">
               <i class="bi bi-envelope"></i>
             </span>
@@ -90,6 +93,11 @@
             <div class="invalid-feedback d-none">Passwords don't match, please verify and try again</div>
           </div>
           <div class="input-group mb-3">
+            <p class="text-center" style="font-size: .85rem">
+              By signing up, you agree to our <a href="terms-of-service.html" target="_blank" class="text-decoration-underline color-secondary">Terms of service</a> and acknowledge our <a href="privacy-policy.html" target="_blank" class="text-decoration-underline color-secondary">Privacy policy</a>
+            </p>
+          </div>
+          <div class="input-group">
             <input id="formError" class="form-control d-none" />
             <div class="invalid-feedback d-none">
               Something went wrong while trying to register. We are sorry for the inconvenience. 
@@ -121,19 +129,18 @@
   
   addEventListener('DOMContentLoaded', () => {
     eventInputs(registerModal)
-    populateData()
+    populateRegisterData()
   })
 
-  function populateData() {
+  function populateRegisterData() {
     if (!isLocal()) return
     const qsvalue = (val1,val2) => registerModal.querySelector(val1).value = val2
 
     qsvalue('#inputFirstName', `Tudor`)
     qsvalue('#inputLastName', `Todorescu-Crisan`)
-    // qsvalue('#inputEmail', `test@test${Math.random().toFixed(5).slice(2)}.com`)
     qsvalue('#inputEmail', `tudor.fis@gmail.com`)
-    qsvalue('#inputPassword', `Doasz${Math.random().toFixed(5).slice(2)}&`)
-    qsvalue('#inputConfirmPassword', registerModal.querySelector('#inputPassword').value)
+    qsvalue('#inputPassword', `Parola137*`)
+    qsvalue('#inputConfirmPassword', `Parola137*`)
   }
 
   function openRegisterModal() {
@@ -172,7 +179,7 @@
     
     !isValidEmail(email)
       ? invalidInput(status, inputEmail, 0)
-    : (await Api.get( 'emailExists', { email })).valid
+    : (await Api.get( 'email_exists', { email: email.toLowerCase() })).valid
       ? invalidInput(status, inputEmail, 1)
       : validInput(inputEmail)
 
@@ -197,7 +204,7 @@
         email: email.toLowerCase(), 
         password: CryptoJS.MD5( password ).toString(), 
         plan: localStorage.getItem('plan') || '',
-        gravatar_url: await fetchGravatar(email)
+        gravatar_url: await fetchGravatar(email.toLowerCase())
       }
 
       if (!(await Api.post( 'register', data)).success) {

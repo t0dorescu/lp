@@ -1,13 +1,5 @@
 <?php
 
-function escapeGet($selector) {
-    return mysqli_real_escape_string($GLOBALS['conn'], $_GET['params'][$selector]);
-}
-
-function escapePost($selector) {
-    return mysqli_real_escape_string($GLOBALS['conn'], $_POST[$selector]);
-}
-
 function eo_fetch($method, $id, $submethod, $subId) {
     $url = $GLOBALS['emailoctopus_api_url'] . '/' . $method . '/'.$id;
     if (isset($submethod)) {

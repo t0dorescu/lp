@@ -1,5 +1,10 @@
 <?php
 
-include('../php/header.php');
+include $_SERVER['DOCUMENT_ROOT']."/php/header.php";
 
-echo $isLoggedIn ? 'membership area' : 'please login';
+if (!$session['is_logged_in']) {
+    echo "<script>window.location = '../'</script>";die;
+}
+
+dd($session['member']);    
+echo $session['is_logged_in'] ? 'membership area' : 'please login';

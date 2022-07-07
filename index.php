@@ -45,7 +45,7 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <div class="align-items-center">&nbsp;</div>
       
-      <?php if (!$isLoggedIn) : ?>
+      <?php if (!$session['is_logged_in']) : ?>
         <a 
           class="btn-standard"
           onclick="openLoginModal()"
@@ -67,6 +67,7 @@
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
           <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
+          <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a class="nav-link scrollto" href="#support">Support</a></li>
           <li><a class="getstarted scrollto" href="#pricing">Enroll</a></li>
@@ -457,13 +458,12 @@
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#faq2-content-2">
-                    Will I get all the other courses as bonuses?
+                    Will I get all the other courses as well?
                   </button>
                 </h2>
                 <div id="faq2-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
                   <div class="accordion-body">
-                    Absolutely! If you register today with the discount you'll have access to all of my other courses.
-                    No extra charge.
+                    Absolutely! Just pick the right plan for you you'll have access to the amazing courses.
                   </div>
                 </div>
               </div>
@@ -859,7 +859,7 @@
               <li><i class="bi bi-chevron-right"></i> <a href="#about">About</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#values">Values</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#pricing">Pricing</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#bonuses">BONUSES</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#faq">FAQ</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#testimonials">Testimonials</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="blog.html">Blog</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#support">Support</a></li>
@@ -980,5 +980,7 @@
     })
   </script>
 
+  <!-- php footer -->
+  <?php include $_SERVER['DOCUMENT_ROOT']."/php/footer.php"; ?>
 </body>
 </html>
