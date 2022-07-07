@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>JavaScript For Absolute Beginners - Get Started</title>
+  <title>Todorescu.com - JavaScript For Absolute Beginners - Get Started</title>
 
   <meta content="Coding is not easy, but I've made it fun! Learn to code JavaScript as an absolute beginner" name="description" />
   <meta content="javascript, learn coding, learn javascript, javascript course, javascript for beginners" name="keywords" />
@@ -783,7 +783,7 @@
                   <i class="bi bi-clock"></i>
                   <h3>Open Hours</h3>
                   <p>Monday - Friday<br>9:00AM - 05:00PM (GMT+3)</p>
-                </div>
+                </div>  
               </div>
             </div>
           </div>
@@ -927,6 +927,8 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/config/config.js"></script>
   <script src="assets/js/utils/utils.js"></script>
+  <script src="assets/js/utils/validators.js"></script>
+  <script src="assets/js/utils/forms.js"></script>
   <script src="assets/js/services/api.js"></script>
 
   <!-- Cookie consent -->

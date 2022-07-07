@@ -6,20 +6,53 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <div class="alert alert-success d-none js_confirm_message" role="alert">
-          <strong>Congratulations!</strong> You've just registered your account. 
+        <div class="alert alert-success d-none js_confirm_message" role="alert" style="text-align: center;">
+          <img class="js_gravatar_img d-none" src="" style="width: 100px; margin: 0 auto;" />
+          <div class="row">&nbsp;</div>
+          <strong>Congratulations <span class="js_name_congrats"></span>!</strong> 
+          <br>
+          You've just registered your account. 
           <br><br>
           Please check your email inbox first to confirm your registration. <strong>(SPAM folder as well)</strong>
         </div>
         <form class="row js_form">
+
           <div class="input-group mb-3">
+            <span class="input-group-text" id="first-name-addon">
+              <i class="bi bi-person"></i>
+            </span>
+            <input 
+              id="inputFirstName" 
+              type="email"
+              class="form-control" 
+              placeholder="First name" 
+              aria-label="First name" 
+              aria-describedby="first-name"
+            />
+            <div class="invalid-feedback d-none">Please provide a valid first name of at least 2 charcters long</div>
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="last-name-addon">
+              <i class="bi bi-person-fill"></i>
+            </span>
+            <input 
+              id="inputLastName" 
+              type="email"
+              class="form-control" 
+              placeholder="Last name" 
+              aria-label="Last name" 
+              aria-describedby="last-name"
+            />
+            <div class="invalid-feedback d-none">Please provide a valid last name of at least 2 charcters long</div>
+          </div>
+          <div class="input-group mb-3 mt-3">
             <span class="input-group-text" id="email-addon">
               <i class="bi bi-envelope"></i>
             </span>
             <input 
               id="inputEmail" 
               type="email"
-              class="form-control" 
+              class="form-control"
               placeholder="Email address" 
               aria-label="Email address" 
               aria-describedby="email-addon"
@@ -44,7 +77,7 @@
           </div>
           <div class="input-group mb-3">
             <span class="input-group-text" id="password-confirm-addon">
-              <i class="bi bi-lock"></i>
+              <i class="bi bi-lock-fill"></i>
             </span>
             <input 
               id="inputConfirmPassword" 
@@ -92,9 +125,15 @@
   })
 
   function populateData() {
-    registerModal.querySelector('#inputEmail').value = `test@test${Math.random().toFixed(5).slice(2)}.com`
-    registerModal.querySelector('#inputPassword').value = `Doasz${Math.random().toFixed(5).slice(2)}&`
-    registerModal.querySelector('#inputConfirmPassword').value = registerModal.querySelector('#inputPassword').value
+    if (!isLocal()) return
+    const qsvalue = (val1,val2) => registerModal.querySelector(val1).value = val2
+
+    qsvalue('#inputFirstName', `Tudor`)
+    qsvalue('#inputLastName', `Todorescu-Crisan`)
+    // qsvalue('#inputEmail', `test@test${Math.random().toFixed(5).slice(2)}.com`)
+    qsvalue('#inputEmail', `tudor.fis@gmail.com`)
+    qsvalue('#inputPassword', `Doasz${Math.random().toFixed(5).slice(2)}&`)
+    qsvalue('#inputConfirmPassword', registerModal.querySelector('#inputPassword').value)
   }
 
   function openRegisterModal() {
@@ -106,11 +145,15 @@
     const status = { isValid: true }
 
     const [
+      [ inputFirstName, firstName ],
+      [ inputLastName, lastName ],
       [ inputEmail, email ],
       [ inputPassword, password ],
       [ inputConfirmPassword, confirmPassword ],
       [ formError ],
     ] = queryInputs( registerModal, [
+      '#inputFirstName',
+      '#inputLastName',
       '#inputEmail',
       '#inputPassword',
       '#inputConfirmPassword',
@@ -119,47 +162,42 @@
 
     resetFormInputs(registerModal)
    
-    if (!isValidEmail(email)) {
-      invalidInput(status, inputEmail, 0)
-    }
-    else if ((await Api.get( 'emailExists', { email })).valid) {
-      invalidInput(status, inputEmail, 1)
-    }
-    else {
-      validInput(inputEmail)
-    }
+    !isValidName(firstName)
+      ? invalidInput(status, inputFirstName, 0)
+      : validInput(inputFirstName)
+   
+    !isValidName(lastName)
+      ? invalidInput(status, inputLastName, 0)
+    : validInput(inputLastName)
+    
+    !isValidEmail(email)
+      ? invalidInput(status, inputEmail, 0)
+    : (await Api.get( 'emailExists', { email })).valid
+      ? invalidInput(status, inputEmail, 1)
+      : validInput(inputEmail)
 
-    ////////
+    password.length < 8
+      ? invalidInput(status, inputPassword, 0)
+    : !isValidPassword(password)
+      ? invalidInput(status, inputPassword, 1)
+      : validInput(inputPassword)
     
-    if (password.length < 8) {
-      invalidInput(status, inputPassword, 0)
-    }
-    else if (!isValidPassword(password)) {
-      invalidInput(status, inputPassword, 1)
-    }
-    else {
-      validInput(inputPassword)
-    }
-    
-    ////////
-    
-    if ( confirmPassword.length === 0 ) {
-      invalidInput(status, inputConfirmPassword)
-    }
-    else if ( password !== confirmPassword ) {
-      invalidInput(status, inputConfirmPassword, 0)
-    } 
-    else {
-      validInput(inputConfirmPassword)
-    }
+    confirmPassword.length === 0 
+      ? invalidInput(status, inputConfirmPassword)
+    : (password !== confirmPassword) 
+      ? invalidInput(status, inputConfirmPassword, 0)
+      : validInput(inputConfirmPassword)
     
     /////////
 
-    if (status.isValid) {
+    if (status.isValid === true) {
       const data = {
+        first_name: firstName,
+        last_name: lastName,
         email: email.toLowerCase(), 
         password: CryptoJS.MD5( password ).toString(), 
-        plan: localStorage.getItem('plan') || ''
+        plan: localStorage.getItem('plan') || '',
+        gravatar_url: await fetchGravatar(email)
       }
 
       if (!(await Api.post( 'register', data)).success) {
@@ -170,9 +208,21 @@
       else {
         toggleElements( registerModal, '.js_confirm_message', '.js_form', true)
         disableButton('.js_register')
+        welcomeMessage(data)
       }
     }
     
     toggleElements( registerModal, '.js_spinner', '.js_register', false)
+  }
+
+  function welcomeMessage(data) {
+    registerModal.querySelector('.js_name_congrats').innerText = data.first_name
+
+    if (data.gravatar_url) {
+      const gravatarImg = registerModal.querySelector('.js_gravatar_img')
+
+      gravatarImg.classList.remove('d-none')
+      gravatarImg.setAttribute('src', data.gravatar_url)
+    }
   }
 </script>

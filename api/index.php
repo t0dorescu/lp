@@ -5,6 +5,7 @@ header("Access-Control-Allow-Headers: *");
 
 include 'config/config.php'; 
 include 'includes/functions.php'; 
+include 'includes/api.php'; 
 
 $conn = mysqli_connect( 
     $mysql_host, 
@@ -13,7 +14,7 @@ $conn = mysqli_connect(
     $mysql_db
 );
 
-$api = new Api( $conn );
+$api = new Api();
 
 if ( isset($_POST['method']) ) {
     $api->{$_POST['method']}();
@@ -23,57 +24,73 @@ if ( isset($_GET['method']) ) {
     $api->{$_GET['method']}();
 }
 
-
 class Api {
-    protected $conn;
-
-    function __construct( $conn ) {
-        $this->conn = $conn;
-    }
-
     public function test() {
-        // $data = fetch('lists', '3c6d0c91-fd13-11ec-9258-0241b9615763');
-        // json($data);
-        
-        post('lists', $GLOBALS['emailoctopus_all_members'], 'contacts', array(
-            'email' => 'test@test.com'
-        ));
+        $contactId = 'e390b02b-fdd9-11ec-9258-0241b9615763';
+        $data = eo_fetch('lists', $GLOBALS['emailoctopus_all_members'], 'contacts', $contactId);
+        output($data);
     }
 
     // GET
     //////////////////////
     public function emailExists() {
         if (!isset($_GET['params'])) {
-            echo json_encode( array( 'invalid' => true ) );
-            die;
+            output( array( 'invalid' => true ) );
         }
 
-        $email = $_GET['params']['email'];
+        $email = escapeGet('email');
         $query = "select * from members where email = '". $email ."'";
 
-        $result = mysqli_query( $this->conn, $query );
+        $result = mysqli_query( $GLOBALS['conn'], $query );
         $valid = $result->num_rows > 0;
 
-        json( array( 'valid' => $valid ) );
+        output( array( 'valid' => $valid ) );
     }
     
     // POST
     //////////////////////
     public function register() {
-        // echo json_encode( array( 'success' => false ) );die;
+        $gravatar_url = escapePost('gravatar_url');
+        $email = escapePost('email');
+        $password = escapePost('password');
+        $plan = escapePost('plan');
+        $first_name = escapePost('first_name');
+        $last_name = escapePost('last_name');
 
+        $emailoctopus_response = eo_post('lists', $GLOBALS['emailoctopus_all_members'], 'contacts', array(
+            'fields' => array(
+                'FirstName' => $first_name,
+                'LastName' => $last_name
+            ),
+            'tags' => array( 'new_member', $plan.'_plan' ),
+            'email_address' => $email
+        ));
+
+        if ( !isset($emailoctopus_response['id']) ) {
+            output(array( 'success' => false ));
+        }
+        
+        $emailoctopus_id = $emailoctopus_response['id'];
         $query = "insert into members (
+            gravatar_url,
             email, 
             password,
-            plan
+            plan,
+            first_name,
+            last_name,
+            emailoctopus_id
         )
         VALUES (
-            '".$_POST['email']."', 
-            '".$_POST['password']."',
-            '".$_POST['plan']."'
+            '".$gravatar_url."', 
+            '".$email."', 
+            '".$password."',
+            '".$plan."',
+            '".$first_name."',
+            '".$last_name."',
+            '".$emailoctopus_id."'
         )";
 
-        $success = mysqli_query($this->conn, $query);
-        json( array( 'success' => $success ) );
+        $mysql_success = mysqli_query($GLOBALS['conn'], $query);
+        output( array( 'success' => $mysql_success ) );
     }
 }

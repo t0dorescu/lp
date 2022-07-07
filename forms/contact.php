@@ -5,7 +5,7 @@
   $subject = $_POST['subject'];
   $message = $_POST['message'];
 
-  $email = 'todorescu.consulting@gmail.com';
+  $email = 'support@todorescu.com';
   $subject = 'NEW FORM SUBMIT MESSAGE';
   $content = 'Name: '. $name ."\nEmail: ". $email ."\n\nSubject: ". $subject ."\nContent: ". $message ;
   $headers = "From: Todorescu.com <support@todorescu.com>";

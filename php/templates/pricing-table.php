@@ -71,7 +71,7 @@
                     </ul>
                     <a 
                     class="btn-buy"
-                    onclick="startCheckout('mid-level')"
+                    onclick="startCheckout('midlevel')"
                     >Enroll</a>
                 </div>
             </div>
@@ -91,7 +91,7 @@
                     </ul>
                     <a 
                     class="btn-buy btn-third"
-                    onclick="startCheckout('senior-level')"
+                    onclick="startCheckout('senior')"
                     >Become a member</a>
                 </div>
             </div>
