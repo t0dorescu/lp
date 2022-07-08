@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Todorescu.com - JavaScript For Absolute Beginners - Get Started</title>
+  <title>JavaScript for absolute beginners - Get started today</title>
 
   <meta content="Coding is not easy, but I've made it fun! Learn to code JavaScript as an absolute beginner" name="description" />
   <meta content="javascript, learn coding, learn javascript, javascript course, javascript for beginners" name="keywords" />

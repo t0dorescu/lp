@@ -231,9 +231,60 @@ class Api {
         output( array( 'success' => $mysql_success ) );
     }
     public function forgot_password() {
-        output( array( 'success' => false ));
-        // email the reset link
-        // https://dev.todorescu.com/reset-password?token=d83744eef9f8065519d214d9a4b452e4
+        $email = escape_post('email');
+
+        $query = "select reset_password_token from members where email = '". $email ."'";
+        $result = mysqli_query( $GLOBALS['conn'], $query );
+        
+        if ($result->num_rows > 0) {
+            $token = $result->fetch_assoc()['reset_password_token'];
+            $url = 'https://'.$_SERVER['HTTP_HOST'].'/reset-password?token='.$token; 
+
+            $headers = "From: Todorescu.com <support@todorescu.com>\r\n";
+            $headers .= "MIME-Version: 1.0\r\n";
+            $headers .= "Content-type: text/html\r\n";
+            $headers .= "Content-type: eom.todorescu.com\r\n";
+            
+            $subject = '🧷 Reset your password';
+            $content = '
+                <!doctype html>
+                <html>
+                    <head>
+                        <title></title>
+                        <style>
+                            * { font-family: "Arial"; }
+                            small { font-size: .5rem; }
+                        </style>
+                    </head>
+                    <body>
+                        <div style="text-align: center;">
+                            <img 
+                                src="https://'.$_SERVER['HTTP_HOST'].'/assets/img/tudor-todorescu.jpg" 
+                                style="width: 50px;height:50px;margin: 10px auto;"
+                            />
+                            <h3>How to reset your password</h3>
+                            <p>
+                                You\'ve requested a new password. It\'s simple just click the following link and set a new one 
+                                <br><br> 
+                                <a href="'.$url.'">'.$url.'</a>
+                            </p>
+                            <br><br>
+                            <small>
+                                ICE STATION ZEBRA SRL<br>
+                                CIF: 46266079<br>
+                                REG: J1/685/08.06.2022<br>
+                                Romania
+                            </small>
+                        </div>
+                    </body>
+                </html>
+            ';
+
+            $send = mail($email, $subject, $content, $headers) == 1;
+            output(array('success' => $send ));
+        }
+        
+        output(array('success' => false ));
     }
     public function reset_password() {
         $token = escape_post('token');

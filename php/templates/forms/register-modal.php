@@ -4,7 +4,7 @@
       <div class="modal-header">
         <h5 class="modal-title color-secondary-color">
           <img src="assets/img/tudor-todorescu.jpg" style="height: 35px; vertical-align: bottom;"> 
-          Register your account first
+          Register account
         </h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
