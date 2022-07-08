@@ -32,7 +32,7 @@
                 <div class="box">
                     <h3 style="color: #65c600;">Junior plan</h3>
                     <div class="price"><sup>$</sup>19<span> / mo</span></div>
-                    <img src="assets/img/pricing-starter.png" class="img-fluid" alt="">
+                    <img src="assets/img/pricing-junior.png" class="img-fluid" alt="">
                     <ul>
                     <li>✓ JavaScript Course (FULL +4 hours)</li>
                     <li>✓ Access to private discord group</li>
@@ -56,7 +56,7 @@
                     <span class="featured">POPULAR</span>
                     <h3 style="color: #ff901c;">Mid-level plan</h3>
                     <div class="price"><sup>$</sup>49<span> / mo</span></div>
-                    <img src="assets/img/pricing-business.png" class="img-fluid" alt="">
+                    <img src="assets/img/pricing-midlevel.png" class="img-fluid" alt="">
                     <ul>
                     <li>✔️ Chess game engine</li>
                     <li>✔️ Flappy bird in canvas</li>
@@ -79,7 +79,7 @@
                 <div class="box">
                     <h3 style="color: #ff0071;">Senior-level plan</h3>
                     <div class="price"><sup>$</sup>299<span> / mo</span></div>
-                    <img src="assets/img/pricing-ultimate.png" class="img-fluid" alt="">
+                    <img src="assets/img/pricing-senior.png" class="img-fluid" alt="">
                     <ul>
                     <li><strong>💯 ALL PLANS INCLUDED</strong></li>
                     <li>🔥 EXCLUSIVE Access to 1on1 zoom calls with me</li>

@@ -1,7 +1,7 @@
 {
     "remotePath": "./dev.todorescu.com",
     "host": "todorescu.com",
-    "username": "tod0resc1",
+    "username": "*********",
     "password": "*********",
     "port": 21,
     "secure": false,
