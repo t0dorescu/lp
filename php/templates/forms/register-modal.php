@@ -1,5 +1,5 @@
 <div id="registerModal" class="modal fade" tabindex="-1">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title color-secondary-color">
@@ -25,7 +25,7 @@
             </span>
             <input 
               id="inputFirstName" 
-              type="email"
+              type="text"
               class="form-control" 
               placeholder="First name" 
               aria-label="First name" 
@@ -39,7 +39,7 @@
             </span>
             <input 
               id="inputLastName" 
-              type="email"
+              type="text"
               class="form-control" 
               placeholder="Last name" 
               aria-label="Last name" 

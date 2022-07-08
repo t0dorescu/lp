@@ -887,7 +887,7 @@ section {
   position: relative;
   overflow: hidden;
   transition: 0.3s;
-  font-family: 'Nunito';
+  font-family: 'Arial';
 }
 .pricing .box:hover {
   transform: scale(1.1);
@@ -902,7 +902,7 @@ section {
   font-size: 36px;
   color: var(--third-color);
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: "Arial";
 }
 .pricing .price sup {
   font-size: 20px;
@@ -974,7 +974,7 @@ section {
 .pricing .box.black .price {
   color: #fff;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Arial';
 }
 .pricing .box.black .btn-buy {
   background: #fff;

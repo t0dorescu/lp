@@ -14,11 +14,6 @@
   <link href="assets/img/favicon.jpg" rel="icon">
   <link href="assets/img/apple-touch-icon.jpg" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
-
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -30,13 +25,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet" />
-
-  <!-- =======================================================
-  * Template Name: FlexStart - v1.9.0
-  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -65,13 +53,19 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
+          <?php if (!$session['is_logged_in']) : ?>
+            <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
+          <?php endif ?>
           <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
           <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a class="nav-link scrollto" href="#support">Support</a></li>
-          <li><a class="getstarted scrollto" href="#pricing">Enroll</a></li>
-        </ul>
+          <?php if (!$session['is_logged_in']) : ?>
+            <li><a class="getstarted scrollto" href="#pricing">Enroll</a></li>
+          <?php else : ?>
+            <li><a class="getstarted scrollto" href="/membership">Members area</a></li>
+          <?php endif ?>
+          </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
     </div>
@@ -86,11 +80,13 @@
           <h2 data-aos="fade-up" data-aos-delay="400">Learn to code JavaScript as an absolute beginner</h2>
           <div data-aos="fade-up" data-aos-delay="600">
             <div class="text-center text-lg-start">
-              <a href="#pricing"
-                class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-                <span>Get Started</span>
-                <i class="bi bi-arrow-right"></i>
-              </a>
+              <?php if (!$session['is_logged_in']) : ?>
+                <a href="#pricing"
+                  class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                  <span>Get Started</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              <?php endif ?>
             </div>
           </div>
         </div>
@@ -114,11 +110,13 @@
                 My vast experience gave me deep knowledge to get my students their dream job / project sooner.
               </p>
               <div class="text-center text-lg-start">
-                <a href="#pricing"
-                  class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                  <span>Get Started</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
+                <?php if (!$session['is_logged_in']) : ?>
+                  <a href="#pricing"
+                    class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                    <span>Get Started</span>
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                <?php endif ?>
               </div>
             </div>
           </div>
@@ -335,42 +333,54 @@
             <div class="service-box blue">
               <h3>POPULARITY</h3>
               <p>JavaScript has been growing faster and faster than any other programming language. Now it's the best time to become highly paid JavaScript developer.</p>
-              <a href="#pricing" class="read-more"><span>Get started</span> <i class="bi bi-arrow-right"></i></a>
+              <?php if (!$session['is_logged_in']) : ?>
+                <a href="#pricing" class="read-more"><span>Get started</span> <i class="bi bi-arrow-right"></i></a>
+              <?php endif ?>
             </div>
           </div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-box orange">
               <h3>FUN FACT</h3>
               <p>You can use JavaScript to build web and mobile apps, and much much more. ( such as games, IOT and even cars ) </p>
-              <a href="#pricing" class="read-more"><span>Get started</span> <i class="bi bi-arrow-right"></i></a>
+              <?php if (!$session['is_logged_in']) : ?>
+                <a href="#pricing" class="read-more"><span>Get started</span> <i class="bi bi-arrow-right"></i></a>
+              <?php endif ?>
             </div>
           </div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-box green">
               <h3>INCREDIBLE SALARIES</h3>
               <p>A great JavaScript developer will earn more than $70,000 per year ( imagine the possibilities working remotely )</p>
-              <a href="#pricing" class="read-more"><span>Get started</span> <i class="bi bi-arrow-right"></i></a>
+              <?php if (!$session['is_logged_in']) : ?>
+                <a href="#pricing" class="read-more"><span>Get started</span> <i class="bi bi-arrow-right"></i></a>
+              <?php endif ?>
             </div>
           </div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-box red">
               <h3>WORK FROM ANYWHERE/ANYTIME</h3>
               <p>You're paid for your development, and you have the freedom to work remotely while having time to spend with friends & family.</p>
-              <a href="#pricing" class="read-more"><span>Get started</span> <i class="bi bi-arrow-right"></i></a>
+              <?php if (!$session['is_logged_in']) : ?>
+                <a href="#pricing" class="read-more"><span>Get started</span> <i class="bi bi-arrow-right"></i></a>
+              <?php endif ?>
             </div>
           </div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-box purple">
               <h3>HIGHLY IN-DEMAND</h3>
               <p>Biggest companies in the world are looking constantly for JavaScript developers. As long as the internet exists, your job will be save, all websites in the world are built with JS</p>
-              <a href="#pricing" class="read-more"><span>Get started</span> <i class="bi bi-arrow-right"></i></a>
+              <?php if (!$session['is_logged_in']) : ?>
+                <a href="#pricing" class="read-more"><span>Get started</span> <i class="bi bi-arrow-right"></i></a>
+              <?php endif ?>
             </div>
           </div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
             <div class="service-box pink">
               <h3>MIND SUPER-POWERS</h3>
               <p>Helps you think more clearly and will drastically impact all areas of your life, not just coding</p>
-              <a href="#pricing" class="read-more"><span>Get started</span> <i class="bi bi-arrow-right"></i></a>
+              <?php if (!$session['is_logged_in']) : ?>
+                <a href="#pricing" class="read-more"><span>Get started</span> <i class="bi bi-arrow-right"></i></a>
+              <?php endif ?>
             </div>
           </div>
         </div>
@@ -378,7 +388,9 @@
     </section><!-- End Services Section -->
 
     <!-- ======= Pricing Section ======= -->
-    <?php include $_SERVER['DOCUMENT_ROOT']."/php/templates/pricing-table.php"; ?>
+    <?php if (!$session['is_logged_in']) : ?>
+      <?php include $_SERVER['DOCUMENT_ROOT']."/php/templates/pricing-table.php"; ?>
+    <?php endif ?>
 
     <!-- ======= F.A.Q Section ======= -->
     <section id="faq" class="faq">
@@ -818,7 +830,11 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
-    <?php include $_SERVER['DOCUMENT_ROOT']."/php/templates/forms/newsletter-signup.php"; ?>
+    
+    <?php if (!$session['is_logged_in']) : ?>
+      <?php include $_SERVER['DOCUMENT_ROOT']."/php/templates/forms/newsletter-signup.php"; ?>
+    <?php endif ?>
+    
     <div class="footer-top">
       <div class="container">
         <div class="row gy-4">
@@ -843,12 +859,18 @@
               <li><i class="bi bi-chevron-right"></i> <a href="#hero">Home</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#about">About</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#values">Values</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#pricing">Pricing</a></li>
+              <?php if (!$session['is_logged_in']) : ?>
+                <li><i class="bi bi-chevron-right"></i> <a href="#pricing">Pricing</a></li>
+              <?php endif ?>
               <li><i class="bi bi-chevron-right"></i> <a href="#faq">FAQ</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#testimonials">Testimonials</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="blog.html">Blog</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#support">Support</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#pricing">Enroll</a></li>
+              <?php if (!$session['is_logged_in']) : ?>
+                <li><i class="bi bi-chevron-right"></i> <a href="#pricing">Enroll</a></li>
+              <?php else : ?>
+                <li><i class="bi bi-chevron-right"></i> <a href="/membership">Members area</a></li>
+              <?php endif ?>
               <li><i class="bi bi-chevron-right"></i> <a href="terms-of-service.html" target="_blank">Terms of service</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="privacy-policy.html" target="_blank">Privacy policy</a>
               <li><i class="bi bi-chevron-right"></i> <a href="cookie-policy.html" target="_blank">Cookie policy</a>
@@ -858,15 +880,15 @@
           <div class="col-lg-2 col-6 footer-links">
             <h4>Courses</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#pricing">JavaScript for absolute beginners</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#pricing">Chess game engine</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#pricing">Flappy bird in canvas</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#pricing">Path finding algorithm</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#pricing">CSS hacking challenges</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#pricing">Ultimate Vue 2/3 crash course</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#pricing">3 Unique web dev projects</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#pricing">Matrix symbols rain effect</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#pricing">HTML canvas manipulation</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="<?= !$session['is_logged_in'] ? '#pricing' : '/membership' ?>">JavaScript for absolute beginners</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="<?= !$session['is_logged_in'] ? '#pricing' : '/membership' ?>">Chess game engine</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="<?= !$session['is_logged_in'] ? '#pricing' : '/membership' ?>">Flappy bird in canvas</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="<?= !$session['is_logged_in'] ? '#pricing' : '/membership' ?>">Path finding algorithm</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="<?= !$session['is_logged_in'] ? '#pricing' : '/membership' ?>">CSS hacking challenges</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="<?= !$session['is_logged_in'] ? '#pricing' : '/membership' ?>">Ultimate Vue 2/3 crash course</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="<?= !$session['is_logged_in'] ? '#pricing' : '/membership' ?>">3 Unique web dev projects</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="<?= !$session['is_logged_in'] ? '#pricing' : '/membership' ?>">Matrix symbols rain effect</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="<?= !$session['is_logged_in'] ? '#pricing' : '/membership' ?>">HTML canvas manipulation</a></li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
@@ -909,7 +931,7 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/crypto-js/crypto-js.min.js"></script>
 
-  <!-- Template Main JS File -->
+  <!-- JS files -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/utils/utils.js"></script>
   <script src="assets/js/utils/validators.js"></script>

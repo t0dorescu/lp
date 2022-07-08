@@ -3,7 +3,7 @@
 include $_SERVER['DOCUMENT_ROOT']."/php/header.php";
 
 if (!$session['is_logged_in']) {
-    echo "<script>window.location = '../'</script>";die;
+    redirect_home();
 }
 
 dd($session['member']);    

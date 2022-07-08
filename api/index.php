@@ -31,7 +31,7 @@ class Api {
     public function email_exists() {
         validate_get($_GET);
 
-        $email = escape_get('email');
+        $email = escape_get_params('email');
         $query = "select id from members where email = '". $email ."'";
 
         $result = mysqli_query( $GLOBALS['conn'], $query );
@@ -42,7 +42,7 @@ class Api {
     public function email_exists_newsletter() {
         validate_get($_GET);
 
-        $email = escape_get('email');
+        $email = escape_get_params('email');
         $query = "select id from newsletter where email = '". $email ."'";
 
         $result = mysqli_query( $GLOBALS['conn'], $query );
@@ -53,7 +53,7 @@ class Api {
     public function email_deactivated() {
         validate_get($_GET);
 
-        $email = escape_get('email');
+        $email = escape_get_params('email');
         $query = "select id from members where email = '". $email ."' and status = 'deactivated'";
 
         $result = mysqli_query( $GLOBALS['conn'], $query );
@@ -64,7 +64,7 @@ class Api {
     public function email_inactive() {
         validate_get($_GET);
 
-        $email = escape_get('email');
+        $email = escape_get_params('email');
         $query = "select id from members where email = '". $email ."' and status = 'inactive'";
 
         $result = mysqli_query( $GLOBALS['conn'], $query );
@@ -75,7 +75,7 @@ class Api {
     public function update_member_status() {
         validate_get($_GET);
 
-        $email = escape_get('email');
+        $email = escape_get_params('email');
         $query = "select emailoctopus_id from members where email = '". $email ."' where status <> 'deactivated'";
         $result = mysqli_query( $GLOBALS['conn'], $query );
         
@@ -99,8 +99,8 @@ class Api {
     public function check_login() {
         validate_get($_GET);
 
-        $email = escape_get('email');
-        $password = escape_get('password');
+        $email = escape_get_params('email');
+        $password = escape_get_params('password');
         $query = "select id from members where email = '". $email ."' and password = '".$password."'";
 
         $result = mysqli_query( $GLOBALS['conn'], $query );
@@ -119,6 +119,7 @@ class Api {
         $plan = escape_post('plan');
         $first_name = escape_post('first_name');
         $last_name = escape_post('last_name');
+        $reset_password_token = bin2hex(random_bytes(16));
 
         $emailoctopus_response = eo_post('lists', $GLOBALS['emailoctopus_all_members'], 'contacts', array(
             'fields' => array(
@@ -144,6 +145,7 @@ class Api {
             status,
             first_name,
             last_name,
+            reset_password_token,
             emailoctopus_id,
             emailoctopus_list
         )
@@ -155,6 +157,7 @@ class Api {
             '".$status."',
             '".$first_name."',
             '".$last_name."',
+            '".$reset_password_token."',
             '".$emailoctopus_id."',
             '".$emailoctopus_list."'
         )";
@@ -227,6 +230,27 @@ class Api {
         $mysql_success = mysqli_query($GLOBALS['conn'], $query);
         output( array( 'success' => $mysql_success ) );
     }
+    public function forgot_password() {
+        output( array( 'success' => false ));
+        // email the reset link
+        // https://dev.todorescu.com/reset-password?token=d83744eef9f8065519d214d9a4b452e4
+    }
+    public function reset_password() {
+        $token = escape_post('token');
+        $password = escape_post('password');
+
+        $query = "select email from members where reset_password_token = '". $token ."'";
+        $result = mysqli_query( $GLOBALS['conn'], $query );
+        
+        if ($result->num_rows > 0) {
+            $query = "update members set password = '".$password."' where reset_password_token = '". $token ."'";
+            $result = mysqli_query($GLOBALS['conn'], $query);
+
+            return output(array('success' => true));
+        }
+        
+        return output(array('success' => false));
+    }
 
     // INTERNAL
     ///////////////////////
@@ -236,7 +260,9 @@ class Api {
             'member' => array()
         );
 
-        if ( !$token ) return $session;
+        if ( !$token ) {
+            return output_internal($session);
+        }
 
         $query = "select member_id from sessions where token = '". $token ."'";
 
@@ -257,6 +283,16 @@ class Api {
             $session['member'] = $result->fetch_assoc();
         }
 
-        return $session; 
+        return output_internal($session);
+    }
+    public function check_reset_token($token) {
+        $query = "select email from members where reset_password_token = '". $token ."'";
+        $result = mysqli_query( $GLOBALS['conn'], $query );
+        
+        if ($result->num_rows > 0) {
+            return output_internal($result->fetch_assoc()['email']);
+        }
+        
+        return output_internal('');
     }
 }

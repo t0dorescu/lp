@@ -1,5 +1,5 @@
 <div id="loginModal" class="modal fade" tabindex="-1">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title color-secondary-color">Login to your membership area</h5>
@@ -87,6 +87,13 @@
   addEventListener('DOMContentLoaded', () => {
     eventInputs(loginModal)
     populateLoginData()
+    
+    const loginEmail = String((new URLSearchParams(window.location.search)).get('loginEmail') || '')?.toLowerCase()
+    
+    if (loginEmail) {
+      openLoginModal()
+      loginModal.querySelector('#inputEmail').value = loginEmail
+    }
   })
 
   function populateLoginData() {
