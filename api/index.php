@@ -17,7 +17,6 @@ $conn = mysqli_connect(
 if ( isset($_POST['method']) ) {
     (new Api())->{$_POST['method']}();
 }
-
 else if ( isset($_GET['method']) ) {
     (new Api())->{$_GET['method']}();
 }
@@ -40,16 +39,62 @@ class Api {
 
         output( array( 'valid' => $valid ) );
     }
-    public function email_active() {
+    public function email_exists_newsletter() {
         validate_get($_GET);
 
         $email = escape_get('email');
-        $query = "select id from members where email = '". $email ."' and status = 'active'";
+        $query = "select id from newsletter where email = '". $email ."'";
 
         $result = mysqli_query( $GLOBALS['conn'], $query );
         $valid = $result->num_rows > 0;
 
         output( array( 'valid' => $valid ) );
+    }
+    public function email_deactivated() {
+        validate_get($_GET);
+
+        $email = escape_get('email');
+        $query = "select id from members where email = '". $email ."' and status = 'deactivated'";
+
+        $result = mysqli_query( $GLOBALS['conn'], $query );
+        $valid = $result->num_rows > 0;
+
+        output( array( 'valid' => $valid ) );
+    }
+    public function email_inactive() {
+        validate_get($_GET);
+
+        $email = escape_get('email');
+        $query = "select id from members where email = '". $email ."' and status = 'inactive'";
+
+        $result = mysqli_query( $GLOBALS['conn'], $query );
+        $valid = $result->num_rows > 0;
+
+        output( array( 'valid' => $valid ) );
+    }
+    public function update_member_status() {
+        validate_get($_GET);
+
+        $email = escape_get('email');
+        $query = "select emailoctopus_id from members where email = '". $email ."' where status <> 'deactivated'";
+        $result = mysqli_query( $GLOBALS['conn'], $query );
+        
+        if ($result->num_rows > 0) {
+            $member = $result->fetch_assoc();
+            $emailoctopus_id = $member['emailoctopus_id'];
+            $respone = eo_fetch('lists', $GLOBALS['emailoctopus_all_members'], 'contacts', $emailoctopus_id);
+            
+            if ($respone['status'] === 'SUBSCRIBED') {
+                $query = "update members set status = 'active' where emailoctopus_id = '".$emailoctopus_id."'";
+                $result = mysqli_query( $GLOBALS['conn'], $query );
+            }
+            if ($respone['status'] === 'PENDING') {
+                $query = "update members set status = 'inactive' where emailoctopus_id = '".$emailoctopus_id."'";
+                $result = mysqli_query( $GLOBALS['conn'], $query );
+            }
+        }
+
+        output( array() );
     }
     public function check_login() {
         validate_get($_GET);
@@ -67,7 +112,7 @@ class Api {
     // POST
     //////////////////////
     public function register() {
-        $status = 'active';
+        $status = 'inactive';
         $gravatar_url = escape_post('gravatar_url');
         $email = escape_post('email');
         $password = escape_post('password');
@@ -89,6 +134,7 @@ class Api {
         }
         
         $emailoctopus_id = $emailoctopus_response['id'];
+        $emailoctopus_list = $GLOBALS['emailoctopus_all_members'];
         
         $query = "insert into members (
             gravatar_url,
@@ -98,7 +144,8 @@ class Api {
             status,
             first_name,
             last_name,
-            emailoctopus_id
+            emailoctopus_id,
+            emailoctopus_list
         )
         VALUES (
             '".$gravatar_url."', 
@@ -108,13 +155,13 @@ class Api {
             '".$status."',
             '".$first_name."',
             '".$last_name."',
-            '".$emailoctopus_id."'
+            '".$emailoctopus_id."',
+            '".$emailoctopus_list."'
         )";
 
         $mysql_success = mysqli_query($GLOBALS['conn'], $query);
         output( array( 'success' => $mysql_success ) );
     }
-
     public function login() {
         $email = escape_post('email');
         $password = escape_post('password');
@@ -147,6 +194,38 @@ class Api {
             'token' => $token 
         ));
         
+    }
+    public function newsletter() {
+        $gravatar_url = escape_post('gravatar_url');
+        $email = escape_post('email');
+
+        $emailoctopus_response = eo_post('lists', $GLOBALS['emailoctopus_newsletter'], 'contacts', array(
+            'tags' => array( 'newsletter_subscription' ),
+            'email_address' => $email
+        ));
+
+        if ( !isset($emailoctopus_response['id']) ) {
+            output(array( 'success' => false ));
+        }
+        
+        $emailoctopus_id = $emailoctopus_response['id'];
+        $emailoctopus_list = $GLOBALS['emailoctopus_newsletter'];
+
+        $query = "insert into newsletter (
+            gravatar_url,
+            email, 
+            emailoctopus_id,
+            emailoctopus_list
+        )
+        VALUES (
+            '".$gravatar_url."', 
+            '".$email."', 
+            '".$emailoctopus_id."',
+            '".$emailoctopus_list."'
+        )";
+
+        $mysql_success = mysqli_query($GLOBALS['conn'], $query);
+        output( array( 'success' => $mysql_success ) );
     }
 
     // INTERNAL

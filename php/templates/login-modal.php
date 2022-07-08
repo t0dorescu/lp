@@ -27,8 +27,9 @@
               <div class="invalid-feedback d-none">Please provide a valid email address</div>
               <div class="invalid-feedback d-none">Email address doesn't appear to be registered</div>
               <div class="invalid-feedback d-none">
-                Your membership is deactivated, please contact <a href="mailTo:support@todorescu.com" class="text-decoration-underline color-secondary">support@todorescu.com</a>
+                Your membership is deactivated, please contact <a href="mailTo:support@todorescu.com" class="text-decoration-underline color-secondary">support@todorescu.com</a> for more information
               </div>
+              <div class="invalid-feedback d-none">You haven't activated your membership yet. Please go to your inbox (or SPAM folder) and follow the instructions, then come back for login.</div>
             </div>
             <div class="input-group mb-3">
               <span class="input-group-text" id="password-addon">
@@ -115,22 +116,30 @@
     ])
 
     resetFormInputs(loginModal)
+    await Api.get( 'update_member_status', { email: email.toLowerCase() })
 
     !isValidEmail(email)
       ? invalidInput(status, inputEmail, 0)
+    
     : !(await Api.get( 'email_exists', { email: email.toLowerCase() })).valid
       ? invalidInput(status, inputEmail, 1)
-    : !(await Api.get( 'email_active', { email: email.toLowerCase() })).valid
+    
+    : (await Api.get( 'email_deactivated', { email: email.toLowerCase() })).valid
       ? invalidInput(status, inputEmail, 2)
+    
+    : (await Api.get( 'email_inactive', { email: email.toLowerCase() })).valid
+      ? invalidInput(status, inputEmail, 3)
       : validInput(inputEmail)
 
-
-    password.length === 0
-      ? invalidInput(status, inputPassword, 0)
-    : !(await Api.get( 'check_login', { email: email.toLowerCase(), password: CryptoJS.MD5( password ).toString()})).valid
-      ? invalidInput(status, inputPassword, 1)
-      : validInput(inputPassword)
-
+    if ( status.isValid ) {
+      password.length === 0
+        ? invalidInput(status, inputPassword, 0)
+      
+      : !(await Api.get( 'check_login', { email: email.toLowerCase(), password: CryptoJS.MD5( password ).toString()})).valid
+        ? invalidInput(status, inputPassword, 1)
+        : validInput(inputPassword)
+    }
+    
     ////////
 
     if (status.isValid === true) {

@@ -19,7 +19,6 @@
           Please check your email inbox first to confirm your registration. <strong>(SPAM folder as well)</strong>
         </div>
         <form class="row js_form">
-
           <div class="input-group mb-3">
             <span class="input-group-text" id="first-name-addon">
               <i class="bi bi-person"></i>
@@ -215,18 +214,20 @@
       else {
         toggleElements( registerModal, '.js_confirm_message', '.js_form', true)
         disableButton('.js_register')
-        welcomeMessage(data)
+        welcomeMessage(registerModal, data)
       }
     }
     
     toggleElements( registerModal, '.js_spinner', '.js_register', false)
   }
 
-  function welcomeMessage(data) {
-    registerModal.querySelector('.js_name_congrats').innerText = data.first_name
+  function welcomeMessage(form, data) {
+    if ( data.first_name ) {
+      form.querySelector('.js_name_congrats').innerText = data.first_name
+    }
 
     if (data.gravatar_url) {
-      const gravatarImg = registerModal.querySelector('.js_gravatar_img')
+      const gravatarImg = form.querySelector('.js_gravatar_img')
 
       gravatarImg.classList.remove('d-none')
       gravatarImg.setAttribute('src', data.gravatar_url)

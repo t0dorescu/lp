@@ -2,9 +2,7 @@ const API_URL = 'https://dev.todorescu.com/api/'
 
 const Api = {
     async get( method, data ) {
-        let url = API_URL
-
-        url += `?method=${ method }`
+        let url = `${API_URL}?method=${ method }`
 
         for ( const name in data ) {
             const value = data[ name ]

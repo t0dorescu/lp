@@ -2,7 +2,8 @@
 function isLocal() {
     return [
         'localhost',
-        '127.0.0.1'
+        '127.0.0.1',
+        'dev.todorescu.com'
     ].includes(window.location.host) 
 }
 

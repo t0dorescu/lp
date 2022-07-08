@@ -1,4 +1,4 @@
-<?php include('php/header.php'); ?>
+<?php include $_SERVER['DOCUMENT_ROOT']."/php/header.php"; ?>
 <!doctype html>
 <html lang="en">
 
@@ -378,7 +378,7 @@
     </section><!-- End Services Section -->
 
     <!-- ======= Pricing Section ======= -->
-    <?php include('php/templates/pricing-table.php') ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/php/templates/pricing-table.php"; ?>
 
     <!-- ======= F.A.Q Section ======= -->
     <section id="faq" class="faq">
@@ -490,7 +490,7 @@
     </section><!-- End F.A.Q Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
+    <section id="testimonials" class="testimonials" style="padding-bottom: 0;">
       <div class="container" data-aos="fade-up">
         <header class="section-header">
           <h2>Udemy Testimonials</h2>
@@ -615,7 +615,7 @@
     </section><!-- End Testimonials Section -->
 
     <!-- ======= Team Section ======= -->
-    <section id="team" class="team">
+    <section id="team" class="team" style="padding-top: 0;">
       <div class="container" data-aos="fade-up">
         <header class="section-header">
           <h2>Behind the scenes</h2>
@@ -818,21 +818,7 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-12 text-center">
-            <h4>Newsletter</h4>
-            <p>Sign-up for the newsletter to not miss out on the latest tips/tricks. </p>
-          </div>
-          <div class="col-lg-6">
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/php/templates/newsletter-signup.php"; ?>
     <div class="footer-top">
       <div class="container">
         <div class="row gy-4">
@@ -844,8 +830,7 @@
             <p>Me and my team are here for you and we are glad to be part of your programming journey. If you need
               assistance or have questions with ABSOLUTELY ANYTHING, feel free to contact us. ( highly encouraged )</p>
             <div class="social-links mt-3">
-              <a href="https://www.youtube.com/channel/UCEpjzXih2Ca98SheN6rkRPg" class="youtube"><i
-                  class="bi bi-youtube"></i></a>
+              <a href="https://www.youtube.com/channel/UCEpjzXih2Ca98SheN6rkRPg" class="youtube"><i class="bi bi-youtube"></i></a>
               <a href="https://www.linkedin.com/in/tudortodorescu/" class="linkedin"><i class="bi bi-linkedin"></i></a>
               <a href="https://github.com/tudortodorescu" class="github"><i class="bi bi-github"></i></a>
               <a href="https://twitter.com/todorescu_tudor" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -888,10 +873,11 @@
             <h4>Contact Us</h4>
             <p>
               ICE STATION ZEBRA SRL<br>
-              CIF 46266079 CIF RO28941568<br>
+              CIF: 46266079<br>
+              REG: J1/685/08.06.2022<br>
               Romania <br><br>
               <strong>Whatsapp:</strong><br> <a href="tel:40756281010">+40 756 281 010</a><br><br>
-              <strong>Email us:</strong> <a href="mailTo:support@todorescu.com">support@todorescu.com</a><br>
+              <strong>Email us:</strong><br> <a href="mailTo:support@todorescu.com">support@todorescu.com</a><br>
             </p>
           </div>
         </div>
@@ -905,9 +891,9 @@
   </footer><!-- End Footer -->
 
   <!-- Modals -->
-  <?php include('php/templates/login-modal.php') ?>
-  <?php include('php/templates/register-modal.php') ?>
-  <?php include('php/templates/forgot-password-modal.php') ?>
+  <?php include $_SERVER['DOCUMENT_ROOT']."/php/templates/login-modal.php"; ?>
+  <?php include $_SERVER['DOCUMENT_ROOT']."/php/templates/register-modal.php"; ?>
+  <?php include $_SERVER['DOCUMENT_ROOT']."/php/templates/forgot-password-modal.php"; ?>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
     <i class="bi bi-arrow-up-short"></i>
@@ -925,7 +911,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/config/config.js"></script>
   <script src="assets/js/utils/utils.js"></script>
   <script src="assets/js/utils/validators.js"></script>
   <script src="assets/js/utils/forms.js"></script>

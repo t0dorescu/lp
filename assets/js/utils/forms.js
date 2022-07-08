@@ -40,7 +40,7 @@ function enableButton(buttonSelector) {
     document.querySelector(buttonSelector).removeAttribute('disabled')
 }
 
-function invalidInput(status, input, num = null) {
+function invalidInput(status, input, num = null, inputParent) {
     status.isValid = false
     input.classList.add('is-invalid')
     if ( num !== null ) {
