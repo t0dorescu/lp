@@ -90,7 +90,7 @@
   })
 
   function populateLoginData() {
-    if (!isLocal()) return
+    if (!isDev()) return
     const qsvalue = (val1,val2) => loginModal.querySelector(val1).value = val2
 
     qsvalue('#inputEmail', `tudor.fis@gmail.com`)

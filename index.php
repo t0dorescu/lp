@@ -818,7 +818,7 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
-    <?php include $_SERVER['DOCUMENT_ROOT']."/php/templates/newsletter-signup.php"; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/php/templates/forms/newsletter-signup.php"; ?>
     <div class="footer-top">
       <div class="container">
         <div class="row gy-4">
@@ -891,9 +891,9 @@
   </footer><!-- End Footer -->
 
   <!-- Modals -->
-  <?php include $_SERVER['DOCUMENT_ROOT']."/php/templates/login-modal.php"; ?>
-  <?php include $_SERVER['DOCUMENT_ROOT']."/php/templates/register-modal.php"; ?>
-  <?php include $_SERVER['DOCUMENT_ROOT']."/php/templates/forgot-password-modal.php"; ?>
+  <?php include $_SERVER['DOCUMENT_ROOT']."/php/templates/forms/login-modal.php"; ?>
+  <?php include $_SERVER['DOCUMENT_ROOT']."/php/templates/forms/register-modal.php"; ?>
+  <?php include $_SERVER['DOCUMENT_ROOT']."/php/templates/forms/forgot-password-modal.php"; ?>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
     <i class="bi bi-arrow-up-short"></i>

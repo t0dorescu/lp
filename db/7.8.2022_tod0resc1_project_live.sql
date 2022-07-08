@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jul 07, 2022 at 05:43 PM
+-- Generation Time: Jul 08, 2022 at 03:07 PM
 -- Server version: 10.3.35-MariaDB-cll-lve
 -- PHP Version: 7.4.30
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `tod0resc1_project`
+-- Database: `tod0resc1_project_live`
 --
 
 -- --------------------------------------------------------
@@ -31,6 +31,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `members` (
   `id` int(11) NOT NULL,
   `emailoctopus_id` varchar(255) NOT NULL,
+  `emailoctopus_list` varchar(255) NOT NULL,
   `gravatar_url` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
@@ -41,32 +42,32 @@ CREATE TABLE `members` (
   `date_created` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `members`
---
-
-INSERT INTO `members` (`id`, `emailoctopus_id`, `gravatar_url`, `email`, `password`, `plan`, `status`, `first_name`, `last_name`, `date_created`) VALUES
-(8, '9f54b419-fde0-11ec-9258-0241b9615763', 'https://secure.gravatar.com/avatar/c203b48078bd798f77d096090fc4dfcb', 'tudor.fis@gmail.com', '785d7a16b57c26b602f9c7d61dd3b616', 'free', 'active', 'Tudor', 'Todorescu-Crisan', '2022-07-07 13:36:13');
-
 -- --------------------------------------------------------
 
 --
--- Table structure for table `revolut`
+-- Table structure for table `newsletter`
 --
 
-CREATE TABLE `revolut` (
+CREATE TABLE `newsletter` (
   `id` int(11) NOT NULL,
-  `type` varchar(255) NOT NULL,
-  `product` varchar(255) NOT NULL,
-  `started_date` varchar(255) NOT NULL,
-  `completed_date` varchar(255) NOT NULL,
-  `description` varchar(255) NOT NULL,
-  `amount` varchar(255) NOT NULL,
-  `fee` varchar(255) NOT NULL,
-  `currency` varchar(255) NOT NULL,
-  `state` varchar(255) NOT NULL,
-  `balance` varchar(255) NOT NULL
+  `emailoctopus_id` varchar(255) NOT NULL,
+  `emailoctopus_list` varchar(255) NOT NULL,
+  `gravatar_url` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `date_created` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `newsletter`
+--
+
+INSERT INTO `newsletter` (`id`, `emailoctopus_id`, `emailoctopus_list`, `gravatar_url`, `email`, `date_created`) VALUES
+(1, '10099398', '764e1bd2-feaa-11ec-9258-0241b9615763', 'https://secure.gravatar.com/avatar/c203b48078bd798f77d096090fc4dfcb', 'tudor.fis@gmail.com', '2022-07-08 14:13:58'),
+(2, '73666fd2-feaf-11ec-9258-0241b9615763', '764e1bd2-feaa-11ec-9258-0241b9615763', 'https://secure.gravatar.com/avatar/b642b4217b34b1e8d3bd915fc65c4452', 'test@test.com', '2022-07-08 14:16:45'),
+(3, '8c54e0d5-feaf-11ec-9258-0241b9615763', '764e1bd2-feaa-11ec-9258-0241b9615763', '', 'qweqeqeq@aweqew.com', '2022-07-08 14:17:26'),
+(4, 'a2b14533-feaf-11ec-9258-0241b9615763', '764e1bd2-feaa-11ec-9258-0241b9615763', '', 'wqeqeqwe123123@io334iuqweihqw.com', '2022-07-08 14:18:04'),
+(5, '04b61be5-feb0-11ec-9258-0241b9615763', '764e1bd2-feaa-11ec-9258-0241b9615763', '', 'qwewqeqwe@wqeqweqw.com', '2022-07-08 14:20:48'),
+(6, '0c929b91-feb0-11ec-9258-0241b9615763', '764e1bd2-feaa-11ec-9258-0241b9615763', '', 'wqeqeqwe123123@io33wewe4iuqweihqw.com', '2022-07-08 14:21:02');
 
 -- --------------------------------------------------------
 
@@ -81,6 +82,17 @@ CREATE TABLE `sessions` (
   `user_agent` varchar(255) NOT NULL,
   `date_created` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `sessions`
+--
+
+INSERT INTO `sessions` (`id`, `member_id`, `token`, `user_agent`, `date_created`) VALUES
+(9, 11, '015006fc9508d069e7ee861530acc9b7', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-08 14:32:55'),
+(10, 11, '7ecd78faf2e991a60fe0367466cb5511', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-08 14:34:12'),
+(11, 11, '883bfbdaaa2bfad118cd07c8e5c2e10d', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-08 14:46:53'),
+(12, 11, 'b67dd2a905ab8a4a0765c050aac9684b', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-08 14:47:06'),
+(13, 11, 'cdfa8c572286233f2f8b203d69f06574', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-08 14:47:29');
 
 -- --------------------------------------------------------
 
@@ -113,9 +125,9 @@ ALTER TABLE `members`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `revolut`
+-- Indexes for table `newsletter`
 --
-ALTER TABLE `revolut`
+ALTER TABLE `newsletter`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -138,19 +150,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `members`
 --
 ALTER TABLE `members`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `revolut`
+-- AUTO_INCREMENT for table `newsletter`
 --
-ALTER TABLE `revolut`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+ALTER TABLE `newsletter`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `sessions`
 --
 ALTER TABLE `sessions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `users`

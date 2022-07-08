@@ -1,10 +1,11 @@
-
 <?php
 
+$isDev = $_SERVER['SERVER_NAME'] == 'dev.todorescu.com';
+
 $mysql_host = 'localhost';
-$mysql_user = 'tod0resc1_project';
-$mysql_pass = ''************';';
-$mysql_db = 'tod0resc1_project';
+$mysql_user = $isDev ? '***********' : ''***********_live';
+$mysql_pass = $isDev ? '***********' : '***********';
+$mysql_db = $isDev ? '''***********' : '''***********_live';
 
 $emailoctopus_all_members = '********-****-****-****-*************';
 $emailoctopus_newsletter = '********-****-****-****-*************';

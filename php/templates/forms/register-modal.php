@@ -132,7 +132,7 @@
   })
 
   function populateRegisterData() {
-    if (!isLocal()) return
+    if (!isDev()) return
     const qsvalue = (val1,val2) => registerModal.querySelector(val1).value = val2
 
     qsvalue('#inputFirstName', `Tudor`)
