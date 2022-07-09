@@ -1,11 +1,12 @@
 <?php
+
   include $_SERVER['DOCUMENT_ROOT']."/api/index.php";
   
   $session = (new Api())->get_session($_COOKIE['token']);
   if (!$session['is_logged_in']) { redirect_home(); }
   
   $title = "Dashboard -". $session['member']['plan'] ." plan";
-  include php_root()."membership/php/adm-header.php"; 
+  include 'php/adm-header.php'; 
 ?>
 
   <!-- ======= Sidebar ======= -->

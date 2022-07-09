@@ -27,11 +27,13 @@
 <body>
   <header id="header" class="header fixed-top d-flex align-items-center">
     <div class="d-flex align-items-center justify-content-between">
-      <a href="<?= root() ?>  " class="logo d-flex align-items-center">
-        <img src="<?= root() ?>assets/img/tudor-todorescu.jpg" alt="">
-        <span class="d-none d-lg-block"><?= strtoupper($session['member']['plan']) ?> PLAN</span>
-      </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
+      
+      <!--
+        <?php if ($session['member']['plan'] === 'free') : ?>
+          <span>Free trial - 8 days left <button class="btn btn-sm btn-primary">Upgrade</button></span>
+        <?php endif ?>
+      -->
     </div>
 
     <!-- SEARCH -->
@@ -54,74 +56,9 @@
             <i class="bi bi-search"></i>
           </a>
         </li> -->
-        <li class="nav-item dropdown">
-          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
-            <i class="bi bi-bell"></i>
-            <span class="badge bg-primary badge-number">0</span>
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
-            <li class="dropdown-header">
-              You have 0 new notifications
-              <!-- <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2 text-thin">View all</span></a> -->
-            </li>
-            <!-- <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li class="notification-item">
-              <i class="bi bi-exclamation-circle text-warning"></i>
-              <div>
-                <h4>Lorem Ipsum</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>30 min. ago</p>
-              </div>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li class="dropdown-footer">
-              <a href="#">Show all notifications</a>
-            </li> -->
-          </ul><!-- End Notification Dropdown Items -->
-        </li><!-- End Notification Nav -->
-
-        <!-- ============= -->
-        <!-- MESSAGES -->
-        <!-- ============= -->
-        <li class="nav-item dropdown">
-          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
-            <i class="bi bi-chat-left-text"></i>
-            <span class="badge bg-success badge-number">0</span>
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
-            <li class="dropdown-header">
-              You have 0 new messages
-              <!-- <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2 text-thin">View all</span></a> -->
-            </li>
-            <!-- <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li class="message-item">
-              <a href="#">
-                <img src="<?= root() ?>assets/img/tudor-todorescu.jpg" alt="" class="rounded-circle">
-                <div>
-                  <h4>Maria Hudson</h4>
-                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
-                  <p>4 hrs. ago</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li class="dropdown-footer">
-              <a href="#">Show all messages</a>
-            </li> -->
-          </ul><!-- End Messages Dropdown Items -->
-        </li><!-- End Messages Nav -->
-        <?= php_root()."membership/php/templates/profile-header.php" ?>
+        <?php include 'templates/notifications-header.php' ?>
+        <?php include 'templates/messages-header.php' ?>
+        <?php include 'templates/profile-header.php' ?>
       </ul> 
     </nav><!-- End Icons Navigation -->
   </header><!-- End Header -->
