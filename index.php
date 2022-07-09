@@ -1,4 +1,7 @@
-<?php include $_SERVER['DOCUMENT_ROOT']."/php/header.php"; ?>
+<?php 
+  include $_SERVER['DOCUMENT_ROOT']."/api/index.php";
+  $session = (new Api())->get_session($_COOKIE['token']);
+?>
 <!doctype html>
 <html lang="en">
 
@@ -58,7 +61,7 @@
           <?php endif ?>
           <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
           <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="blog/blog.html">Blog</a></li>
           <li><a class="nav-link scrollto" href="#support">Support</a></li>
           <?php if (!$session['is_logged_in']) : ?>
             <li><a class="getstarted scrollto" href="#pricing">Enroll</a></li>
@@ -389,7 +392,7 @@
 
     <!-- ======= Pricing Section ======= -->
     <?php if (!$session['is_logged_in']) : ?>
-      <?php include $_SERVER['DOCUMENT_ROOT']."/php/templates/pricing-table.php"; ?>
+      <?php include $_SERVER['DOCUMENT_ROOT']."/php/templates/pricing/pricing-table.php"; ?>
     <?php endif ?>
 
     <!-- ======= F.A.Q Section ======= -->
@@ -729,7 +732,7 @@
               <div class="post-img"><img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt=""></div>
               <span class="post-date">Tue, September 15</span>
               <h3 class="post-title">How to create custom javaScript events</h3>
-              <a href="blog-single.html" class="readmore stretched-link mt-auto"><span>Read More</span><i
+              <a href="blog/blog-single.html" class="readmore stretched-link mt-auto"><span>Read More</span><i
                   class="bi bi-arrow-right"></i></a>
             </div>
           </div>
@@ -738,7 +741,7 @@
               <div class="post-img"><img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt=""></div>
               <span class="post-date">Fri, August 28</span>
               <h3 class="post-title">How to implement debounce and throttle in JavaScript</h3>
-              <a href="blog-single.html" class="readmore stretched-link mt-auto"><span>Read More</span><i
+              <a href="blog/blog-single.html" class="readmore stretched-link mt-auto"><span>Read More</span><i
                   class="bi bi-arrow-right"></i></a>
             </div>
           </div>
@@ -747,7 +750,7 @@
               <div class="post-img"><img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt=""></div>
               <span class="post-date">Mon, July 11</span>
               <h3 class="post-title">How to use the most used array method - map</h3>
-              <a href="blog-single.html" class="readmore stretched-link mt-auto"><span>Read More</span><i
+              <a href="blog/blog-single.html" class="readmore stretched-link mt-auto"><span>Read More</span><i
                   class="bi bi-arrow-right"></i></a>
             </div>
           </div>
@@ -800,7 +803,7 @@
             </div>
           </div>
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form">
+            <form action="api/contact.php" method="post" class="php-email-form">
               <div class="row gy-4">
                 <div class="col-md-6">
                   <input type="text" name="name" class="form-control" placeholder="Your Name" required>
@@ -987,7 +990,5 @@
     })
   </script>
 
-  <!-- php footer -->
-  <?php include $_SERVER['DOCUMENT_ROOT']."/php/footer.php"; ?>
 </body>
 </html>

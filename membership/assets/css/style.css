@@ -6,30 +6,75 @@
 */
 
 /*--------------------------------------------------------------
+# FONTS
+--------------------------------------------------------------*/
+@font-face {
+  font-family: fontfamily1;
+  src: url("../fonts/pixeloid.ttf") format("truetype");
+}
+@font-face {
+  font-family: fontfamily2;
+  src: url("../fonts/diary.ttf") format("truetype");
+}
+
+.font-family-1 {
+  font-family: 'fontfamily1' !important;
+  font-weight: 100 !important;
+}
+.font-family-2 {
+  font-family: 'fontfamily2' !important;
+  font-weight: 100 !important;
+}
+/*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 :root {
   scroll-behavior: smooth;
+  --primary-color: #bd9652;
+  --secondary-color: #012970;
+  --third-color: #444444;
+
+  --bs-primary: #012970;
+  --bs-primary-rgb: 1, 41, 112;
+  --bs-secondary: #444444;
+  --bs-secondary-rgb: 68, 68, 68;
+  --bs-success: #bd9652;
+  --bs-success-rgb: 189, 150, 82;
+}
+.modal {
+  z-index: 99999 !important;
+}
+.form-control:focus {
+  border-color: var(--secondary-color);
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  background: #f6f9ff;
-  color: #444444;
+  font-family: 'fontfamily1';
+  color: var(--third-color);
 }
 
 a {
-  color: #4154f1;
+  color: var(--primary-color);
   text-decoration: none;
+  cursor: pointer;
+  user-select: none;
 }
 
 a:hover {
-  color: #717ff5;
+  color: var(--secondary-color);
   text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Nunito", sans-serif;
+  font-family: 'fontfamily1';
+  font-weight: 100;
+}
+
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+.text-thin {
+  font-weight: 100 !important;
 }
 
 /*--------------------------------------------------------------
@@ -69,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #4154f1;
+  background: var(--secondary-color);
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -227,7 +272,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   font-weight: 500;
   color: #012970;
-  font-family: "Poppins", sans-serif;
+  font-family: "Arial";
 }
 .card-title span {
   color: #899bbd;
@@ -245,7 +290,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Alerts */
 .alert-heading {
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
+  font-family: "Arial";
   font-size: 20px;
 }
 
@@ -279,7 +324,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .accordion-flush .accordion-button:not(.collapsed) {
   box-shadow: none;
-  color: #4154f1;
+  color: var(--secondary-color);
 }
 .accordion-flush .accordion-body {
   padding: 0 0 15px 0;
@@ -290,7 +335,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Breadcrumbs */
 .breadcrumb {
   font-size: 14px;
-  font-family: "Nunito", sans-serif;
+  font-family: "Arial";
   color: #899bbd;
   font-weight: 600;
 }
@@ -319,12 +364,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #2c384e;
 }
 .nav-tabs-bordered .nav-link:hover, .nav-tabs-bordered .nav-link:focus {
-  color: #4154f1;
+  color: var(--secondary-color);
 }
 .nav-tabs-bordered .nav-link.active {
   background-color: #fff;
-  color: #4154f1;
-  border-bottom: 2px solid #4154f1;
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
 }
 
 /*--------------------------------------------------------------
@@ -346,7 +391,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 26px;
   font-weight: 700;
   color: #012970;
-  font-family: "Nunito", sans-serif;
+  font-family: "Arial";
 }
 
 .header {
@@ -599,7 +644,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   font-size: 15px;
   font-weight: 600;
-  color: #4154f1;
+  color: var(--secondary-color);
   transition: 0.3;
   background: #f6f9ff;
   padding: 10px 15px;
@@ -608,7 +653,7 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar-nav .nav-link i {
   font-size: 16px;
   margin-right: 10px;
-  color: #4154f1;
+  color: var(--secondary-color);
 }
 .sidebar-nav .nav-link.collapsed {
   color: #012970;
@@ -618,11 +663,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #899bbd;
 }
 .sidebar-nav .nav-link:hover {
-  color: #4154f1;
+  color: var(--secondary-color);
   background: #f6f9ff;
 }
 .sidebar-nav .nav-link:hover i {
-  color: #4154f1;
+  color: var(--secondary-color);
 }
 .sidebar-nav .nav-link .bi-chevron-down {
   margin-right: 0;
@@ -653,10 +698,10 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
 }
 .sidebar-nav .nav-content a:hover, .sidebar-nav .nav-content a.active {
-  color: #4154f1;
+  color: var(--secondary-color);
 }
 .sidebar-nav .nav-content a.active i {
-  background-color: #4154f1;
+  background-color: var(--secondary-color);
 }
 
 /*--------------------------------------------------------------
@@ -676,7 +721,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
 }
 .dashboard .filter .icon:hover, .dashboard .filter .icon:focus {
-  color: #4154f1;
+  color: var(--secondary-color);
 }
 .dashboard .filter .dropdown-header {
   padding: 8px 15px;
@@ -714,7 +759,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-grow: 0;
 }
 .dashboard .sales-card .card-icon {
-  color: #4154f1;
+  color: var(--secondary-color);
   background: #f6f6fe;
 }
 .dashboard .revenue-card .card-icon {
@@ -787,7 +832,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 .dashboard .news h4 a:hover {
-  color: #4154f1;
+  color: var(--secondary-color);
 }
 .dashboard .news p {
   font-size: 14px;
@@ -914,7 +959,7 @@ h1, h2, h3, h4, h5, h6 {
 .faq .basic h6 {
   font-size: 18px;
   font-weight: 600;
-  color: #4154f1;
+  color: var(--secondary-color);
 }
 .faq .basic p {
   color: #6980aa;
@@ -929,7 +974,7 @@ h1, h2, h3, h4, h5, h6 {
 .contact .info-box i {
   font-size: 38px;
   line-height: 0;
-  color: #4154f1;
+  color: var(--secondary-color);
 }
 .contact .info-box h3 {
   font-size: 20px;
@@ -987,7 +1032,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 0;
 }
 .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-  border-color: #4154f1;
+  border-color: var(--secondary-color);
 }
 .contact .php-email-form input {
   padding: 10px 15px;
@@ -996,7 +1041,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 12px 15px;
 }
 .contact .php-email-form button[type=submit] {
-  background: #4154f1;
+  background: var(--secondary-color);
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -1032,7 +1077,7 @@ h1, h2, h3, h4, h5, h6 {
 .error-404 h1 {
   font-size: 180px;
   font-weight: 700;
-  color: #4154f1;
+  color: var(--secondary-color);
   margin-bottom: 0;
   line-height: 150px;
 }
