@@ -392,7 +392,7 @@
 
     <!-- ======= Pricing Section ======= -->
     <?php if (!$session['is_logged_in']) : ?>
-      <?php include $_SERVER['DOCUMENT_ROOT']."/php/templates/pricing/pricing-table.php"; ?>
+      <?php include php_root()."php/templates/pricing/pricing-table.php"; ?>
     <?php endif ?>
 
     <!-- ======= F.A.Q Section ======= -->
@@ -835,7 +835,7 @@
   <footer id="footer" class="footer">
     
     <?php if (!$session['is_logged_in']) : ?>
-      <?php include $_SERVER['DOCUMENT_ROOT']."/php/templates/forms/newsletter-signup.php"; ?>
+      <?php include php_root()."php/templates/forms/newsletter-signup.php"; ?>
     <?php endif ?>
     
     <div class="footer-top">
@@ -916,9 +916,9 @@
   </footer><!-- End Footer -->
 
   <!-- Modals -->
-  <?php include $_SERVER['DOCUMENT_ROOT']."/php/templates/forms/login-modal.php"; ?>
-  <?php include $_SERVER['DOCUMENT_ROOT']."/php/templates/forms/register-modal.php"; ?>
-  <?php include $_SERVER['DOCUMENT_ROOT']."/php/templates/forms/forgot-password-modal.php"; ?>
+  <?php include php_root()."php/templates/forms/login-modal.php"; ?>
+  <?php include php_root()."php/templates/forms/register-modal.php"; ?>
+  <?php include php_root()."php/templates/forms/forgot-password-modal.php"; ?>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
     <i class="bi bi-arrow-up-short"></i>

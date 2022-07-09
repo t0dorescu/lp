@@ -5,7 +5,7 @@
   if (!$session['is_logged_in']) { redirect_home(); }
 
   $title = "My profile - ". $session['member']['first_name'] ." ".$session['member']['last_name'];
-  include $_SERVER['DOCUMENT_ROOT']."/membership/php/template-header.php"; 
+  include php_root()."membership/php/template-header.php"; 
 ?>
 
   <!-- ======= Sidebar ======= -->

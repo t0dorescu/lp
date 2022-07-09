@@ -238,7 +238,7 @@ class Api {
         
         if ($result->num_rows > 0) {
             $token = $result->fetch_assoc()['reset_password_token'];
-            $url = 'https://'.$_SERVER['HTTP_HOST'].'/reset-password?token='.$token; 
+            $url = root().'reset-password?token='.$token; 
 
             $headers = "From: Todorescu.com <support@todorescu.com>\r\n";
             $headers .= "MIME-Version: 1.0\r\n";
@@ -259,7 +259,7 @@ class Api {
                     <body>
                         <div style="text-align: center;">
                             <img 
-                                src="https://'.$_SERVER['HTTP_HOST'].'/assets/img/tudor-todorescu.jpg" 
+                                src="'.root().'assets/img/tudor-todorescu.jpg" 
                                 style="width: 50px;height:50px;margin: 10px auto;"
                             />
                             <h3>How to reset your password</h3>

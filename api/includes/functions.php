@@ -35,3 +35,9 @@ function validate_get($get) {
 function redirect_home() {
     echo "<script>window.location = '../'</script>";die;
 }
+function php_root() {
+    echo $_SERVER['DOCUMENT_ROOT']."/";
+}
+function root() {
+    echo 'https://'.$_SERVER['HTTP_HOST'].'/';
+}
