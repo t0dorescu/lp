@@ -34,13 +34,23 @@ if (!$email) {
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet" />
 </head>
-<body>
+<body class="modal-open" style="overflow: hidden; padding-right: 0px;">
   
-<div id="resetPasswordModal" class="modal fade" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" t>
+<div 
+  id="resetPasswordModal"
+  class="modal fade show"
+  tabindex="-1"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  aria-labelledby="staticBackdropLabel"
+  aria-modal="true"
+  role="dialog"
+  style="display: block;"
+>
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title color-secondary-color">
+        <h5 class="modal-title color-secondary-color" id="staticBackdropLabel">
           <img src="assets/img/tudor-todorescu.jpg" style="height: 35px; vertical-align: bottom;"> 
           Reset your password
         </h5>
@@ -120,6 +130,7 @@ if (!$email) {
     </div>
   </div>
 </div>
+<div class="modal-backdrop fade show"></div>
 
 <!-- Vendor JS Files -->
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -137,7 +148,6 @@ if (!$email) {
   addEventListener('DOMContentLoaded', () => {
     eventInputs(resetPasswordModal)
     populateResetPasswordData()
-    openResetPasswordModal()
   })
 
   function populateResetPasswordData() {
@@ -146,10 +156,6 @@ if (!$email) {
 
     qsvalue('#inputPassword', `Parola137*`)
     qsvalue('#inputConfirmPassword', `Parola137*`)
-  }
-
-  function openResetPasswordModal() {
-    new bootstrap.Modal(resetPasswordModal).show()
   }
 
   async function resetPassword() {

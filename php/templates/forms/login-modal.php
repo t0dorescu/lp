@@ -164,7 +164,7 @@
         loginModal.querySelector('.js_forgot_password').classList.add('d-none')
       } 
       else {
-        document.cookie = `token=${loginResponse.token}; expires=Thu, 18 Dec 2113 12:00:00 UTC; path=/`;
+        updateSessionToken(loginResponse.token)
         window.location = 'membership'
       }
     }

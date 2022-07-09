@@ -1,4 +1,8 @@
 
+function l() {
+    console.log( ...arguments )
+}
+
 function isDev() {
     return [
         'localhost',
@@ -16,4 +20,8 @@ async function fetchGravatar(email) {
     }        
 
     return ''
+}
+
+function updateSessionToken($token = '') {
+    document.cookie = `token=${$token}; expires=Thu, 18 Dec 2113 12:00:00 UTC; path=/`;
 }

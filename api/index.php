@@ -76,19 +76,19 @@ class Api {
         validate_get($_GET);
 
         $email = escape_get_params('email');
-        $query = "select emailoctopus_id from members where email = '". $email ."' where status <> 'deactivated'";
+        $query = "select emailoctopus_id from members where email = '". $email ."' and status <> 'deactivated'";
         $result = mysqli_query( $GLOBALS['conn'], $query );
-        
+
         if ($result->num_rows > 0) {
             $member = $result->fetch_assoc();
             $emailoctopus_id = $member['emailoctopus_id'];
-            $respone = eo_fetch('lists', $GLOBALS['emailoctopus_all_members'], 'contacts', $emailoctopus_id);
+            $response = eo_fetch('lists', $GLOBALS['emailoctopus_all_members'], 'contacts', $emailoctopus_id);
             
-            if ($respone['status'] === 'SUBSCRIBED') {
+            if ($response['status'] === 'SUBSCRIBED') {
                 $query = "update members set status = 'active' where emailoctopus_id = '".$emailoctopus_id."'";
                 $result = mysqli_query( $GLOBALS['conn'], $query );
             }
-            if ($respone['status'] === 'PENDING') {
+            if ($response['status'] === 'PENDING') {
                 $query = "update members set status = 'inactive' where emailoctopus_id = '".$emailoctopus_id."'";
                 $result = mysqli_query( $GLOBALS['conn'], $query );
             }
