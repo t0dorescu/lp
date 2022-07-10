@@ -93,7 +93,7 @@
           </div>
           <div class="input-group mb-3">
             <p class="text-center" style="font-size: .85rem">
-              By signing up, you agree to our <a href="terms-of-service.html" target="_blank" class="text-decoration-underline color-secondary">Terms of service</a> and acknowledge our <a href="privacy-policy.html" target="_blank" class="text-decoration-underline color-secondary">Privacy policy</a>
+              By signing up, you agree to our <a href="<?= root().'terms-of-service' ?>" target="_blank" class="text-decoration-underline color-secondary">Terms of service</a> and acknowledge our <a href="<?= root().'privacy-policy' ?>" target="_blank" class="text-decoration-underline color-secondary">Privacy policy</a>
             </p>
           </div>
           <div class="input-group">

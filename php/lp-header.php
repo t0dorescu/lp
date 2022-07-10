@@ -41,7 +41,7 @@
       <?php else : ?>
         <a
           class="btn-standard"
-          href="/membership"
+          href="<?= root().'membership' ?>"
         >
           <i class="bi bi-file-person"></i>
           Members area
@@ -57,7 +57,7 @@
           <?php endif ?>
           <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
           <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
-          <li><a href="blog/blog.html">Blog</a></li>
+          <li><a href="<?= root().'blog' ?>">Blog</a></li>
           <li><a class="nav-link scrollto" href="#support">Support</a></li>
           <?php if (!$session['is_logged_in']) : ?>
             <li><a class="getstarted scrollto" href="#pricing">Enroll</a></li>

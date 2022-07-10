@@ -7,8 +7,8 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-info">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <!-- <img src="assets/img/logo.png" alt=""> -->
+            <a href="<?= root() ?>" class="logo d-flex align-items-center">
+              <img src="<?= root().'assets/img/tudor-todorescu.jpg' ?>" alt="">
               <span>TODORESCU</span>
             </a>
             <p>Me and my team are here for you and we are glad to be part of your programming journey. If you need
@@ -32,16 +32,16 @@
               <?php endif ?>
               <li><i class="bi bi-chevron-right"></i> <a href="#faq">FAQ</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#testimonials">Testimonials</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="blog.html">Blog</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="<?= root().'blog' ?>">Blog</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#support">Support</a></li>
               <?php if (!$session['is_logged_in']) : ?>
                 <li><i class="bi bi-chevron-right"></i> <a href="#pricing">Enroll</a></li>
               <?php else : ?>
-                <li><i class="bi bi-chevron-right"></i> <a href="/membership">Members area</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="<?= root().'membership' ?>">Members area</a></li>
               <?php endif ?>
-              <li><i class="bi bi-chevron-right"></i> <a href="terms-of-service.html" target="_blank">Terms of service</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="privacy-policy.html" target="_blank">Privacy policy</a>
-              <li><i class="bi bi-chevron-right"></i> <a href="cookie-policy.html" target="_blank">Cookie policy</a>
+              <li><i class="bi bi-chevron-right"></i> <a href="<?= root().'terms-of-service' ?>" target="_blank">Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="<?= root().'privacy-policy' ?>" target="_blank">Privacy policy</a>
+              <li><i class="bi bi-chevron-right"></i> <a href="<?= root().'cookie-policy' ?>" target="_blank">Cookie policy</a>
               </li>
             </ul>
           </div>
@@ -109,6 +109,18 @@
 <script src="assets/js/utils/forms.js<?= v_lp() ?>"></script>
 <script src="assets/js/services/api.js<?= v_lp() ?>"></script>
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<?php if (!$isDev) : ?>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122326504-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-122326504-1');
+  </script>
+<?php endif ?>
+
 <!-- Cookie consent -->
 <script src="assets/vendor/cookieconsent/cookieconsent.js<?= v_lp() ?>"></script>
 <script>
@@ -117,7 +129,7 @@
         'en': {
             consent_modal: {
             title: 'Cookie policy',
-            description: 'This website uses cookies to understand how you interact with it. <a href="/cookie-policy.html" target="_blank">Read more</a>',
+            description: 'This website uses cookies to understand how you interact with it. <a href="<?= root()."cookie-policy" ?>" target="_blank">Read more</a>',
             primary_btn: {
                 text: 'Accept all',
                 role: 'accept_all'
@@ -157,15 +169,3 @@
         }
     })
 </script>
-
-<?php if (!$isDev) : ?>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122326504-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-122326504-1');
-  </script>
-<?php endif ?>

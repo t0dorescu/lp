@@ -62,7 +62,7 @@ if (!$email) {
           <br>
           You can now go to the main page to login into your members area. 
           <br><br>
-          <a href="/?loginEmail=<?= $email ?>" class="text-decoration-underline color-secondary">Click here for login!</a>
+          <a href="<?= root().'?loginEmail='. $email ?>" class="text-decoration-underline color-secondary">Click here for login!</a>
         </div>
         <form class="row js_form">
           <div class="input-group mb-3">
