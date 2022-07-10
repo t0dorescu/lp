@@ -36,8 +36,17 @@ function redirect_home() {
     echo "<script>window.location = '../'</script>";die;
 }
 function php_root() {
-    echo $_SERVER['DOCUMENT_ROOT']."/";
+    return $_SERVER['DOCUMENT_ROOT']."/";
 }
 function root() {
-    echo 'https://'.$_SERVER['HTTP_HOST'].'/';
+    return 'https://'.$_SERVER['HTTP_HOST'].'/';
+}
+function v_lp() {
+    echo '?v='.$GLOBALS['version_lp'];
+}
+function v_adm() {
+    echo '?v='.$GLOBALS['version_adm'];
+}
+function v_blog() {
+    echo '?v='.$GLOBALS['version_blog'];
 }

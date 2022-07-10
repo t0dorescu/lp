@@ -137,6 +137,9 @@ if (!$email) {
 <script src="assets/vendor/crypto-js/crypto-js.min.js"></script>
 
 <!-- JS Main files -->
+<script>
+  const API_URL = "<?= root().'api/' ?>"
+</script>
 <script src="assets/js/utils/utils.js"></script>
 <script src="assets/js/utils/validators.js"></script>
 <script src="assets/js/utils/forms.js"></script>

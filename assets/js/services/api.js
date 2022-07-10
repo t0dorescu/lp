@@ -1,4 +1,3 @@
-const API_URL = 'https://dev.todorescu.com/api/'
 
 const Api = {
     async get( method, data ) {

@@ -71,10 +71,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
-# Buttons
+# CUSTOM
 --------------------------------------------------------------*/
 .text-thin {
   font-weight: 100 !important;
+}
+.btn-primary {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+.header-plan-txt {
+  margin: 0 0 0 10px;
+  letter-spacing: .02rem;
+  font-size: .75rem;
 }
 
 /*--------------------------------------------------------------

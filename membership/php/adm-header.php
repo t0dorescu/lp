@@ -13,27 +13,46 @@
   <link href="<?= root() ?>assets/img/apple-touch-icon.jpg" rel="apple-touch-icon">
 
   <!-- Vendor CSS Files -->
-  <link href="<?= root() ?>membership/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="<?= root() ?>membership/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="<?= root() ?>membership/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="<?= root() ?>membership/assets/vendor/quill/quill.snow.css" rel="stylesheet">
-  <link href="<?= root() ?>membership/assets/vendor/quill/quill.bubble.css" rel="stylesheet">
-  <link href="<?= root() ?>membership/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="<?= root() ?>membership/assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  <link href="<?= root() ?>membership/assets/vendor/bootstrap/css/bootstrap.min.css<?= v_adm() ?>" rel="stylesheet">
+  <link href="<?= root() ?>membership/assets/vendor/bootstrap-icons/bootstrap-icons.css<?= v_adm() ?>" rel="stylesheet">
+  <link href="<?= root() ?>membership/assets/vendor/boxicons/css/boxicons.min.css<?= v_adm() ?>" rel="stylesheet">
+  <link href="<?= root() ?>membership/assets/vendor/quill/quill.snow.css<?= v_adm() ?>" rel="stylesheet">
+  <link href="<?= root() ?>membership/assets/vendor/quill/quill.bubble.css<?= v_adm() ?>" rel="stylesheet">
+  <link href="<?= root() ?>membership/assets/vendor/remixicon/remixicon.css<?= v_adm() ?>" rel="stylesheet">
+  <link href="<?= root() ?>membership/assets/vendor/simple-datatables/style.css<?= v_adm() ?>" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style.css<?= v_adm() ?>" rel="stylesheet">
 </head>
 <body>
   <header id="header" class="header fixed-top d-flex align-items-center">
     <div class="d-flex align-items-center justify-content-between">
       <i class="bi bi-list toggle-sidebar-btn"></i>
       
-      <!--
         <?php if ($session['member']['plan'] === 'free') : ?>
-          <span>Free trial - 8 days left <button class="btn btn-sm btn-primary">Upgrade</button></span>
+          <span class="header-plan-txt">
+            <strong>Free trial</strong>
+            <br> 8 days left 
+            <button 
+              class="btn btn-sm btn-primary d-none d-md-block"
+              style="
+                margin-top: -1rem;
+                margin-left: .5rem;
+                float: right;
+              ">Upgrade plan</button>
+          </span>
+        
+        <?php elseif ($session['member']['plan'] === 'junior') : ?>
+          <span class="header-plan-txt">
+            <button class="btn btn-sm btn-primary">Upgrade plan</button>
+          </span>
+        
+        <?php elseif ($session['member']['plan'] === 'midlevel') : ?>
+          <span class="header-plan-txt">
+            <button class="btn btn-sm btn-primary">Upgrade plan</button>
+          </span>
+        
         <?php endif ?>
-      -->
     </div>
 
     <!-- SEARCH -->
@@ -56,9 +75,9 @@
             <i class="bi bi-search"></i>
           </a>
         </li> -->
-        <?php include 'templates/notifications-header.php' ?>
-        <?php include 'templates/messages-header.php' ?>
-        <?php include 'templates/profile-header.php' ?>
+        <?php include php_root().'membership/php/templates/notifications-header.php' ?>
+        <?php include php_root().'membership/php/templates/messages-header.php' ?>
+        <?php include php_root().'membership/php/templates/profile-header.php' ?>
       </ul> 
     </nav><!-- End Icons Navigation -->
   </header><!-- End Header -->
