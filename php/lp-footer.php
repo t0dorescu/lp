@@ -14,11 +14,12 @@
             <p>Me and my team are here for you and we are glad to be part of your programming journey. If you need
               assistance or have questions with ABSOLUTELY ANYTHING, feel free to contact us. ( highly encouraged )</p>
             <div class="social-links mt-3">
-              <a href="https://www.youtube.com/channel/UCEpjzXih2Ca98SheN6rkRPg" class="youtube"><i class="bi bi-youtube"></i></a>
-              <a href="https://www.linkedin.com/in/tudortodorescu/" class="linkedin"><i class="bi bi-linkedin"></i></a>
-              <a href="https://github.com/tudortodorescu" class="github"><i class="bi bi-github"></i></a>
-              <a href="https://twitter.com/todorescu_tudor" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="https://www.facebook.com/tudor.todorescu" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://github.com/tudortodorescu" class="github" target="_blank"><i class="bi bi-github"></i></a>
+              <a href="https://www.linkedin.com/in/tudortodorescu/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.youtube.com/channel/UCEpjzXih2Ca98SheN6rkRPg" class="youtube" target="_blank"><i class="bi bi-youtube"></i></a>
+              <a href="https://www.facebook.com/tudor.todorescu" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+              <a href="https://twitter.com/todorescu_tudor" class="twitter" target="_blank"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.instagram.com/t0dorescu" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
             </div>
           </div>
           <div class="col-lg-2 col-6 footer-links">
