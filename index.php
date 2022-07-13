@@ -2,6 +2,11 @@
   include $_SERVER['DOCUMENT_ROOT']."/api/index.php";
   $session = (new Api())->get_session($_COOKIE['token']);
   
+  $ignore = array(
+    'header' => false,
+    'footer' => false
+  );
+  
   $title = "JavaScript for absolute beginners - Get started today";
   include php_root().'php/lp-header.php';
 ?>

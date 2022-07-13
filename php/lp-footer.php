@@ -1,4 +1,6 @@
-<footer id="footer" class="footer">
+
+<?php if (!$ignore['footer']) : ?>
+  <footer id="footer" class="footer">
     <?php if (!$session['is_logged_in']) : ?>
       <?php include php_root()."php/templates/forms/newsletter-signup.php"; ?>
     <?php endif ?>
@@ -79,16 +81,17 @@
         &copy; Copyright <strong><span>ICE STATION ZEBRAL SRL</span></strong>. All Rights Reserved
       </div>
     </div>
-</footer><!-- End Footer -->
+  </footer><!-- End Footer -->
 
-<!-- Modals -->
-<?php include php_root()."php/templates/forms/login-modal.php"; ?>
-<?php include php_root()."php/templates/forms/register-modal.php"; ?>
-<?php include php_root()."php/templates/forms/forgot-password-modal.php"; ?>
+  <!-- Modals -->
+  <?php include php_root()."php/templates/forms/login-modal.php"; ?>
+  <?php include php_root()."php/templates/forms/register-modal.php"; ?>
+  <?php include php_root()."php/templates/forms/forgot-password-modal.php"; ?>
 
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center">
-<i class="bi bi-arrow-up-short"></i>
-</a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+<?php endif ?>
 
 <!-- Vendor JS Files -->
 <script src="assets/vendor/purecounter/purecounter.js<?= v_lp() ?>"></script>

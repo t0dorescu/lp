@@ -31,6 +31,9 @@
                         Please email us at <a href="mailTo:support@todorescu.com" class="text-decoration-underline color-secondary">support@todorescu.com</a> for manual newsletter subsription.
                     </div>
                 </div>
+                <p class="text-center" style="font-size: .75rem; color: #777; max-width: 350px; margin: 0.5rem auto;">
+                    By signing up, you agree to our <a href="<?= root().'terms-of-service' ?>" target="_blank" class="text-decoration-underline color-secondary">Terms of service</a> and acknowledge our <a href="<?= root().'privacy-policy' ?>" target="_blank" class="text-decoration-underline color-secondary">Privacy policy</a>
+                </p>
             </div>
         </div>
     </div>

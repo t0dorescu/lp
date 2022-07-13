@@ -27,45 +27,47 @@
 </head>
 
 <body>
-  <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <div class="align-items-center">&nbsp;</div>
-      
-      <?php if (!$session['is_logged_in']) : ?>
-        <a 
-          class="btn-standard"
-          onclick="openLoginModal()"
-        >Login</a>
-        <a href="#pricing" >Register</a>
-      <?php else : ?>
-        <a
-          class="btn-standard"
-          href="<?= root().'membership' ?>"
-        >
-          <i class="bi bi-file-person"></i>
-          Members area
-        </a>
-      <?php endif ?>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <?php if (!$session['is_logged_in']) : ?>
-            <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
-          <?php endif ?>
-          <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
-          <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
-          <li><a href="<?= root().'blog' ?>">Blog</a></li>
-          <li><a class="nav-link scrollto" href="#support">Support</a></li>
-          <?php if (!$session['is_logged_in']) : ?>
-            <li><a class="getstarted scrollto" href="#pricing">Enroll</a></li>
-          <?php else : ?>
-            <li><a class="getstarted scrollto" href="/membership">Members area</a></li>
-          <?php endif ?>
-          </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-    </div>
-  </header><!-- End Header -->
+  <?php if (!$ignore['header']) : ?>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top">
+      <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+        <div class="align-items-center">&nbsp;</div>
+        
+        <?php if (!$session['is_logged_in']) : ?>
+          <a 
+            class="btn-standard"
+            onclick="openLoginModal()"
+          >Login</a>
+          <a href="#pricing" >Register</a>
+        <?php else : ?>
+          <a
+            class="btn-standard"
+            href="<?= root().'membership' ?>"
+          >
+            <i class="bi bi-file-person"></i>
+            Members area
+          </a>
+        <?php endif ?>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#team">Team</a></li>
+            <?php if (!$session['is_logged_in']) : ?>
+              <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
+            <?php endif ?>
+            <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
+            <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
+            <li><a href="<?= root().'blog' ?>">Blog</a></li>
+            <li><a class="nav-link scrollto" href="#support">Support</a></li>
+            <?php if (!$session['is_logged_in']) : ?>
+              <li><a class="getstarted scrollto" href="#pricing">Enroll</a></li>
+            <?php else : ?>
+              <li><a class="getstarted scrollto" href="/membership">Members area</a></li>
+            <?php endif ?>
+            </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+      </div>
+    </header><!-- End Header -->
+  <?php endif ?>
