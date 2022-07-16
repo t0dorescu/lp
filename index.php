@@ -7,7 +7,7 @@
     'footer' => false
   );
   
-  $title = "JavaScript for absolute beginners - Get started today";
+  $title = "High class level coding - Get started today";
   include php_root().'php/lp-header.php';
 ?>
 
@@ -654,6 +654,7 @@
     </section><!-- End Team Section -->
 
     <!-- ======= Recent Blog Posts Section ======= -->
+    <!--
     <section id="recent-blog-posts" class="recent-blog-posts">
       <div class="container" data-aos="fade-up">
         <header class="section-header">
@@ -690,7 +691,9 @@
           </div>
         </div>
       </div>
-    </section><!-- End Recent Blog Posts Section -->
+    </section>
+    -->
+    <!-- End Recent Blog Posts Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="support" class="contact">

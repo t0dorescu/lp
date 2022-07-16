@@ -31,7 +31,7 @@
             <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
                 <div class="box">
                     <h3 style="color: #65c600;">Junior plan</h3>
-                    <div class="price"><sup>$</sup>19<span> / mo</span></div>
+                    <div class="price"><sup>$</sup>179<span> / mo</span></div>
                     <img src="assets/img/pricing-junior.png" class="img-fluid" alt="">
                     <ul>
                     <li>✓ JavaScript Course (FULL +4 hours)</li>
@@ -55,7 +55,7 @@
                 <div class="box black">
                     <span class="featured">POPULAR</span>
                     <h3 style="color: #ff901c;">Mid-level plan</h3>
-                    <div class="price"><sup>$</sup>49<span> / mo</span></div>
+                    <div class="price"><sup>$</sup>349<span> / mo</span></div>
                     <img src="assets/img/pricing-midlevel.png" class="img-fluid" alt="">
                     <ul>
                     <li>✔️ Chess game engine</li>
@@ -78,7 +78,7 @@
             <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
                 <div class="box">
                     <h3 style="color: #ff0071;">Senior-level plan</h3>
-                    <div class="price"><sup>$</sup>299<span> / mo</span></div>
+                    <div class="price"><sup>$</sup>2699<span> / mo</span></div>
                     <img src="assets/img/pricing-senior.png" class="img-fluid" alt="">
                     <ul>
                     <li><strong>💯 ALL PLANS INCLUDED</strong></li>
