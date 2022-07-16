@@ -50,7 +50,7 @@
         <?php endif ?>
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto active" href="#hero">Why</a></li>
             <li><a class="nav-link scrollto" href="#about">About</a></li>
             <li><a class="nav-link scrollto" href="#team">Team</a></li>
             <?php if (!$session['is_logged_in']) : ?>

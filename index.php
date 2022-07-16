@@ -7,7 +7,7 @@
     'footer' => false
   );
   
-  $title = "High class level coding - Get started today";
+  $title = "High-class level coding - Get started today";
   include php_root().'php/lp-header.php';
 ?>
 
@@ -16,8 +16,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">Coding is not easy, but I've made it fun!</h1>
-          <h2 data-aos="fade-up" data-aos-delay="400">Learn to code JavaScript as an absolute beginner</h2>
+          <h1 data-aos="fade-up">Learn to code like an absolute beast!</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">Equip yourself with olympic level coding skills</h2>
           <div data-aos="fade-up" data-aos-delay="600">
             <div class="text-center text-lg-start">
               <?php if (!$session['is_logged_in']) : ?>
@@ -45,9 +45,9 @@
           <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
             <div class="content">
               <h3>Who Am I</h3>
-              <h2>Professionally, I've been doing JavaScript for more than 15 years.</h2>
+              <h2>Completed 6-figures projects. I've done high-standard industry frontend development</h2>
               <p>
-                My vast experience gave me deep knowledge to get my students their dream job / project sooner.
+                15+ years of coding is a long time. Imagine how fast you can save years of burnout, migraines and ruinned relationships locking yourself-up in your room trying to learn all of this?
               </p>
               <div class="text-center text-lg-start">
                 <?php if (!$session['is_logged_in']) : ?>
@@ -79,21 +79,21 @@
             <div class="box">
               <img src="assets/img/values-1.png" class="img-fluid" alt="">
               <h3>Student</h3>
-              <p>100% attention on student success by listening to feedback through 1on1 calls</p>
+              <p>100% attention on student success by providing clarity through 1on1 calls</p>
             </div>
           </div>
           <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
             <div class="box">
               <img src="assets/img/values-2.png" class="img-fluid" alt="">
               <h3>Progressive</h3>
-              <p>Each lesson builds on the previous. Guaranteed you'll master code!</p>
+              <p>Each lesson builds on the previous. This snowball effect will boost you everest heights!</p>
             </div>
           </div>
           <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
             <div class="box">
               <img src="assets/img/values-3.png" class="img-fluid" alt="">
               <h3>Projects</h3>
-              <p>I'll teach you how to build your own web projects</p>
+              <p>I'll teach you how to build web projects the right way. Projects employeers and clients pay top dollars for.</p>
             </div>
           </div>
         </div>
@@ -110,7 +110,7 @@
               <div>
                 <span data-purecounter-start="0" data-purecounter-end="7179" data-purecounter-duration="1"
                   class="purecounter"></span>
-                <p>Students</p>
+                <p>Udemy students</p>
               </div>
             </div>
           </div>
@@ -118,7 +118,7 @@
             <div class="count-box">
               <i class="bi bi-journal-richtext" style="color: #ee6c20;"></i>
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="71020" data-purecounter-duration="1"
+                <span data-purecounter-start="0" data-purecounter-end="51020" data-purecounter-duration="1"
                   class="purecounter"></span>
                 <p>Youtube views</p>
               </div>
@@ -128,9 +128,9 @@
             <div class="count-box">
               <i class="bi bi-headset" style="color: #15be56;"></i>
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
+                <span data-purecounter-start="0" data-purecounter-end="241" data-purecounter-duration="1"
                   class="purecounter"></span>
-                <p>Hours Of Support</p>
+                <p>Hours of coaching</p>
               </div>
             </div>
           </div>
@@ -153,7 +153,7 @@
       <div class="container" data-aos="fade-up">
         <header class="section-header">
           <h2>Why Me</h2>
-          <p class="font-family-2">My course is easy to follow and covers all the confusing parts.</p>
+          <p class="font-family-2">I've created a curriculum so easy to follow, with (almost) zero confusion.</p>
         </header>
         <div class="row">
           <div class="col-lg-6">
@@ -164,37 +164,37 @@
               <div class="col-md-6" data-aos="zoom-out" data-aos-delay="200">
                 <div class="feature-box d-flex align-items-center">
                   <i class="bi bi-check"></i>
-                  <h3>Concise, easy to follow</h3>
+                  <h3>Concise, to the point</h3>
                 </div>
               </div>
               <div class="col-md-6" data-aos="zoom-out" data-aos-delay="300">
                 <div class="feature-box d-flex align-items-center">
                   <i class="bi bi-check"></i>
-                  <h3>JavaScript essentials</h3>
+                  <h3>Essentials and fundamentals</h3>
                 </div>
               </div>
               <div class="col-md-6" data-aos="zoom-out" data-aos-delay="400">
                 <div class="feature-box d-flex align-items-center">
                   <i class="bi bi-check"></i>
-                  <h3>Blazingly fast learning</h3>
+                  <h3>Blazingly effective learning</h3>
                 </div>
               </div>
               <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
                 <div class="feature-box d-flex align-items-center">
                   <i class="bi bi-check"></i>
-                  <h3>Proven track-record</h3>
+                  <h3>Proven real-life methods</h3>
                 </div>
               </div>
               <div class="col-md-6" data-aos="zoom-out" data-aos-delay="600">
                 <div class="feature-box d-flex align-items-center">
                   <i class="bi bi-check"></i>
-                  <h3>Guaranteed JavaScript mastery</h3>
+                  <h3>Guaranteed mastery (if you put in the work of course)</h3>
                 </div>
               </div>
               <div class="col-md-6" data-aos="zoom-out" data-aos-delay="700">
                 <div class="feature-box d-flex align-items-center">
                   <i class="bi bi-check"></i>
-                  <h3>24/7 support</h3>
+                  <h3>Real support</h3>
                 </div>
               </div>
             </div>
