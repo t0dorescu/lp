@@ -16,22 +16,22 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">Learn to code like an absolute beast!</h1>
-          <h2 data-aos="fade-up" data-aos-delay="400">Equip yourself with olympic level coding skills</h2>
+          <h1 data-aos="fade-up">High-class career changing</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">Overclock your brain to unbelivable levels of coding effectiveness</h2>
           <div data-aos="fade-up" data-aos-delay="600">
             <div class="text-center text-lg-start">
               <?php if (!$session['is_logged_in']) : ?>
-                <a href="#pricing"
+                <!-- <a href="#pricing"
                   class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-                  <span>Get Started</span>
+                  <span>Waiting list</span>
                   <i class="bi bi-arrow-right"></i>
-                </a>
+                </a> -->
               <?php endif ?>
             </div>
           </div>
         </div>
         <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
-          <img src="assets/img/hero-img.jpg" class="img-fluid" alt="">
+          <img src="assets/img/fighterjet.png" class="img-fluid" alt="">
         </div>
       </div>
     </div>
@@ -44,16 +44,27 @@
         <div class="row gx-0">
           <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
             <div class="content">
-              <h3>Who Am I</h3>
-              <h2>Completed 6-figures projects. I've done high-standard industry frontend development</h2>
-              <p>
-                15+ years of coding is a long time. Imagine how fast you can save years of burnout, migraines and ruinned relationships locking yourself-up in your room trying to learn all of this?
-              </p>
+              <h3>Who is Todorescu</h3>
+              <h2>Like the M1 chip on a brand new apple computer, a simple algorithmic principle from Todorescu can overclock your brain to unbelievable levels of effectiveness</h2>
+              
+              <p>Some say he's too different; he thinks different. Still, you'll be too if you grew up in post-communist Romania, walking winters barefoot.</p>
+
+              <p>Due to his crippling fear of interacting with actual human beings, he made best friends with his computer (his mom bought it for him at three years old)</p>
+
+              <p>This kid could understand and felt understood by the computer. He was the top dog in his class at mathematics; he even had a puffin stuck up his nose and ruined his teachers class with terror screaming; imagine that.</p>
+
+              <p>Being such a freak, at 17 years old, he discovered parkour. Everything changed. He finally grew some balls to go out and express himself. Hanging out with misfits, he started exploring life and humanity's side of life. He slowly became less emotionally stupid and more connected to people.</p>
+
+              <p>In time he discovered that the more you "fix" your emotional side, the better you do programming. Logical and emotional sides are just faces of the same coin, and he eventually figured out a method to tap into the best of both worlds.</p>
+
+              <p>Landing 6-figures dream job clients with unlimited freedom and selfish car buying, he soon hit a pretty significant depression. It's his coaching clients that got him out of the slump. You see, doing work for others and changing their lives (or at least contributing to it) it's something to wake up for. He started to go all out and dump his entire 15+ years of professional knowledge into nine valuable courses.</p>
+
+              <p>With over 10.000 students, Tudor now only offers 1 hour of direct coaching for $1500.  </p>
               <div class="text-center text-lg-start">
                 <?php if (!$session['is_logged_in']) : ?>
-                  <a href="#pricing"
+                  <a href="#newsletter"
                     class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                    <span>Get Started</span>
+                    <span>Waiting list</span>
                     <i class="bi bi-arrow-right"></i>
                   </a>
                 <?php endif ?>
@@ -68,6 +79,7 @@
     </section><!-- End About Section -->
 
     <!-- ======= Values Section ======= -->
+    <!--
     <section id="values" class="values">
       <div class="container" data-aos="fade-up">
         <header class="section-header">
@@ -98,7 +110,9 @@
           </div>
         </div>
       </div>
-    </section><!-- End Values Section -->
+    </section>
+    -->
+    <!-- End Values Section -->
 
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts">
@@ -106,41 +120,40 @@
         <div class="row gy-4">
           <div class="col-lg-3 col-md-6">
             <div class="count-box">
-              <i class="bi bi-emoji-smile"></i>
+              <!-- <i class="bi bi-emoji-smile"></i> -->
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="7179" data-purecounter-duration="1"
+                <span data-purecounter-start="0" data-purecounter-end="10719" data-purecounter-duration="1"
                   class="purecounter"></span>
-                <p>Udemy students</p>
+                <p>Students</p>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
             <div class="count-box">
-              <i class="bi bi-journal-richtext" style="color: #ee6c20;"></i>
+              <i class="bi bi-star" style="color: #ee6c20;"></i>
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="51020" data-purecounter-duration="1"
+                <span data-purecounter-start="0" data-purecounter-end="4.19" data-purecounter-duration="1"
                   class="purecounter"></span>
-                <p>Youtube views</p>
+                <p>Rating</p>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
             <div class="count-box">
-              <i class="bi bi-headset" style="color: #15be56;"></i>
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="241" data-purecounter-duration="1"
+                <span data-purecounter-start="0" data-purecounter-end="30120" data-purecounter-duration="1"
                   class="purecounter"></span>
-                <p>Hours of coaching</p>
+                <p>Hours of experience</p>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
             <div class="count-box">
-              <i class="bi bi-people" style="color: #bb0852;"></i>
+              <!-- <i class="bi bi-people" style="color: #bb0852;"></i> -->
               <div>
                 <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
                   class="purecounter"></span>
-                <p>Years of experience</p>
+                <p>Years in the industry</p>
               </div>
             </div>
           </div>
@@ -149,6 +162,7 @@
     </section><!-- End Counts Section -->
 
     <!-- ======= Features Section ======= -->
+    <!--
     <section id="features" class="features">
       <div class="container" data-aos="fade-up">
         <header class="section-header">
@@ -199,13 +213,10 @@
               </div>
             </div>
           </div>
-        </div> <!-- / row -->
-
-        <!-- Feature Tabs -->
+        </div>
         <div class="row feture-tabs" data-aos="fade-up">
           <div class="col-lg-6">
             <h3 class="font-family-2">JavaScript For Absolute Beginners - COMPLETE COURSE FOR 2022</h3>
-            <!-- Tabs -->
             <ul class="nav nav-pills mb-5 mt-5">
               <li>
                 <a class="nav-link active" data-bs-toggle="pill" href="#tab1">What you'll learn ?</a>
@@ -216,8 +227,7 @@
               <li>
                 <a class="nav-link" data-bs-toggle="pill" href="#tab3">Who is this for</a>
               </li>
-            </ul><!-- End Tabs -->
-            <!-- Tab Content -->
+            </ul>
             <div class="tab-content">
               <div class="tab-pane fade show active" id="tab1">
                 <p>By the end of the course, you'll graduate from "no-clue about JavaScript" to an intermediate level.
@@ -231,7 +241,7 @@
                   <i class="bi bi-check2"></i>
                   <h4>You will be able to properly read JavaScript code</h4>
                 </div>
-              </div><!-- End Tab 1 Content -->
+              </div>
               <div class="tab-pane fade show" id="tab2">
                 <div class="d-flex align-items-center mb-2">
                   <i class="bi bi-check2"></i>
@@ -242,7 +252,7 @@
                   <i class="bi bi-check2"></i>
                   <h4>There is one requirement from you. To bring your passion and enthusiasm for learning.</h4>
                 </div>
-              </div><!-- End Tab 2 Content -->
+              </div>
               <div class="tab-pane fade show" id="tab3">
                 <p>College students who find confusing computer science classes and want to master a real-life skill.
                 </p>
@@ -251,17 +261,19 @@
                   <h4>Absolute beginners who haven't wrote a single line of JavaScript code in their life</h4>
                 </div>
                 <p>People who are dedicating to changing their career path and pursuing a career in web development.</p>
-              </div><!-- End Tab 3 Content -->
+              </div>
             </div>
           </div>
           <div class="col-lg-6">
             <img src="assets/img/features-2.png" class="img-fluid mt-5" alt="" />
           </div>
-        </div><!-- End Feature Tabs -->
+        </div>
       </div>
     </section>
+    -->
 
     <!-- ======= Services Section ======= -->
+    <!--
     <section id="services" class="services">
       <div class="container" data-aos="fade-up">
         <header class="section-header">
@@ -325,7 +337,9 @@
           </div>
         </div>
       </div>
-    </section><!-- End Services Section -->
+    </section>
+              -->
+    <!-- End Services Section -->
 
     <!-- ======= Pricing Section ======= -->
     <?php if (!$session['is_logged_in']) : ?>
@@ -444,8 +458,8 @@
     <section id="testimonials" class="testimonials" style="padding-bottom: 0;">
       <div class="container" data-aos="fade-up">
         <header class="section-header">
-          <h2>Udemy Testimonials</h2>
-          <p class="font-family-2">Happy students = Happy instructors</p>
+          <h2>Testimonials from students</h2>
+          <p class="font-family-2">Focus = results</p>
         </header>
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
           <div class="swiper-pagination" style="margin-top: 20px;"></div>

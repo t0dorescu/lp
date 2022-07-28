@@ -2,8 +2,8 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-12 text-center">
-                <h4>Newsletter</h4>
-                <p>Sign-up for the newsletter to not miss out on the latest tips/tricks. </p>
+                <h4>Waiting list</h4>
+                <p>We are soryy, but you have to sign-up for the waiting list. It may take between 1-3 weeks for us to contact you</p>
             </div>
             <div class="col-lg-6">
                 <div class="alert alert-success d-none js_confirm_message" role="alert" style="text-align: center;">
@@ -18,13 +18,13 @@
                 <form class="js_form">
                     <input type="email" id="inputEmail" name="email" class="is-invalid" style="outline: 0;" />
                     <div class="spinner-border js_spinner d-none" style="float: right;"></div>
-                    <input type="submit" value="Subscribe" class="js_subscribe" onclick="newsletterSignup()" />
+                    <input type="submit" value="Join waiting list" class="js_subscribe" onclick="newsletterSignup()" />
                 </form>
                 <div class="input-group">
                     <input id="formError" class="form-control d-none" />
                     <div class="invalid-feedback d-none">Please provide a valid email address</div>
-                    <div class="invalid-feedback d-none">Email address already used as a member. You're already subscribed!</div>
-                    <div class="invalid-feedback d-none">Email address already used for newsletter subscription, you're all set!</div>
+                    <div class="invalid-feedback d-none">Email address already used as a member.</div>
+                    <div class="invalid-feedback d-none">Email address already used for a subscription, you're all set!</div>
                     <div class="invalid-feedback d-none">
                         Something went wrong while trying to subscribe. We are sorry for the inconvenience.
                         <br /><br />

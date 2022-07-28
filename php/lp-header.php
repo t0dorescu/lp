@@ -38,7 +38,7 @@
             class="btn-standard"
             onclick="openLoginModal()"
           >Login</a>
-          <a href="#pricing" >Register</a>
+          <!-- <a href="#pricing" >Register</a> -->
         <?php else : ?>
           <a
             class="btn-standard"
@@ -50,9 +50,9 @@
         <?php endif ?>
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a class="nav-link scrollto active" href="#hero">Why</a></li>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
             <li><a class="nav-link scrollto" href="#about">About</a></li>
-            <li><a class="nav-link scrollto" href="#team">Team</a></li>
+            <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
             <?php if (!$session['is_logged_in']) : ?>
               <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
             <?php endif ?>
@@ -61,7 +61,7 @@
             <!-- <li><a href="<?= root().'blog' ?>">Blog</a></li> -->
             <li><a class="nav-link scrollto" href="#support">Support</a></li>
             <?php if (!$session['is_logged_in']) : ?>
-              <li><a class="getstarted scrollto" href="#pricing">Enroll</a></li>
+              <li><a class="getstarted scrollto" href="#newsletter">Join waiting list</a></li>
             <?php else : ?>
               <li><a class="getstarted scrollto" href="/membership">Members area</a></li>
             <?php endif ?>

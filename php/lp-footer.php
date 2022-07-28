@@ -27,7 +27,7 @@
             <ul>
               <li><i class="bi bi-chevron-right"></i> <a href="#hero">Home</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#about">About</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#values">Values</a></li>
+              <!-- <li><i class="bi bi-chevron-right"></i> <a href="#values">Values</a></li> -->
               <?php if (!$session['is_logged_in']) : ?>
                 <li><i class="bi bi-chevron-right"></i> <a href="#pricing">Pricing</a></li>
               <?php endif ?>
@@ -36,7 +36,7 @@
               <!-- <li><i class="bi bi-chevron-right"></i> <a href="<?= root().'blog' ?>">Blog</a></li> -->
               <li><i class="bi bi-chevron-right"></i> <a href="#support">Support</a></li>
               <?php if (!$session['is_logged_in']) : ?>
-                <li><i class="bi bi-chevron-right"></i> <a href="#pricing">Enroll</a></li>
+                <!-- <li><i class="bi bi-chevron-right"></i> <a href="#pricing">Enroll</a></li> -->
               <?php else : ?>
                 <li><i class="bi bi-chevron-right"></i> <a href="<?= root().'membership' ?>">Members area</a></li>
               <?php endif ?>
