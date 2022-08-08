@@ -1,9 +1,11 @@
-<div id="newsletter" class="footer-newsletter js_newsletter_signup">
-    <div class="container">
+<div id="newsletter" class="footer-newsletter js_newsletter_signup" 
+    style="background: none; opacity: .9; border: 0; padding: 30px 0 0 0;">
+    <div class="container" style="    background: black;
+    padding: 30px;">
         <div class="row justify-content-center">
             <div class="col-lg-12 text-center">
-                <h4>Waiting list</h4>
-                <p>We are soryy, but you have to sign-up for the waiting list. It may take between 1-3 weeks for us to contact you</p>
+                <h4 style="color: var(--primary-color)">Waiting list</h4>
+                <p style="color: #ccc;">You have to sign-up for the waiting list. Sometimes it can take up to 1-3 weeks.</p>
             </div>
             <div class="col-lg-6">
                 <div class="alert alert-success d-none js_confirm_message" role="alert" style="text-align: center;">
@@ -13,12 +15,12 @@
                     <br>
                     You're one step away from getting the good stuff! 🍖
                     <br><br>
-                    Please check your email inbox first to confirm your subscription. <strong>(SPAM folder as well)</strong>
+                    Please check your email inbox first to confirm. <strong>(SPAM folder as well)</strong>
                 </div>
                 <form class="js_form">
                     <input type="email" id="inputEmail" name="email" class="is-invalid" style="outline: 0;" />
                     <div class="spinner-border js_spinner d-none" style="float: right;"></div>
-                    <input type="submit" value="Join waiting list" class="js_subscribe" onclick="newsletterSignup()" />
+                    <input type="submit" value="Join" class="js_subscribe" onclick="newsletterSignup()" />
                 </form>
                 <div class="input-group">
                     <input id="formError" class="form-control d-none" />
@@ -31,8 +33,8 @@
                         Please email us at <a href="mailTo:support@todorescu.com" class="text-decoration-underline color-secondary">support@todorescu.com</a> for manual newsletter subsription.
                     </div>
                 </div>
-                <p class="text-center" style="font-size: .75rem; color: #777; max-width: 350px; margin: 0.5rem auto;">
-                    By signing up, you agree to our <a href="<?= root().'terms-of-service' ?>" target="_blank" class="text-decoration-underline color-secondary">Terms of service</a> and acknowledge our <a href="<?= root().'privacy-policy' ?>" target="_blank" class="text-decoration-underline color-secondary">Privacy policy</a>
+                <p class="text-center" style="font-size: .75rem; color: #ccc; max-width: 350px; margin: 0.5rem auto;">
+                    By signing up, you agree to our <a href="<?= root().'terms-of-service' ?>" target="_blank" class="text-decoration-underline">Terms of service</a> and acknowledge our <a href="<?= root().'privacy-policy' ?>" target="_blank" class="text-decoration-underline">Privacy policy</a>
                 </p>
             </div>
         </div>

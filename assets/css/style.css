@@ -16,6 +16,10 @@
   font-family: fontfamily2;
   src: url("../fonts/diary.ttf") format("truetype");
 }
+@font-face {
+  font-family: fontfamily3;
+  src: url("../fonts/sexpistols.ttf") format("truetype");
+}
 
 .font-family-1 {
   font-family: 'fontfamily1' !important;
@@ -25,13 +29,17 @@
   font-family: 'fontfamily2' !important;
   font-weight: 100 !important;
 }
+.font-family-3 {
+  font-family: 'fontfamily3' !important;
+  font-weight: 100 !important;
+}
 
 /*--------------------------------------------------------------
 # GENERAL
 --------------------------------------------------------------*/
 :root {
   scroll-behavior: smooth;
-  --primary-color: #bd9652;
+  --primary-color: #fa643f;
   --secondary-color: #012970;
   --third-color: #444444;
 }
@@ -55,7 +63,7 @@ a {
 }
 
 a:hover {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -106,13 +114,13 @@ h1, h2, h3, h4, h5, h6 {
 # Sections
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 30px 0;
   overflow: hidden;
 }
 
 .section-header {
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
 .section-header h2 {
   font-size: 13px;
@@ -125,7 +133,7 @@ section {
 .section-header p {
   margin: 10px 0 0 0;
   padding: 0;
-  font-size: 38px;
+  font-size: 28px;
   line-height: 42px;
   font-weight: 700;
   color: var(--secondary-color);
@@ -276,7 +284,7 @@ section {
   font-family: 'fontfamily1';
   font-size: 16px;
   font-weight: 700;
-  color: #013289;
+  color: white;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -452,9 +460,14 @@ section {
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  height: 100vh;
-  background: url(../img/hero-bg.png) top center no-repeat;
+  margin-top: 70px;
   background-size: cover;
+}
+.hero .container {
+  background: black;
+  opacity: 0.9;
+  padding: 2rem 1rem;
+
 }
 .hero h1 {
   margin: 0;
@@ -504,7 +517,7 @@ section {
 @media (max-width: 991px) {
   .hero {
     height: auto;
-    padding: 120px 0 60px 0;
+    padding: 0 0 60px 0;
   }
   .hero .hero-img {
     text-align: center;
@@ -537,7 +550,7 @@ section {
 --------------------------------------------------------------*/
 .about .content {
   background-color: #f6f9ff;
-  padding: 40px;
+  padding: 20px;
 }
 .about h3 {
   font-size: 14px;
@@ -552,8 +565,9 @@ section {
 }
 .about p {
   margin: 15px 0 30px 0;
-  line-height: 24px;
-  font-family: 'fontfamily1'
+  line-height: 1.75rem;
+  font-family: 'fontfamily1';
+  font-size: 1.20rem;
 }
 .about .btn-read-more {
   line-height: 0;
@@ -1017,14 +1031,17 @@ section {
 --------------------------------------------------------------*/
 .testimonials .testimonial-item {
   box-sizing: content-box;
-  padding: 30px;
-  margin: 40px 30px;
+  padding: 0;
+  padding: 20px;
+  margin-top: 35px !important;
+  margin: 0;
   box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
   background: #fff;
   display: flex;
   flex-direction: column;
   text-align: center;
   transition: 0.3s;
+  font-size: 1.25rem;
 }
 .testimonials .testimonial-item .stars {
   margin-bottom: 15px;
@@ -1233,10 +1250,10 @@ section {
 .contact .info-box {
   color: var(--third-color);
   background: #fafbff;
-  padding: 0 30px;
+  padding: 30px;
 }
 .contact .info-box i {
-  font-size: 38px;
+  font-size: 32px;
   line-height: 0;
   color: var(--primary-color);
 }
@@ -1249,7 +1266,7 @@ section {
 .contact .info-box p {
   padding: 0;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 0;
 }
 .contact .php-email-form {
@@ -1319,6 +1336,10 @@ section {
 }
 .contact .php-email-form button[type=submit]:hover {
   background: var(--secondary-color);
+}
+.contact textarea, .contact input {
+  background: black !important;
+  color: white !important;
 }
 @-webkit-keyframes animate-loading {
   0% {
@@ -1758,7 +1779,8 @@ section {
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  background: #f6f9ff;
+  background: black;
+  opacity: .9;
   padding: 0 0 30px 0;
   font-size: 14px;
 }
@@ -1807,10 +1829,8 @@ section {
   background: var(--secondary-color);
 }
 .footer .footer-top {
-  background: white url(../img/footer-bg.png) no-repeat right top;
   background-size: contain;
   border-top: 1px solid #e1ecff;
-  border-bottom: 1px solid #e1ecff;
   padding: 60px 0 30px 0;
 }
 @media (max-width: 992px) {
@@ -1885,7 +1905,6 @@ section {
   padding-top: 0;
 }
 .footer .footer-top .footer-links ul a {
-  color: #013289;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;

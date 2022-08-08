@@ -28,17 +28,24 @@
 
 <body>
   <?php if (!$ignore['header']) : ?>
-    <!-- ======= Header ======= -->
-    <header id="header" class="header fixed-top">
+    <header 
+      id="header"
+      class="header fixed-top"
+      style="
+        background: black;
+        opacity: .9;
+      "
+    >
       <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
         <div class="align-items-center">&nbsp;</div>
-        
         <?php if (!$session['is_logged_in']) : ?>
-          <a 
-            class="btn-standard"
-            onclick="openLoginModal()"
-          >Login</a>
-          <!-- <a href="#pricing" >Register</a> -->
+          <img 
+            src="<?= root().'assets/img/tudor-todorescu.jpg' ?>"
+            style="
+              width: 30px;
+              height: 30px;
+            "
+          />
         <?php else : ?>
           <a
             class="btn-standard"
@@ -50,24 +57,17 @@
         <?php endif ?>
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
             <li><a class="nav-link scrollto" href="#about">About</a></li>
-            <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
-            <?php if (!$session['is_logged_in']) : ?>
-              <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
-            <?php endif ?>
-            <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
-            <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
-            <!-- <li><a href="<?= root().'blog' ?>">Blog</a></li> -->
+            <li><a class="nav-link scrollto" href="#confessions">Confessions</a></li>
             <li><a class="nav-link scrollto" href="#support">Support</a></li>
             <?php if (!$session['is_logged_in']) : ?>
-              <li><a class="getstarted scrollto" href="#newsletter">Join waiting list</a></li>
+              <li><a class="getstarted scrollto" href="#newsletter">Waiting list</a></li>
             <?php else : ?>
               <li><a class="getstarted scrollto" href="/membership">Members area</a></li>
             <?php endif ?>
             </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav><!-- .navbar -->
+          <i class="bi bi-list mobile-nav-toggle" style="color: white;"></i>
+        </nav>
       </div>
-    </header><!-- End Header -->
+    </header>
   <?php endif ?>

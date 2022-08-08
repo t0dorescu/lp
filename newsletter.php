@@ -44,9 +44,6 @@
     }
 </style>
 
-
-<!-- ======= Footer ======= -->
 <?php include php_root().'php/lp-footer.php'; ?>
-
 </body>
 </html>

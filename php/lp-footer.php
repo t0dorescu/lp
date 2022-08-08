@@ -1,85 +1,38 @@
 
 <?php if (!$ignore['footer']) : ?>
-  <footer id="footer" class="footer">
+  <footer id="footer" class="footer" style="border: 0;">
     <?php if (!$session['is_logged_in']) : ?>
       <?php include php_root()."php/templates/forms/newsletter-signup.php"; ?>
     <?php endif ?>
-    
-    <div class="footer-top">
+    <div class="footer-top" style="margin-bottom: 0; padding-bottom: 0; border: 0; padding: 30px 0 50px 0;">
       <div class="container">
         <div class="row gy-4">
-          <div class="col-lg-5 col-md-12 footer-info">
-            <a href="<?= root() ?>" class="logo d-flex align-items-center">
-              <img src="<?= root().'assets/img/tudor-todorescu.jpg' ?>" alt="">
-              <span>SOCIALS</span>
-            </a>
-            <div class="social-links mt-3">
-              <a href="https://www.linkedin.com/in/tudortodorescu/" class="linkedin" target="_blank"><i class="bi bi-linkedin" style="font-size: 1.75rem"></i></a>
-              <a href="https://www.youtube.com/c/tudortodorescu" class="youtube" target="_blank"><i class="bi bi-youtube" style="font-size: 1.75rem"></i></a>
-              <a href="https://www.github.com/tudortodorescu" class="github" target="_blank"><i class="bi bi-github" style="font-size: 1.75rem"></i></a>
-              <a href="https://www.facebook.com/tudor.t0dorescu" class="facebook" target="_blank"><i class="bi bi-facebook" style="font-size: 1.75rem"></i></a>
-              <a href="https://www.instagram.com/tudortodorescu" class="instagram" target="_blank"><i class="bi bi-instagram" style="font-size: 1.75rem"></i></a>
-              <a href="https://www.twitter.com/todorescu_tudor" class="twitter" target="_blank"><i class="bi bi-twitter" style="font-size: 1.75rem"></i></a>
+          <div class="col-12 footer-info">
+            <div class="social-links mt-3" style="text-align: center;">
+              <a href="https://www.linkedin.com/in/tudortodorescu/" class="linkedin" target="_blank"><i class="bi bi-linkedin" style="font-size: 1.75rem; color: #999;"></i></a>
+              <a href="https://www.youtube.com/c/tudortodorescu" class="youtube" target="_blank"><i class="bi bi-youtube" style="font-size: 1.75rem; color: #999;"></i></a>
+              <a href="https://www.github.com/tudortodorescu" class="github" target="_blank"><i class="bi bi-github" style="font-size: 1.75rem; color: #999;"></i></a>
+              <a href="https://www.facebook.com/tudor.t0dorescu" class="facebook" target="_blank"><i class="bi bi-facebook" style="font-size: 1.75rem; color: #999;"></i></a>
+              <a href="https://www.instagram.com/tudortodorescu" class="instagram" target="_blank"><i class="bi bi-instagram" style="font-size: 1.75rem; color: #999;"></i></a>
+              <a href="https://www.twitter.com/todorescu_tudor" class="twitter" target="_blank"><i class="bi bi-twitter" style="font-size: 1.75rem; color: #999;"></i></a>
             </div>
           </div>
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Navigation</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#hero">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#about">About</a></li>
-              <!-- <li><i class="bi bi-chevron-right"></i> <a href="#values">Values</a></li> -->
-              <?php if (!$session['is_logged_in']) : ?>
-                <li><i class="bi bi-chevron-right"></i> <a href="#pricing">Pricing</a></li>
-              <?php endif ?>
-              <li><i class="bi bi-chevron-right"></i> <a href="#faq">FAQ</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#testimonials">Testimonials</a></li>
-              <!-- <li><i class="bi bi-chevron-right"></i> <a href="<?= root().'blog' ?>">Blog</a></li> -->
-              <li><i class="bi bi-chevron-right"></i> <a href="#support">Support</a></li>
-              <?php if (!$session['is_logged_in']) : ?>
-                <!-- <li><i class="bi bi-chevron-right"></i> <a href="#pricing">Enroll</a></li> -->
-              <?php else : ?>
-                <li><i class="bi bi-chevron-right"></i> <a href="<?= root().'membership' ?>">Members area</a></li>
-              <?php endif ?>
-              <li><i class="bi bi-chevron-right"></i> <a href="<?= root().'terms-of-service' ?>" target="_blank">Terms of service</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="<?= root().'privacy-policy' ?>" target="_blank">Privacy policy</a>
-              <li><i class="bi bi-chevron-right"></i> <a href="<?= root().'cookie-policy' ?>" target="_blank">Cookie policy</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Courses</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="<?= !$session['is_logged_in'] ? '#pricing' : '/membership' ?>">JavaScript for absolute beginners</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="<?= !$session['is_logged_in'] ? '#pricing' : '/membership' ?>">Chess game engine</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="<?= !$session['is_logged_in'] ? '#pricing' : '/membership' ?>">Flappy bird in canvas</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="<?= !$session['is_logged_in'] ? '#pricing' : '/membership' ?>">Path finding algorithm</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="<?= !$session['is_logged_in'] ? '#pricing' : '/membership' ?>">CSS hacking challenges</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="<?= !$session['is_logged_in'] ? '#pricing' : '/membership' ?>">Ultimate Vue 2/3 crash course</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="<?= !$session['is_logged_in'] ? '#pricing' : '/membership' ?>">3 Unique web dev projects</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="<?= !$session['is_logged_in'] ? '#pricing' : '/membership' ?>">Matrix symbols rain effect</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="<?= !$session['is_logged_in'] ? '#pricing' : '/membership' ?>">HTML canvas manipulation</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4>Contact</h4>
-            <p>
-              ICE STATION ZEBRA SRL<br>
-              CIF: 46266079<br>
-              REG: J1/685/08.06.2022<br>
-              Romania <br><br>
-              <strong>Whatsapp:</strong><br> <a href="tel:40756281010">+40 756 281 010</a><br><br>
-              <strong>Email:</strong><br> <a href="mailTo:support@todorescu.com">support@todorescu.com</a><br>
-            </p>
-          </div>
+        </div>
+        <div class="col-12 footer-links" style="text-align: center;">
+          <i class="bi bi-chevron-right"></i> <a href="<?= root().'terms-of-service' ?>" target="_blank">Terms of service</a><br>
+          <i class="bi bi-chevron-right"></i> <a href="<?= root().'privacy-policy' ?>" target="_blank">Privacy policy</a><br>
+          <i class="bi bi-chevron-right"></i> <a href="<?= root().'cookie-policy' ?>" target="_blank">Cookie policy</a>
+          <br><br>
+          <h3>Company</h3>
+          <p>
+            ICE STATION ZEBRA SRL<br>
+            CIF: 46266079<br>
+            REG: J1/685/08.06.2022<br>
+          </p>
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>ICE STATION ZEBRAL SRL</span></strong>. All Rights Reserved
-      </div>
-    </div>
-  </footer><!-- End Footer -->
+  </footer>
 
   <!-- Modals -->
   <?php include php_root()."php/templates/forms/login-modal.php"; ?>
