@@ -78,10 +78,10 @@
               
               <p>He's not a life coach or a guru. He still earns his living doing vue.js long-term projects <a href="https://www.linkedin.com/in/tudortodorescu/" target="_blank">(check Linkedin <i class="bi bi-linkedin"></i>)</a>. However, his heart is in helping others unlock their potential.
 
-              <p>His system works not only for him, but he condensed it into a simple on-point video.
+              <p>His system works not only for him, but for anybody willing to give it a try.
               <br><br>
               
-              He put together a unique training revealing his way; if you want it, send an email to <a href="mailto:adina@todorescu.com">adina@todorescu.com</a>, and she will email it to you.</p>
+              He put together an on-point video training revealing his way;<br> Do you want it ? Then just send an email to <a href="mailto:adina@todorescu.com">adina@todorescu.com</a>.</p>
 
               <a 
                 href="mailto:adina@todorescu.com"
