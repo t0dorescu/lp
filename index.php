@@ -61,7 +61,7 @@
               
               <img src="<?= root().'assets/img/santorini.gif' ?>" style="width: 100%;" />
               
-              <p>After seeing his parkour adventures ripped away, he made a life-changing decision. He swore he would learn the process of attracting dream clients. <strong>Undemanding, no meetings, and pay for his travels.</strong><Br></p>
+              <p>After seeing his parkour adventures ripped away from him, he made a life-changing decision. He swore he would learn the process of attracting dream clients. <strong>Undemanding, no meetings, and pay for his travels.</strong><Br></p>
               
               <strong style="color: var(--primary-color);">
               <i class="bi bi-cash-coin"></i> Revolut accounts
