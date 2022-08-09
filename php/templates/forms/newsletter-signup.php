@@ -5,15 +5,15 @@
         <div class="row justify-content-center">
             <div class="col-lg-12 text-center">
                 <h4 style="color: var(--primary-color)">Waiting list</h4>
-                <p style="color: #ccc;">You have to sign-up for the waiting list. Sometimes it can take up to 1-3 weeks.</p>
+                <p style="color: #ccc;">Unfortunately, no spots open at this time. Sign-up for the queue, and you'll get notified on future opennings</p>
             </div>
             <div class="col-lg-6">
                 <div class="alert alert-success d-none js_confirm_message" role="alert" style="text-align: center;">
                     <img class="js_gravatar_img d-none" src="" style="width: 100px; margin: 0 auto;" />
                     <div class="row">&nbsp;</div>
-                    <strong>Congratulations <span class="js_name_congrats"></span>!</strong>
+                    <strong>You've joined the queue <span class="js_name_congrats"></span></strong>
                     <br>
-                    You're one step away from getting the good stuff! 🍖
+                    You're one step away from getting to the good stuff! 🍖
                     <br><br>
                     Please check your email inbox first to confirm. <strong>(SPAM folder as well)</strong>
                 </div>
@@ -28,7 +28,7 @@
                     <div class="invalid-feedback d-none">Email address already used as a member.</div>
                     <div class="invalid-feedback d-none">Email address already used for a subscription, you're all set!</div>
                     <div class="invalid-feedback d-none">
-                        Something went wrong while trying to subscribe. We are sorry for the inconvenience.
+                        Something went wrong while trying to register. We are sorry for the inconvenience.
                         <br /><br />
                         Please email us at <a href="mailTo:support@todorescu.com" class="text-decoration-underline color-secondary">support@todorescu.com</a> for manual newsletter subsription.
                     </div>

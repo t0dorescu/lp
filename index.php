@@ -159,6 +159,34 @@
                 </div>
               </div>
             </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <video 
+                  controls="controls"
+                  poster="<?= root().'assets/img/ovidiu-thumb_.jpg' ?>" 
+                  style="width: 100%;"
+                >
+                  <source src="<?= root().'assets/video/interviu-ovidiu.mp4' ?>" type="video/mp4">
+                </video>
+                <div class="stars" style="margin-top: 20px;">
+                  "From Tudor I've learned directly senior developer stuff" - Ovidiu.
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <video 
+                  controls="controls"
+                  poster="<?= root().'assets/img/cristi-thumb_.jpg' ?>" 
+                  style="width: 100%;"
+                >
+                  <source src="<?= root().'assets/video/interviu-cristi.mp4' ?>" type="video/mp4">
+                </video>
+                <div class="stars" style="margin-top: 20px;">
+                  "From Tudor I've learned directly senior developer stuff", told Ovidiu in his video confession.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -167,6 +195,7 @@
       <div class="container" data-aos="fade-up">
         <header class="section-header">
           <p class="font-family-2" style="color: var(--primary-color);">Student support</p>
+          <p class="gray-text">Please, if you're not in the paid program, don't use this form. If you do, we will blacklist your info</p>
         </header>
         <div class="row gy-4">
           <div class="col-12">

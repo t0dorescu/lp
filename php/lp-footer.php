@@ -19,16 +19,16 @@
           </div>
         </div>
         <div class="col-12 footer-links" style="text-align: center;">
-          <i class="bi bi-chevron-right"></i> <a href="<?= root().'terms-of-service' ?>" target="_blank">Terms of service</a><br>
-          <i class="bi bi-chevron-right"></i> <a href="<?= root().'privacy-policy' ?>" target="_blank">Privacy policy</a><br>
-          <i class="bi bi-chevron-right"></i> <a href="<?= root().'cookie-policy' ?>" target="_blank">Cookie policy</a>
-          <br><br>
-          <h3>Company</h3>
           <p>
             ICE STATION ZEBRA SRL<br>
             CIF: 46266079<br>
             REG: J1/685/08.06.2022<br>
           </p>
+          <br><br>
+          <i class="bi bi-chevron-right"></i> <a href="<?= root().'terms-of-service' ?>" target="_blank">Terms of service</a><br>
+          <i class="bi bi-chevron-right"></i> <a href="<?= root().'privacy-policy' ?>" target="_blank">Privacy policy</a><br>
+          <i class="bi bi-chevron-right"></i> <a href="<?= root().'cookie-policy' ?>" target="_blank">Cookie policy</a>
+          
         </div>
       </div>
     </div>
