@@ -98,7 +98,7 @@
     <section id="confessions" class="testimonials" style="margin-bottom: 30px; padding-bottom: 0; background: black;opacity: .9;padding-top: 15px;margin-top: 30px;">
       <div class="container" data-aos="fade-up">
         <header class="section-header">
-          <img src="<?= root().'assets/img/confessions.png' ?>" style="width: 100%;" />
+          <img src="<?= root().'assets/img/confessions-text.png' ?>" style="width: 100%;" />
         </header>
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
           <div class="swiper-pagination" style="margin-top: 20px;"></div>
@@ -183,11 +183,30 @@
                   <source src="<?= root().'assets/video/interviu-cristi.mp4' ?>" type="video/mp4">
                 </video>
                 <div class="stars" style="margin-top: 20px;">
-                  "From Tudor I've learned directly senior developer stuff", told Ovidiu in his video confession.
+                  Cristi saved his soul from tutorial hell and skyrocketed his skills.
                 </div>
               </div>
             </div>
           </div>
+        </div>
+        <div class="row" data-aos="fade-up" data-aos-delay="200">
+            <img src="<?= root().'assets/img/reviews/js-beginners.png' ?>" />
+            <img src="<?= root().'assets/img/reviews/review1.png' ?>" />
+            <img src="<?= root().'assets/img/reviews/review2.png' ?>" />
+            <img src="<?= root().'assets/img/reviews/review3.png' ?>" />
+            <img src="<?= root().'assets/img/reviews/review4.png' ?>" />
+            <img src="<?= root().'assets/img/reviews/review5.png' ?>" />
+            <img src="<?= root().'assets/img/reviews/review6.png' ?>" />
+            <img src="<?= root().'assets/img/reviews/review7.png' ?>" />
+            <img src="<?= root().'assets/img/reviews/review8.png' ?>" />
+            <img src="<?= root().'assets/img/reviews/pathfinding.png' ?>" />
+            <img src="<?= root().'assets/img/reviews/review9.png' ?>" />
+            <img src="<?= root().'assets/img/reviews/vue.png' ?>" />
+            <img src="<?= root().'assets/img/reviews/review10.png' ?>" />
+            <img src="<?= root().'assets/img/reviews/review11.png' ?>" />
+            <img src="<?= root().'assets/img/reviews/review12.png' ?>" />
+            <img src="<?= root().'assets/img/reviews/review13.png' ?>" />
+            <img src="<?= root().'assets/img/reviews/review14.png' ?>" />
         </div>
       </div>
     </section>
