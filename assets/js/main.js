@@ -182,13 +182,31 @@
 
   addEventListener('DOMContentLoaded', function() {
     setTimeout(() => {
-      [ ...document.querySelectorAll('.testimonials-slider video')].forEach(element => {
-          element.addEventListener('click', () => {
-            window.testimonial_swiper.autoplay.stop()
-          })
+      ;[ ...document.querySelectorAll('.testimonial-item video')].forEach(element => {
+        element.addEventListener('play', () => {
+          window.testimonial_swiper.autoplay.stop()
+        })
       })
     }, 1000)
+
+    window.changeBgImage()
   })
+
+  function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+  }
+
+  window.changeBgImage = function() {
+    const randomBg = getRandomInt(1,9)
+    const randomTime = getRandomInt(3,6)
+    
+    setTimeout(() => {
+      document.body.style.backgroundImage = `url('/assets/img/punkbg_${randomBg}.jpg')`
+      window.changeBgImage()
+    }, randomTime * 1000)
+  }
 
   /**
    * Animation on scroll

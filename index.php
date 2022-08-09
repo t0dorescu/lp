@@ -13,7 +13,8 @@
 
 <style>
   body {
-    background: url('<?= root().'assets/img/punkbg_1.jpg' ?>');
+    background-color: black;
+    background-image: url('<?= root().'assets/img/punkbg_1.jpg' ?>');
   }
 </style>
   <section
@@ -104,7 +105,11 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <video controls="controls" poster="<?= root().'assets/img/radu-thumb.jpg' ?>" style="width: 100%;">
+                <video 
+                  controls="controls"
+                  poster="<?= root().'assets/img/radu-thumb_.jpg' ?>" 
+                  style="width: 100%;"
+                >
                   <source src="<?= root().'assets/video/interviu-radu.mp4' ?>" type="video/mp4">
                 </video>
                 <div class="stars" style="margin-top: 20px;">
@@ -114,19 +119,25 @@
             </div>
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <div class="testimonial-item">
-                  <video controls="controls" poster="<?= root().'assets/img/alina-thumb.jpg' ?>" style="width: 100%;">
-                    <source src="<?= root().'assets/video/interviu-alina.mp4' ?>" type="video/mp4">
-                  </video>
-                  <div class="stars" style="margin-top: 20px;">
-                    Alina switched from a marketing career to landing her first one-month trial for a <strong>fulltime junior web developer position.</strong>.
-                  </div>
+                <video 
+                  controls="controls"
+                  poster="<?= root().'assets/img/alina-thumb_.jpg' ?>" 
+                  style="width: 100%;"
+                >
+                  <source src="<?= root().'assets/video/interviu-alina.mp4' ?>" type="video/mp4">
+                </video>
+                <div class="stars" style="margin-top: 20px;">
+                  Alina switched from a marketing career to landing her first one-month trial for a <strong>fulltime junior web developer position.</strong>.
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <video controls="controls" poster="<?= root().'assets/img/petrisor-thumb.jpg' ?>"  style="width: 100%;">
+                <video 
+                  controls="controls"
+                  poster="<?= root().'assets/img/petrisor-thumb_.jpg' ?>"  
+                  style="width: 100%;"
+                >
                   <source src="<?= root().'assets/video/interviu-petrisor.mp4' ?>" type="video/mp4">
                 </video>
                 <div class="stars" style="margin-top: 20px;">
@@ -136,7 +147,11 @@
             </div>
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <video controls="controls" poster="<?= root().'assets/img/robert-thumb.jpg' ?>" style="width: 100%;">
+                <video 
+                  controls="controls"
+                  poster="<?= root().'assets/img/robert-thumb_.jpg' ?>" 
+                  style="width: 100%;"
+                >
                   <source src="<?= root().'assets/video/interviu-robert.mp4' ?>" type="video/mp4">
                 </video>
                 <div class="stars" style="margin-top: 20px;">
