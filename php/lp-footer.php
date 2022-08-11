@@ -15,6 +15,7 @@
               <a href="https://www.facebook.com/tudor.t0dorescu" class="facebook" target="_blank"><i class="bi bi-facebook" style="font-size: 1.75rem; color: #999;"></i></a>
               <a href="https://www.instagram.com/tudortodorescu" class="instagram" target="_blank"><i class="bi bi-instagram" style="font-size: 1.75rem; color: #999;"></i></a>
               <a href="https://www.twitter.com/todorescu_tudor" class="twitter" target="_blank"><i class="bi bi-twitter" style="font-size: 1.75rem; color: #999;"></i></a>
+              <a href="https://www.tiktok.com/@t0dorescu" class="tiktok" target="_blank"><i class="bi bi-tiktok" style="font-size: 1.75rem; color: #999;"></i></a>
             </div>
           </div>
         </div>

@@ -32,7 +32,7 @@
               font-size: 2.25rem;
               padding: 2rem 0 1rem;
             "
-          >Start enjoying<br> life more.</h1>
+          >Enjoy life more.</h1>
           <h2 
             data-aos="fade-up" 
             data-aos-delay="400"
@@ -190,6 +190,32 @@
           </div>
         </div>
         <div class="row" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-12" style="margin: 50px 0 0 0; padding: 0 30px; text-align: center;">
+            <img src="<?= root().'assets/img/recruitment.png' ?>" style="width: 100%" />
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 col-12">
+            <img src="<?= root().'assets/img/offers/offer2.png' ?>" style="width: 90%; margin: 20px;" />
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <img src="<?= root().'assets/img/offers/offer8.png' ?>" style="width: 90%; margin: 20px;" /> 
+            <img src="<?= root().'assets/img/offers/offer6.png' ?>" style="width: 90%; margin: 20px;" /> 
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <img src="<?= root().'assets/img/offers/offer3.png' ?>" style="width: 90%; margin: 20px;" />
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <img src="<?= root().'assets/img/offers/offer4.png' ?>" style="width: 90%; margin: 20px;" />
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <img src="<?= root().'assets/img/offers/offer5.png' ?>" style="width: 90%; margin: 20px;" />
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <img src="<?= root().'assets/img/offers/offer1.png' ?>" style="width: 90%; margin: 20px;" />
+          </div>
+        </div> 
+        <!-- <div class="row" data-aos="fade-up" data-aos-delay="200">
             <img src="<?= root().'assets/img/reviews/js-beginners.png' ?>" />
             <img src="<?= root().'assets/img/reviews/review1.png' ?>" />
             <img src="<?= root().'assets/img/reviews/review2.png' ?>" />
@@ -207,7 +233,7 @@
             <img src="<?= root().'assets/img/reviews/review12.png' ?>" />
             <img src="<?= root().'assets/img/reviews/review13.png' ?>" />
             <img src="<?= root().'assets/img/reviews/review14.png' ?>" />
-        </div>
+        </div> -->
       </div>
     </section>
     <section id="support" class="contact" style="background: black; opacity: .9">
