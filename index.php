@@ -7,7 +7,7 @@
     'footer' => false
   );
   
-  $title = "Get high-ticket web development projects without much experience";
+  $title = "Buy your freedom back! Jobs so high-paid you'll suddenly have 50 new cousins";
   include php_root().'php/lp-header.php';
 ?>
 
@@ -32,7 +32,7 @@
               font-size: 2.25rem;
               padding: 2rem 0 1rem;
             "
-          >Enjoy life more.</h1>
+          >Obnoxiously highest-paid web dev jobs at your choosing.</h1>
           <h2 
             data-aos="fade-up" 
             data-aos-delay="400"
@@ -40,8 +40,11 @@
               color: #95f0f1;
               font-size: 1.5rem;
               padding: 1rem 0;
+              width: 100%;
             "
-          >Get high-ticket web development projects without much experience</h2>
+          >Jobs so high-paid, everyone begins to hate you. Old friends come crawling back</h2>
+          
+          <!-- Suddenly you'll have 50 new cousins</h2> -->
         </div>
         <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
           <img src="assets/img/fighterjet2.png" class="img-fluid" alt="">
