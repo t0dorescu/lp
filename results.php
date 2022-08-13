@@ -27,12 +27,14 @@ include php_root() . 'php/lp-header.php';
                     color: #fa643f;
                     font-size: 2.25rem;
                     padding: 2rem 0 1rem;
+                    text-align: center;
                 ">Unlimited job opportunities at your choosing.</h1>
                 <h2 data-aos="fade-up" data-aos-delay="400" style="
                     color: #95f0f1;
                     font-size: 1.5rem;
                     padding: 1rem 0;
                     width: 100%;
+                    text-align: center;
                 ">So many offers you'll suddenly have new 50 cousins inviting you to their wedding.</h2>
             </div>
         </div>

@@ -104,7 +104,7 @@
               <p>His system works not only for him, but for anybody willing to give it a try.
               <br><br>
               
-              He put together an on-point video training revealing his way;<br> Do you want it ? Then just send an email to <a href="mailto:adina@todorescu.com">adina@todorescu.com</a>.</p>
+              He put together an on-point video training revealing his way;<br><br> Do you want it ? Then just send an email to <a href="mailto:adina@todorescu.com">adina@todorescu.com</a>.</p>
 
               <a 
                 href="mailto:adina@todorescu.com"
@@ -122,92 +122,82 @@
         <header class="section-header">
           <img src="<?= root().'assets/img/confessions-text.png' ?>" style="width: 100%;" />
         </header>
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
-          <div class="swiper-pagination" style="margin-top: 20px;"></div>
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <video 
-                  controls="controls"
-                  poster="<?= root().'assets/img/radu-thumb_.jpg' ?>" 
-                  style="width: 100%;"
-                >
-                  <source src="<?= root().'assets/video/interviu-radu.mp4' ?>" type="video/mp4">
-                </video>
-                <div class="stars" style="margin-top: 20px;">
-                  Radu went from mediocre job to <strong>getting hired today</strong>. Watch his impressive story of transformation, he finally works a serious vue.js project.
-                </div>
-              </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-12 testimonial-new-item">
+            <video 
+              controls="controls"
+              poster="<?= root().'assets/img/radu-thumb_.jpg' ?>" 
+            >
+              <source src="<?= root().'assets/video/interviu-radu.mp4' ?>" type="video/mp4">
+            </video>
+            <div class="text">
+              Radu went from mediocre job to <strong>getting hired today</strong>. Watch his impressive story of transformation, he finally works a serious vue.js project.
             </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <video 
-                  controls="controls"
-                  poster="<?= root().'assets/img/alina-thumb_.jpg' ?>" 
-                  style="width: 100%;"
-                >
-                  <source src="<?= root().'assets/video/interviu-alina.mp4' ?>" type="video/mp4">
-                </video>
-                <div class="stars" style="margin-top: 20px;">
-                  Alina switched from a marketing career to landing her first one-month trial for a <strong>fulltime junior web developer position.</strong>.
-                </div>
-              </div>
+          </div>
+          <div class="col-lg-6 col-md-12 testimonial-new-item">
+            <video 
+              controls="controls"
+              poster="<?= root().'assets/img/robert-thumb_.jpg' ?>" 
+            >
+              <source src="<?= root().'assets/video/interviu-robert.mp4' ?>" type="video/mp4">
+            </video>
+            <div class="text">
+              Tudor helped Robert <strong>kickstart his programming journey</strong> and got him focused on javascript.
             </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <video 
-                  controls="controls"
-                  poster="<?= root().'assets/img/petrisor-thumb_.jpg' ?>"  
-                  style="width: 100%;"
-                >
-                  <source src="<?= root().'assets/video/interviu-petrisor.mp4' ?>" type="video/mp4">
-                </video>
-                <div class="stars" style="margin-top: 20px;">
-                  Petrisor says Tudor's mentoring made a huge difference in his progress.<strong>"Tudor's a natural"</strong>.
-                </div>
-              </div>
+          </div>
+          <div class="col-lg-6 col-md-12 testimonial-new-item">
+            <video 
+              controls="controls"
+              poster="<?= root().'assets/img/mihnea-thumb_.jpg' ?>" 
+            >
+              <source src="<?= root().'assets/video/interviu-mihnea.mp4' ?>" type="video/mp4">
+            </video>
+            <div class="text">
+              Mihnea got help on how a programmer should think. Concepts that take one month to grasp, <strong>took one week</strong>.
             </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <video 
-                  controls="controls"
-                  poster="<?= root().'assets/img/robert-thumb_.jpg' ?>" 
-                  style="width: 100%;"
-                >
-                  <source src="<?= root().'assets/video/interviu-robert.mp4' ?>" type="video/mp4">
-                </video>
-                <div class="stars" style="margin-top: 20px;">
-                  Tudor helped Robert <strong>kickstart his programming journey</strong> and got him focused on javascript.
-                </div>
-              </div>
+          </div>
+          <div class="col-lg-6 col-md-12 testimonial-new-item">
+            <video 
+              controls="controls"
+              poster="<?= root().'assets/img/alina-thumb_.jpg' ?>" 
+            >
+              <source src="<?= root().'assets/video/interviu-alina.mp4' ?>" type="video/mp4">
+            </video>
+            <div class="text">
+              Alina switched from a marketing career to landing her first one-month trial for a <strong>fulltime junior web developer position.</strong>.
             </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <video 
-                  controls="controls"
-                  poster="<?= root().'assets/img/ovidiu-thumb_.jpg' ?>" 
-                  style="width: 100%;"
-                >
-                  <source src="<?= root().'assets/video/interviu-ovidiu.mp4' ?>" type="video/mp4">
-                </video>
-                <div class="stars" style="margin-top: 20px;">
-                  "From Tudor I've learned directly senior developer stuff" - Ovidiu.
-                </div>
-              </div>
+          </div>
+          <div class="col-lg-6 col-md-12 testimonial-new-item">
+            <video 
+              controls="controls"
+              poster="<?= root().'assets/img/petrisor-thumb_.jpg' ?>"  
+            >
+              <source src="<?= root().'assets/video/interviu-petrisor.mp4' ?>" type="video/mp4">
+            </video>
+            <div class="text">
+              Petrisor says Tudor's mentoring made a huge difference in his progress.<strong>"Tudor's a natural"</strong>.
             </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <video 
-                  controls="controls"
-                  poster="<?= root().'assets/img/cristi-thumb_.jpg' ?>" 
-                  style="width: 100%;"
-                >
-                  <source src="<?= root().'assets/video/interviu-cristi.mp4' ?>" type="video/mp4">
-                </video>
-                <div class="stars" style="margin-top: 20px;">
-                  Cristi saved his soul from tutorial hell and skyrocketed his skills.
-                </div>
-              </div>
+          </div>
+          <div class="col-lg-6 col-md-12 testimonial-new-item">
+            <video 
+              controls="controls"
+              poster="<?= root().'assets/img/ovidiu-thumb_.jpg' ?>" 
+            >
+              <source src="<?= root().'assets/video/interviu-ovidiu.mp4' ?>" type="video/mp4">
+            </video>
+            <div class="text">
+              "From Tudor I've learned directly senior developer stuff" - Ovidiu.
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 testimonial-new-item">
+            <video 
+              controls="controls"
+              poster="<?= root().'assets/img/cristi-thumb_.jpg' ?>" 
+            >
+              <source src="<?= root().'assets/video/interviu-cristi.mp4' ?>" type="video/mp4">
+            </video>
+            <div class="text">
+              Cristi saved his soul from tutorial hell and skyrocketed his skills.
             </div>
           </div>
         </div>
@@ -235,7 +225,17 @@
             <img src="<?= root().'assets/img/offers/offer1.png' ?>" class="offer-img-bottom" />
           </div>
           <div class="col-12" style="text-align: center;">
-            <button class="btn btn-primary mb-4" onclick="window.location = '<?= root().'results' ?>'">Load more...</button>
+            <button 
+              style="
+                font-size: 1.15rem;
+                padding: 10px 20px;
+                margin-bottom: 20px;
+              "
+              class="btn btn-primary mb-4"
+              onclick="window.location = '<?= root().'results' ?>'"
+            >
+            <i class="bi bi-infinity"></i> Load more...
+          </button>
           </div>
         </div> 
         <!-- <div class="row" data-aos="fade-up" data-aos-delay="200">
