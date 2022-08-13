@@ -39,13 +39,15 @@
       <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
         <div class="align-items-center">&nbsp;</div>
         <?php if (!$session['is_logged_in']) : ?>
-          <img 
-            src="<?= root().'assets/img/tudor-todorescu.jpg' ?>"
-            style="
-              width: 30px;
-              height: 30px;
-            "
-          />
+          <a href="<?= root() ?>">
+            <img 
+              src="<?= root().'assets/img/tudor-todorescu.jpg' ?>"
+              style="
+                width: 30px;
+                height: 30px;
+              "
+            />
+          </a>
         <?php else : ?>
           <a
             class="btn-standard"
@@ -57,14 +59,19 @@
         <?php endif ?>
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a class="nav-link scrollto" href="#about">About</a></li>
-            <li><a class="nav-link scrollto" href="#confessions">Confessions</a></li>
-            <li><a class="nav-link scrollto" href="#support">Support</a></li>
-            <?php if (!$session['is_logged_in']) : ?>
-              <li><a class="getstarted scrollto" href="#newsletter">Waiting list</a></li>
-            <?php else : ?>
-              <li><a class="getstarted scrollto" href="/membership">Members area</a></li>
-            <?php endif ?>
+            <?php if (!$ignore['menu']) : ?>
+              <li><a class="nav-link scrollto" href="#about">About</a></li>
+              <li><a class="nav-link scrollto" href="#confessions">Confessions</a></li>
+              <li><a class="nav-link scrollto" href="<?= root().'results' ?>">Results</a></li>
+              <li><a class="nav-link scrollto" href="#support">Support</a></li>
+                <?php if (!$session['is_logged_in']) : ?>
+                  <li><a class="getstarted scrollto" href="#newsletter">Waiting list</a></li>
+                <?php else : ?>
+                  <li><a class="getstarted scrollto" href="/membership">Members area</a></li>
+                <?php endif ?>
+              <?php else : ?>
+                <li><a class="nav-link scrollto" href="<?= root() ?>">Home</a></li>
+              <?php endif ?>
             </ul>
           <i class="bi bi-list mobile-nav-toggle" style="color: white;"></i>
         </nav>

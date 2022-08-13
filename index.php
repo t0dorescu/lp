@@ -4,7 +4,8 @@
   
   $ignore = array(
     'header' => false,
-    'footer' => false
+    'footer' => false,
+    'menu' => false
   );
   
   $title = "Buy your freedom back! Jobs so high-paid you'll suddenly have 50 new cousins";
@@ -32,7 +33,7 @@
               font-size: 2.25rem;
               padding: 2rem 0 1rem;
             "
-          >Obnoxiously highest-paid web dev jobs at your choosing.</h1>
+          >Obnoxiously highest-paid web dev jobs at your feet.</h1>
           <h2 
             data-aos="fade-up" 
             data-aos-delay="400"
@@ -48,6 +49,24 @@
         </div>
         <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
           <img src="assets/img/fighterjet2.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    class="d-flex align-items-center"
+    style="padding-bottom: 0;"
+  >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-12">
+          <img src="<?= root().'assets/img/offers/offer13.png' ?>" class="offer-img" />
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <img src="<?= root().'assets/img/offers/offer11.png' ?>" class="offer-img" />
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <img src="<?= root().'assets/img/offers/offer10.png' ?>" class="offer-img" />
         </div>
       </div>
     </div>
@@ -193,29 +212,30 @@
           </div>
         </div>
         <div class="row" data-aos="fade-up" data-aos-delay="200">
-          <div class="col-12" style="margin: 50px 0 0 0; padding: 0 30px; text-align: center;">
+          <div class="col-12" style="margin: 30px 0 0 0; padding: 0 30px; text-align: center;">
             <img src="<?= root().'assets/img/recruitment.png' ?>" style="width: 100%" />
           </div>
-
-
           <div class="col-lg-4 col-md-6 col-12">
-            <img src="<?= root().'assets/img/offers/offer2.png' ?>" style="width: 90%; margin: 20px;" />
+            <img src="<?= root().'assets/img/offers/offer2.png' ?>" class="offer-img-bottom" />
           </div>
           <div class="col-lg-4 col-md-6 col-12">
-            <img src="<?= root().'assets/img/offers/offer8.png' ?>" style="width: 90%; margin: 20px;" /> 
-            <img src="<?= root().'assets/img/offers/offer6.png' ?>" style="width: 90%; margin: 20px;" /> 
+            <img src="<?= root().'assets/img/offers/offer8.png' ?>" class="offer-img-bottom" /> 
+            <img src="<?= root().'assets/img/offers/offer6.png' ?>" class="offer-img-bottom" /> 
           </div>
           <div class="col-lg-4 col-md-6 col-12">
-            <img src="<?= root().'assets/img/offers/offer3.png' ?>" style="width: 90%; margin: 20px;" />
+            <img src="<?= root().'assets/img/offers/offer3.png' ?>" class="offer-img-bottom" />
           </div>
           <div class="col-lg-4 col-md-6 col-12">
-            <img src="<?= root().'assets/img/offers/offer4.png' ?>" style="width: 90%; margin: 20px;" />
+            <img src="<?= root().'assets/img/offers/offer4.png' ?>" class="offer-img-bottom" />
           </div>
           <div class="col-lg-4 col-md-6 col-12">
-            <img src="<?= root().'assets/img/offers/offer5.png' ?>" style="width: 90%; margin: 20px;" />
+            <img src="<?= root().'assets/img/offers/offer5.png' ?>" class="offer-img-bottom" />
           </div>
           <div class="col-lg-4 col-md-6 col-12">
-            <img src="<?= root().'assets/img/offers/offer1.png' ?>" style="width: 90%; margin: 20px;" />
+            <img src="<?= root().'assets/img/offers/offer1.png' ?>" class="offer-img-bottom" />
+          </div>
+          <div class="col-12" style="text-align: center;">
+            <button class="btn btn-primary mb-4" onclick="window.location = '<?= root().'results' ?>'">Load more...</button>
           </div>
         </div> 
         <!-- <div class="row" data-aos="fade-up" data-aos-delay="200">
