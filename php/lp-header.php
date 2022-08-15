@@ -1,7 +1,19 @@
 <!doctype html>
 <html lang="en">
-
 <head>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <?php if (!$isDev) : ?>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122326504-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-122326504-1');
+    </script>
+  <?php endif ?>
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title><?= $title ?></title>

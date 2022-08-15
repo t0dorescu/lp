@@ -83,7 +83,7 @@
               
               <img src="<?= root().'assets/img/santorini.gif' ?>" style="width: 100%;" />
               
-              <p>After seeing his parkour adventures ripped away from him, he made a life-changing decision. He swore he would learn the process of attracting dream clients. <strong>Undemanding, no meetings, and pay for his travels.</strong><Br></p>
+              <p>After seeing his parkour adventures ripped away, he made a life-changing decision. He swore he would learn the process of attracting dream clients. <strong>Undemanding, no meetings, and pay for his travels.</strong><Br></p>
               
               <strong style="color: var(--primary-color);">
               <i class="bi bi-cash-coin"></i> Revolut accounts
@@ -93,18 +93,15 @@
                 <source src="<?= root().'assets/video/revolut.mp4' ?>" type="video/mp4">
               </video>
                 
-              <p><br>He finally cracked it, and it was surprisingly easy once he got it. It even works without having FAANG on resume. His system has already helped dozens change their career</p>
+              <p><br>He finally cracked it, and it was surprisingly easy once he got it. It even works without having FAANG on your resume. His approach is so unique, he instantly made him stand-out. (even if he never worked an actual senior job/project before)</p>
 
-              <p>His system made him from a sad stuck shmuk, into a sad free adventurer, oh yeah, happiness comes from other places, but that's a different story.</p>
+              <p>From a sad stuck shmuk, into a sad free man overnight (almost)... oh yeah, btw, happiness comes from other places; that's a different story.</p>
 
               <img src="<?= root().'assets/img/zoom.jpg' ?>" style="width: 100%;" />
               
-              <p>He's not a life coach or a guru. He still earns his living doing vue.js long-term projects <a href="https://www.linkedin.com/in/tudortodorescu/" target="_blank">(check Linkedin <i class="bi bi-linkedin"></i>)</a>. However, his heart is in helping others unlock their potential.
+              <p>He's not a life-coach, therapist or sifu. Tudor earns his living doing high-end vue3 projects<br> <a href="https://www.linkedin.com/in/tudortodorescu/" target="_blank">(latest on Linkedin <i class="bi bi-linkedin"></i>)</a>. <br><br><b>Money is empty, sharing is fun. Tudor loves to hear all about his students success, and be a part of their journey.</b>
 
-              <p>His system works not only for him, but for anybody willing to give it a try.
-              <br><br>
-              
-              He put together an on-point video training revealing his way;<br><br> Do you want it ? Then just send an email to <a href="mailto:adina@todorescu.com">adina@todorescu.com</a>.</p>
+              <p>Want more? Write down why you want a change in your career and email <a href="mailto:adina@todorescu.com">adina@todorescu.com</a> with your why. <br><br><i>She will forward your story to Tudor, and he'll prepare a special training (in video format).</i></p>
 
               <a 
                 href="mailto:adina@todorescu.com"

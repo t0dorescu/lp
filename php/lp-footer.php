@@ -65,18 +65,6 @@
 <script src="assets/js/utils/forms.js<?= v_lp() ?>"></script>
 <script src="assets/js/services/api.js<?= v_lp() ?>"></script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<?php if (!$isDev) : ?>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122326504-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-122326504-1');
-  </script>
-<?php endif ?>
-
 <!-- Cookie consent -->
 <script src="assets/vendor/cookieconsent/cookieconsent.js<?= v_lp() ?>"></script>
 <script>
