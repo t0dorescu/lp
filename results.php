@@ -103,6 +103,54 @@ include php_root() . 'php/lp-header.php';
             <div class="col-lg-4 col-md-6 col-12">
                 <img src="<?= root() . 'assets/img/offers/offer23.png' ?>" class="offer-img-bottom-results" />
             </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <img src="<?= root() . 'assets/img/offers/offer24.png' ?>" class="offer-img-bottom-results" />
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <img src="<?= root() . 'assets/img/offers/offer25.png' ?>" class="offer-img-bottom-results" />
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <img src="<?= root() . 'assets/img/offers/offer26.png' ?>" class="offer-img-bottom-results" />
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <img src="<?= root() . 'assets/img/offers/offer27.png' ?>" class="offer-img-bottom-results" />
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <img src="<?= root() . 'assets/img/offers/offer28.png' ?>" class="offer-img-bottom-results" />
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <img src="<?= root() . 'assets/img/offers/offer29.png' ?>" class="offer-img-bottom-results" />
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <img src="<?= root() . 'assets/img/offers/offer30.png' ?>" class="offer-img-bottom-results" />
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <img src="<?= root() . 'assets/img/offers/offer31.png' ?>" class="offer-img-bottom-results" />
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <img src="<?= root() . 'assets/img/offers/offer32.png' ?>" class="offer-img-bottom-results" />
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <img src="<?= root() . 'assets/img/offers/offer33.png' ?>" class="offer-img-bottom-results" />
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <img src="<?= root() . 'assets/img/offers/offer34.png' ?>" class="offer-img-bottom-results" />
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <img src="<?= root() . 'assets/img/offers/offer35.png' ?>" class="offer-img-bottom-results" />
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <img src="<?= root() . 'assets/img/offers/offer36.png' ?>" class="offer-img-bottom-results" />
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <img src="<?= root() . 'assets/img/offers/offer37.png' ?>" class="offer-img-bottom-results" />
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <img src="<?= root() . 'assets/img/offers/offer38.png' ?>" class="offer-img-bottom-results" />
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <img src="<?= root() . 'assets/img/offers/offer39.png' ?>" class="offer-img-bottom-results" />
+            </div>
         </div>
     </div>
 </section>
