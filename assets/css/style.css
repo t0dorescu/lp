@@ -12,25 +12,8 @@
   font-family: fontfamily1;
   src: url("../fonts/pixeloid.ttf") format("truetype");
 }
-@font-face {
-  font-family: fontfamily2;
-  src: url("../fonts/diary.ttf") format("truetype");
-}
-@font-face {
-  font-family: fontfamily3;
-  src: url("../fonts/sexpistols.ttf") format("truetype");
-}
-
 .font-family-1 {
   font-family: 'fontfamily1' !important;
-  font-weight: 100 !important;
-}
-.font-family-2 {
-  font-family: 'fontfamily2' !important;
-  font-weight: 100 !important;
-}
-.font-family-3 {
-  font-family: 'fontfamily3' !important;
   font-weight: 100 !important;
 }
 
@@ -53,6 +36,7 @@
 body {
   font-family: 'fontfamily1';
   color: var(--third-color);
+  background: url('/assets/img/punkbg_1.jpg');
 }
 
 a {
@@ -499,9 +483,9 @@ section {
 .hero h1 {
   margin: 0;
   font-size: 48px;
-  font-weight: 100;
+  font-weight: bold;
   color: var(--secondary-color);
-  font-family: 'fontfamily2';
+  font-family: 'fontfamily1';
 }
 .hero h2 {
   color: var(--third-color);

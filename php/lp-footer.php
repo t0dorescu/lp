@@ -48,12 +48,12 @@
 <?php endif ?>
 
 <!-- Vendor JS Files -->
-<script src="assets/vendor/aos/aos.js<?= v_lp() ?>"></script>
+<!-- <script src="assets/vendor/aos/aos.js<?= v_lp() ?>"></script> -->
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js<?= v_lp() ?>"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js<?= v_lp() ?>"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js<?= v_lp() ?>"></script>
+<!-- <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js<?= v_lp() ?>"></script> -->
+<!-- <script src="assets/vendor/swiper/swiper-bundle.min.js<?= v_lp() ?>"></script> -->
 <script src="assets/vendor/php-email-form/php-email-form.js<?= v_lp() ?>"></script>
-<script src="assets/vendor/crypto-js/crypto-js.min.js<?= v_lp() ?>"></script>
+<!-- <script src="assets/vendor/crypto-js/crypto-js.min.js<?= v_lp() ?>"></script> -->
 
 <!-- JS files -->
 <script>

@@ -155,72 +155,72 @@
     }
   });
 
-  window.testimonial_swiper = new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 40
-      },
+  // window.testimonial_swiper = new Swiper('.testimonials-slider', {
+  //   speed: 600,
+  //   loop: true,
+  //   autoplay: {
+  //     delay: 3000,
+  //     disableOnInteraction: false
+  //   },
+  //   slidesPerView: 'auto',
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //     type: 'bullets',
+  //     clickable: true
+  //   },
+  //   breakpoints: {
+  //     320: {
+  //       slidesPerView: 1,
+  //       spaceBetween: 40
+  //     },
 
-      1200: {
-        slidesPerView: 3,
-      }
-    }
-  });
+  //     1200: {
+  //       slidesPerView: 3,
+  //     }
+  //   }
+  // });
 
-  addEventListener('DOMContentLoaded', function() {
-    setTimeout(() => {
-      ;[ ...document.querySelectorAll('.testimonial-item video')].forEach(element => {
-        element.addEventListener('play', () => {
-          window.testimonial_swiper.autoplay.stop()
-        })
-      })
-    }, 1000)
+  // addEventListener('DOMContentLoaded', function() {
+  //   setTimeout(() => {
+  //     ;[ ...document.querySelectorAll('.testimonial-item video')].forEach(element => {
+  //       element.addEventListener('play', () => {
+  //         window.testimonial_swiper.autoplay.stop()
+  //       })
+  //     })
+  //   }, 1000)
 
-    window.changeBgImage()
-  })
+  //   // window.changeBgImage()
+  // })
 
-  function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
-  }
+  // function getRandomInt(min, max) {
+  //   min = Math.ceil(min);
+  //   max = Math.floor(max);
+  //   return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+  // }
 
-  window.changeBgImage = function() {
-    const randomBg = getRandomInt(1,9)
-    const randomTime = getRandomInt(3,6)
+  // window.changeBgImage = function() {
+  //   const randomBg = getRandomInt(1,9)
+  //   const randomTime = getRandomInt(3,6)
     
-    setTimeout(() => {
-      document.body.style.backgroundImage = `url('/assets/img/punkbg_${randomBg}.jpg')`
-      window.changeBgImage()
-    }, randomTime * 1000)
-  }
+  //   setTimeout(() => {
+  //     document.body.style.backgroundImage = `url('/assets/img/punkbg_${randomBg}.jpg')`
+  //     window.changeBgImage()
+  //   }, randomTime * 1000)
+  // }
 
   /**
    * Animation on scroll
    */
-  function aos_init() {
-    AOS.init({
-      duration: 350,
-      easing: "ease-in-out",
-      once: true,
-      mirror: false
-    });
-  }
-  window.addEventListener('load', () => {
-    aos_init();
-  });
+  // function aos_init() {
+  //   AOS.init({
+  //     duration: 350,
+  //     easing: "ease-in-out",
+  //     once: true,
+  //     mirror: false
+  //   });
+  // }
+  // window.addEventListener('load', () => {
+  //   aos_init();
+  // });
 
 })();

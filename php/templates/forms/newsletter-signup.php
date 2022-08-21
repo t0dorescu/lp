@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-12 text-center">
                 <h4 style="color: var(--primary-color)">Waiting list</h4>
-                <p style="color: #ccc;">Unfortunately, no spots open at this time. Sign-up for the queue, and you'll get notified on future opennings</p>
+                <p style="color: #ccc;">We offer our mentoring services only to a select few. Unfortunately, no spots are open at this time. Join our waiting list and we'll notify you on oppenings.</p>
             </div>
             <div class="col-lg-6">
                 <div class="alert alert-success d-none js_confirm_message" role="alert" style="text-align: center;">

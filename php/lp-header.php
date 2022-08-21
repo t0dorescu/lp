@@ -36,12 +36,12 @@
   <link href="assets/img/apple-touch-icon.jpg" rel="apple-touch-icon">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css<?= v_lp() ?>" rel="stylesheet" />
+  <!-- <link href="assets/vendor/aos/aos.css<?= v_lp() ?>" rel="stylesheet" /> -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css<?= v_lp() ?>" rel="stylesheet" />
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css<?= v_lp() ?>" rel="stylesheet" />
-  <link href="assets/vendor/glightbox/css/glightbox.min.css<?= v_lp() ?>" rel="stylesheet" />
-  <link href="assets/vendor/remixicon/remixicon.css<?= v_lp() ?>" rel="stylesheet" />
-  <link href="assets/vendor/swiper/swiper-bundle.min.css<?= v_lp() ?>" rel="stylesheet" />
+  <!-- <link href="assets/vendor/glightbox/css/glightbox.min.css<?= v_lp() ?>" rel="stylesheet" /> -->
+  <!-- <link href="assets/vendor/remixicon/remixicon.css<?= v_lp() ?>" rel="stylesheet" /> -->
+  <!-- <link href="assets/vendor/swiper/swiper-bundle.min.css<?= v_lp() ?>" rel="stylesheet" /> -->
   <link href="assets/vendor/cookieconsent/cookieconsent.css<?= v_lp() ?>" rel="stylesheet" />
 
   <!-- Template Main CSS File -->
@@ -82,10 +82,11 @@
         <nav id="navbar" class="navbar">
           <ul>
             <?php if (!$ignore['menu']) : ?>
-              <li><a class="nav-link scrollto" href="#about">About</a></li>
-              <li><a class="nav-link scrollto" href="#confessions">Confessions</a></li>
+              <li><a class="nav-link scrollto" href="<?= root() ?>">Home</a></li>
+              <li><a class="nav-link scrollto" href="<?= root().'story' ?>">Story</a></li>
+              <li><a class="nav-link scrollto" href="<?= root().'students' ?>">Students</a></li>
               <li><a class="nav-link scrollto" href="<?= root().'results' ?>">Results</a></li>
-              <li><a class="nav-link scrollto" href="#support">Support</a></li>
+              <li><a class="nav-link scrollto" href="<?= root().'support' ?>">Support</a></li>
                 <?php if (!$session['is_logged_in']) : ?>
                   <li><a class="getstarted scrollto" href="#newsletter">Waiting list</a></li>
                 <?php else : ?>
