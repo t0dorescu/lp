@@ -1,8 +1,6 @@
 <?php
 
 $version_lp = '0.0.1';
-$version_adm = '0.0.1';
-$version_blog = '0.0.1';
 
 $isDev = (
     $_SERVER['SERVER_NAME'] == 'dev.todorescu.com' || 

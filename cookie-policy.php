@@ -1,5 +1,5 @@
 <?php
-  include $_SERVER['DOCUMENT_ROOT']."/api/index.php";
+  include $_SERVER['DOCUMENT_ROOT']."/api/light.php";
   
   $title = "Cookie policy";
   include php_root().'php/legal-header.php';

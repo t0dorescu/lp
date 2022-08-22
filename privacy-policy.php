@@ -1,5 +1,5 @@
 <?php
-  include $_SERVER['DOCUMENT_ROOT']."/api/index.php";
+include $_SERVER['DOCUMENT_ROOT'] . "/api/light.php";
   
   $title = "Privacy policy";
   include php_root().'php/legal-header.php';
@@ -111,7 +111,7 @@
     used to estimate general location and other technographics such as connection speed, whether you have visited
     the website in a shared location, and type of the device used to visit the website. They may aggregate
     information about our advertising and what you see on the website and then provide auditing, research and
-    reporting for us and our advertisers.   We may also disclose personal and non-personal information about you to
+    reporting for us and our advertisers. We may also disclose personal and non-personal information about you to
     government or law enforcement officials or private parties as we, in our sole discretion, believe necessary or
     appropriate in order to respond to claims, legal process (including subpoenas), to protect our rights and
     interests or those of a third party, the safety of the public or any person, to prevent or stop any illegal,

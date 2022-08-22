@@ -1,12 +1,5 @@
 <?php
-include $_SERVER['DOCUMENT_ROOT'] . "/api/index.php";
-$session = (new Api())->get_session($_COOKIE['token']);
-
-$ignore = array(
-    'header' => false,
-    'footer' => false,
-    'menu' => false
-);
+include $_SERVER['DOCUMENT_ROOT'] . "/api/light.php";
 
 $title = "Get premium support from our team - Todorescu.com";
 include php_root() . 'php/lp-header.php';
@@ -14,9 +7,9 @@ include php_root() . 'php/lp-header.php';
 
 <main id="main">
     <section id="support" class="contact" style="background: black; opacity: .9;margin-top: 80px;">
-        <div class="container" data-aos="fade-up">
+        <div class="container">
             <header class="section-header">
-                <p class="font-family-1" style="color: var(--primary-color);">Student support</p>
+                <p style="color: var(--primary-color);">Student support</p>
                 <p class="gray-text">Please, if you're not in the paid program, don't use this form. If you do, we will blacklist your info</p>
             </header>
             <div class="row gy-4">
@@ -48,9 +41,9 @@ include php_root() . 'php/lp-header.php';
         </div>
     </section>
     <section id="team" class="team" style="padding-top: 30px; opacity: .9;background: none;margin-bottom: 30px;">
-        <div class="container" data-aos="fade-up">
+        <div class="container">
             <div class="row gy-4">
-                <div class="col-4 d-flex align-items-stretch" style="padding: 0 5px;" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-4 col-6 d-flex align-items-stretch" style="padding: 0 5px;">
                     <div class="member">
                         <div class="member-img">
                             <img src="assets/img/team/tzuka.jpg" class="img-fluid" alt="">
@@ -63,7 +56,7 @@ include php_root() . 'php/lp-header.php';
                         </div>
                     </div>
                 </div>
-                <div class="col-4 d-flex align-items-stretch" style="padding: 0 5px;" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-4 col-6 d-flex align-items-stretch" style="padding: 0 5px;">
                     <div class="member">
                         <div class="member-img">
                             <img src="assets/img/team/crisan-cristina.jpg" class="img-fluid" alt="">
@@ -76,7 +69,7 @@ include php_root() . 'php/lp-header.php';
                         </div>
                     </div>
                 </div>
-                <div class="col-4 d-flex align-items-stretch" style="padding: 0 5px;" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-lg-4 col-6 d-flex align-items-stretch" style="padding: 0 5px;">
                     <div class="member">
                         <div class="member-img">
                             <img src="assets/img/team/todorescu-tudor.jpg" class="img-fluid" alt="">
@@ -89,7 +82,7 @@ include php_root() . 'php/lp-header.php';
                         </div>
                     </div>
                 </div>
-                <div class="col-4 d-flex align-items-stretch" style="padding: 0 5px;" data-aos="fade-up" data-aos-delay="400">
+                <div class="col-lg-4 col-6 d-flex align-items-stretch" style="padding: 0 5px;">
                     <div class="member">
                         <div class="member-img">
                             <img src="assets/img/team/musat-radu.jpg" class="img-fluid" alt="">
@@ -102,7 +95,7 @@ include php_root() . 'php/lp-header.php';
                         </div>
                     </div>
                 </div>
-                <div class="col-4 d-flex align-items-stretch" style="padding: 0 5px;" data-aos="fade-up" data-aos-delay="400">
+                <div class="col-lg-4 col-6 d-flex align-items-stretch" style="padding: 0 5px;">
                     <div class="member">
                         <div class="member-img">
                             <img src="assets/img/team/adina-minca.jpg" class="img-fluid" alt="">
@@ -115,7 +108,7 @@ include php_root() . 'php/lp-header.php';
                         </div>
                     </div>
                 </div>
-                <div class="col-4 d-flex align-items-stretch" style="padding: 0 5px;" data-aos="fade-up" data-aos-delay="400">
+                <div class="col-lg-4 col-6 d-flex align-items-stretch" style="padding: 0 5px;">
                     <div class="member">
                         <div class="member-img">
                             <img src="assets/img/team/tao-robert.jpg" class="img-fluid" alt="">

@@ -51,3 +51,17 @@ function invalidInput(status, input, num = null, inputParent) {
 function validInput(input) {
     input.classList.add('is-valid')
 }
+
+
+function welcomeMessage(form, data) {
+    if ( data.first_name ) {
+      form.querySelector('.js_name_congrats').innerText = data.first_name
+    }
+
+    if (data.gravatar_url) {
+      const gravatarImg = form.querySelector('.js_gravatar_img')
+
+      gravatarImg.classList.remove('d-none')
+      gravatarImg.setAttribute('src', data.gravatar_url)
+    }
+  }

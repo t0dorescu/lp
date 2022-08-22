@@ -44,9 +44,3 @@ function root() {
 function v_lp() {
     echo '?v='.$GLOBALS['version_lp'];
 }
-function v_adm() {
-    echo '?v='.$GLOBALS['version_adm'];
-}
-function v_blog() {
-    echo '?v='.$GLOBALS['version_blog'];
-}

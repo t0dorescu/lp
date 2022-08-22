@@ -5,14 +5,9 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title><?= $title ?></title>
     <style>
-        @font-face {
-            font-family: fontfamily1;
-            src: url("assets/fonts/pixeloid.ttf") format("truetype");
-        }
-
         * {
-            font-family: 'fontfamily1';
-            color: #444444;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ccc;
         }
 
         h1,
@@ -23,11 +18,12 @@
         h6,
         a {
             font-weight: 600;
-            color: #012970;
+            color: #fa643f;
         }
 
         body {
             padding: 2rem;
+            background: #222;
         }
         @media (max-width: 768px) {
             body {

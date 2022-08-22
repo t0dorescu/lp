@@ -1,10 +1,10 @@
 <?php
-  include $_SERVER['DOCUMENT_ROOT']."/api/index.php";
-  
-  $title = "Terms of service";
-  include php_root().'php/legal-header.php';
+include $_SERVER['DOCUMENT_ROOT'] . "/api/light.php";
+
+$title = "Terms of service";
+include php_root() . 'php/legal-header.php';
 ?>
-    
+
 <h1>Terms & Conditions</h1>
 <p>Updated at 2022-06-29</p>
 
@@ -49,8 +49,7 @@
         available) and on this platform.</li>
     <li>Third-party service: refers to advertisers, contest sponsors, promotional and marketing partners, and others
         who provide our content or whose products or services we think may interest you.</li>
-    <li>Website: ICE STATION ZEBRA SRL's site, which can be accessed via this URL: <a
-            href="https://www.todorescu.com">www.todorescu.com</a></li>
+    <li>Website: ICE STATION ZEBRA SRL's site, which can be accessed via this URL: <a href="https://www.todorescu.com">www.todorescu.com</a></li>
     <li>You: a person or entity that is registered with ICE STATION ZEBRA SRL to use the Services.</li>
 </ul>
 
@@ -273,8 +272,7 @@
 <h1>Notice of Dispute</h1>
 <p>In the event of a dispute, you or ICE STATION ZEBRA SRL must give the other a Notice of Dispute, which is a
     written statement that sets forth the name, address, and contact information of the party giving it, the facts
-    giving rise to the dispute, and the relief requested. You must send any Notice of Dispute via email to: <a
-        href="mailTo:support@todorescu.com">support@todorescu.com</a>. ICE STATION ZEBRA SRL will send any Notice of
+    giving rise to the dispute, and the relief requested. You must send any Notice of Dispute via email to: <a href="mailTo:support@todorescu.com">support@todorescu.com</a>. ICE STATION ZEBRA SRL will send any Notice of
     Dispute to you by mail to your address if we have it, or otherwise to your email address. You and ICE STATION
     ZEBRA SRL will attempt to resolve any dispute through informal negotiation within sixty (60) days from the date
     the Notice of Dispute is sent. After sixty (60) days, you or ICE STATION ZEBRA SRL may commence arbitration.</p>
@@ -363,4 +361,5 @@
 </ul>
 
 </body>
+
 </html>
