@@ -64,4 +64,4 @@ function welcomeMessage(form, data) {
       gravatarImg.classList.remove('d-none')
       gravatarImg.setAttribute('src', data.gravatar_url)
     }
-  }
+}

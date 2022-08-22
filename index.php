@@ -25,6 +25,3 @@ include php_root() . 'php/lp-header.php';
 </main>
 
 <?php include php_root() . 'php/lp-footer.php'; ?>
-</body>
-
-</html>
