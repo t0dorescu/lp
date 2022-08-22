@@ -1,7 +1,7 @@
 <?php
 include $_SERVER['DOCUMENT_ROOT'] . "/api/light.php";
   
-  $title = "Privacy policy";
+  $title = "Privacy policy - Todorescu.com";
   include php_root().'php/legal-header.php';
 ?>
 

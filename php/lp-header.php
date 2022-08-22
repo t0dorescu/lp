@@ -42,14 +42,7 @@
 </head>
 
 <body>
-  <header 
-    id="header"
-    class="header fixed-top"
-    style="
-      background: black;
-      opacity: .9;
-    "
-  >
+  <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <div class="align-items-center">&nbsp;</div>
       <a href="<?= root() ?>">
@@ -65,7 +58,7 @@
           <li><a class="nav-link" href="<?= root().'students' ?>">Students</a></li>
           <li><a class="nav-link" href="<?= root().'results' ?>">Results</a></li>
           <li><a class="nav-link" href="<?= root().'support' ?>">Support</a></li>
-          <li><a class="getstarted scrollto" href="#newsletter">Waiting list</a></li>
+          <li><a class="getstarted scrollto" href="#footer">Waiting list</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle" style="color: white;"></i>
       </nav>

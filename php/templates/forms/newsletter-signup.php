@@ -1,14 +1,19 @@
-<div id="newsletter" class="footer-newsletter js_newsletter_signup" 
+<div class="footer-newsletter js_newsletter_signup" 
     style="background: none; opacity: .9; border: 0; padding: 30px 0 0 0;">
-    <div class="container" style="    background: black;
-    padding: 30px;">
+    <div class="container" style="background: black;padding: 30px;">
         <div class="row justify-content-center">
             <div class="col-lg-12 text-center">
                 <h4 style="color: var(--primary-color)">Waiting list</h4>
-                <p style="color: #ccc; margin-bottom: 0">We offer our mentoring services only to a select few. Unfortunately, no spots are open at this time. <br>Join our waiting list and we'll notify you on oppenings.</p>
+                <p style="color: #ccc; margin-bottom: 0">
+                    <strong style="color: white;">Unfortunately, no spots are open at this time.</strong> Join our waiting list and we'll notify you on oppenings.
+                </p>
             </div>
-            <div class="col-lg-6" style="margin-top: 20px;">
-                <div class="alert alert-success d-none js_confirm_message" role="alert" style="text-align: center;">
+            <div class="col-lg-6">
+                <div 
+                    class="alert alert-success d-none js_confirm_message" 
+                    role="alert" 
+                    style="text-align: center; margin-top: 20px;"
+                >
                     <img class="js_gravatar_img d-none" src="" style="width: 100px; margin: 0 auto;" />
                     <div class="row">&nbsp;</div>
                     <strong>You've joined the queue <span class="js_name_congrats"></span></strong>

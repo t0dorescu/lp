@@ -1,5 +1,5 @@
 <?php
-include $_SERVER['DOCUMENT_ROOT'] . "/api/light.php";
+include $_SERVER['DOCUMENT_ROOT'] . "/api/index.php";
 
 $title = "Get premium support from our team - Todorescu.com";
 include php_root() . 'php/lp-header.php';
@@ -9,11 +9,12 @@ include php_root() . 'php/lp-header.php';
     <section id="support" class="contact" style="background: black; opacity: .9;margin-top: 80px;">
         <div class="container">
             <header class="section-header">
-                <p style="color: var(--primary-color);">Student support</p>
-                <p class="gray-text">Please, if you're not in the paid program, don't use this form. If you do, we will blacklist your info</p>
+                <p class="font-family-1" style="color: var(--primary-color);">Student support</p>
+                <p class="gray-text" style="font-weight: 400;">Use this form only if you're in the paid program. Sign-up for the waiting list and we will contact you</p>
             </header>
             <div class="row gy-4">
-                <div class="col-12">
+                <div class="col-lg-4 col-md-3">&nbsp;</div>
+                <div class="col-lg-4 col-md-6 col-12">
                     <form action="api/contact.php" method="post" class="php-email-form">
                         <div class="row gy-4">
                             <div class="col-md-6">
@@ -37,29 +38,17 @@ include php_root() . 'php/lp-header.php';
                         </div>
                     </form>
                 </div>
+                <div class="col-lg-4 col-md-3">&nbsp;</div>
             </div>
         </div>
     </section>
     <section id="team" class="team" style="padding-top: 30px; opacity: .9;background: none;margin-bottom: 30px;">
         <div class="container">
             <div class="row gy-4">
-                <div class="col-lg-4 col-6 d-flex align-items-stretch" style="padding: 0 5px;">
+                <div class="col-md-3 col-6 d-flex align-items-stretch" style="padding: 0 5px;">
                     <div class="member">
                         <div class="member-img">
-                            <img src="assets/img/team/tzuka.jpg" class="img-fluid" alt="">
-                            <div class="social"></div>
-                        </div>
-                        <div class="member-info">
-                            <h4>Tzuka</h4>
-                            <span>CEO (boss)</span>
-                            <p style="line-height: 1rem;">Our beloved director brings vision and excitement to our mission.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-6 d-flex align-items-stretch" style="padding: 0 5px;">
-                    <div class="member">
-                        <div class="member-img">
-                            <img src="assets/img/team/crisan-cristina.jpg" class="img-fluid" alt="">
+                            <img src="<?= root() .'assets/img/team/crisan-cristina.jpg' ?>" class="img-fluid" alt="">
                             <div class="social"></div>
                         </div>
                         <div class="member-info">
@@ -69,23 +58,10 @@ include php_root() . 'php/lp-header.php';
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-6 d-flex align-items-stretch" style="padding: 0 5px;">
+                <div class="col-md-3 col-6 d-flex align-items-stretch" style="padding: 0 5px;">
                     <div class="member">
                         <div class="member-img">
-                            <img src="assets/img/team/todorescu-tudor.jpg" class="img-fluid" alt="">
-                            <div class="social"></div>
-                        </div>
-                        <div class="member-info">
-                            <h4>Todorescu Tudor</h4>
-                            <span>Founder</span>
-                            <p style="line-height: 1rem;">The man with the plan.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-6 d-flex align-items-stretch" style="padding: 0 5px;">
-                    <div class="member">
-                        <div class="member-img">
-                            <img src="assets/img/team/musat-radu.jpg" class="img-fluid" alt="">
+                            <img src="<?= root() .'assets/img/team/musat-radu.jpg' ?>" class="img-fluid" alt="">
                             <div class="social"></div>
                         </div>
                         <div class="member-info">
@@ -95,10 +71,10 @@ include php_root() . 'php/lp-header.php';
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-6 d-flex align-items-stretch" style="padding: 0 5px;">
+                <div class="col-md-3 col-6 d-flex align-items-stretch" style="padding: 0 5px;">
                     <div class="member">
                         <div class="member-img">
-                            <img src="assets/img/team/adina-minca.jpg" class="img-fluid" alt="">
+                            <img src="<?= root() .'assets/img/team/adina-minca.jpg' ?>" class="img-fluid" alt="">
                             <div class="social"></div>
                         </div>
                         <div class="member-info">
@@ -108,10 +84,10 @@ include php_root() . 'php/lp-header.php';
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-6 d-flex align-items-stretch" style="padding: 0 5px;">
+                <div class="col-md-3 col-6 d-flex align-items-stretch" style="padding: 0 5px;">
                     <div class="member">
                         <div class="member-img">
-                            <img src="assets/img/team/tao-robert.jpg" class="img-fluid" alt="">
+                            <img src="<?= root() .'assets/img/team/tao-robert.jpg' ?>" class="img-fluid" alt="">
                             <div class="social"></div>
                         </div>
                         <div class="member-info">

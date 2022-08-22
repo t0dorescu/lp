@@ -1,7 +1,7 @@
 <?php
   include $_SERVER['DOCUMENT_ROOT']."/api/light.php";
   
-  $title = "Cookie policy";
+  $title = "Cookie policy - Todorescu.com";
   include php_root().'php/legal-header.php';
 ?>
 

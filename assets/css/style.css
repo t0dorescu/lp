@@ -53,6 +53,11 @@ h1, h2, h3, h4, h5, h6 {
 video::-webkit-media-controls-start-playback-button {
   display: none;
 }
+a.link {
+  color: var(--secondary-color); 
+  text-decoration: underline; 
+  font-weight: bold;
+}
 /*--------------------------------------------------------------
 # Buttons
 --------------------------------------------------------------*/
@@ -95,7 +100,6 @@ video::-webkit-media-controls-start-playback-button {
 .gray-text {
   color: #ccc !important;
   font-size: 1rem !important;
-  font-weight: 100 !important;
   line-height: 1.5rem !important;
 }
 .text-thin {
@@ -173,7 +177,7 @@ section {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #6776f4;
+  background: var(--primary-color);
   color: #fff;
 }
 .back-to-top.active {
@@ -188,9 +192,11 @@ section {
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
+  background: black;
+  opacity: .9;
 }
 .header.header-scrolled {
-  background: #fff;
+  background: black;
   padding: 15px 0;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
 }
@@ -349,7 +355,7 @@ section {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(1, 22, 61, 0.9);
+  background: black;
   transition: 0.3s;
 }
 .navbar-mobile .mobile-nav-toggle {
@@ -369,6 +375,7 @@ section {
   background-color: #fff;
   overflow-y: auto;
   transition: 0.3s;
+  height: 300px;
 }
 .navbar-mobile a, .navbar-mobile a:focus {
   padding: 10px 20px;
@@ -446,7 +453,7 @@ section {
   box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
 }
 .hero .btn-get-started span {
-  font-family: "fontfamily1";
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
   font-size: 16px;
   letter-spacing: 1px;
@@ -533,8 +540,9 @@ section {
 }
 .btn-read-more span {
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 100;
   font-size: 14px;
+  font-weight: bold;
+  color: white;
   letter-spacing: 1px;
 }
 .btn-read-more i {
@@ -583,9 +591,9 @@ img.profile {
 }
 
 /*--------------------------------------------------------------
-# Testimonials
+# Confessions
 --------------------------------------------------------------*/
-.testimonials .testimonial-item {
+.confessions .testimonial-item {
   box-sizing: content-box;
   padding: 0;
   padding: 20px;
@@ -599,49 +607,45 @@ img.profile {
   transition: 0.3s;
   font-size: 1.25rem;
 }
-.testimonials .testimonial-new-item {
+.confessions .testimonial-new-item {
   background: white;
   padding: 10px;
-  margin: 10px;
+  margin: 10px auto;
+  height: auto;
 }
-@media (min-width: 800px) {
-  .testimonials .testimonial-new-item {
-    width: 31%;
-  }
-}
-.testimonials .testimonial-new-item video {
+.confessions .testimonial-new-item video {
   width: 100%;
   padding: 10px;
 }
-.testimonials .testimonial-new-item .text {
+.confessions .testimonial-new-item .text {
   margin: 0 auto 10px auto;
   text-align: center;;
 }
-.testimonials .testimonial-item .stars {
+.confessions .testimonial-item .stars {
   margin-bottom: 15px;
 }
-.testimonials .testimonial-item .stars i {
+.confessions .testimonial-item .stars i {
   color: #ffc107;
   margin: 0 1px;
 }
-.testimonials .testimonial-item .testimonial-img {
+.confessions .testimonial-item .testimonial-img {
   width: 90px;
   border-radius: 50%;
   border: 4px solid #fff;
   margin: 0 auto;
 }
-.testimonials .testimonial-item h3 {
+.confessions .testimonial-item h3 {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 0;
   color: #111;
 }
-.testimonials .testimonial-item h4 {
+.confessions .testimonial-item h4 {
   font-size: 14px;
   color: #999;
   margin: 0;
 }
-.testimonials .testimonial-item p {
+.confessions .testimonial-item p {
   font-style: italic;
   margin: 0 auto 15px auto;
 }
@@ -652,6 +656,16 @@ img.profile {
 .team {
   background: #fff;
   padding: 0;
+}
+.team .container {
+  width: 50%;
+  margin: 0 auto;
+}
+@media (max-width: 992px) {
+  .team .container {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 .team .member {
   overflow: hidden;

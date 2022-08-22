@@ -1,5 +1,5 @@
 
-<footer id="footer" class="footer" style="border: 0;">
+<footer id="footer" class="footer" style="border: 0; margin-top: 20px;">
   <?php include php_root()."php/templates/forms/newsletter-signup.php"; ?>
 
   <div class="footer-top">
@@ -9,10 +9,10 @@
           <div class="social-links mt-3" style="text-align: center;">
             <a href="https://www.facebook.com/tudor.t0dorescu" class="facebook" target="_blank"><i class="bi bi-facebook" style="font-size: 1.75rem; color: #999;"></i></a>
             <a href="https://www.linkedin.com/in/tudortodorescu/" class="linkedin" target="_blank"><i class="bi bi-linkedin" style="font-size: 1.75rem; color: #999;"></i></a>
-            <a href="https://www.tiktok.com/@t0dorescu" class="tiktok" target="_blank"><i class="bi bi-tiktok" style="font-size: 1.75rem; color: #999;"></i></a>
+            <a href="https://www.github.com/tudortodorescu" class="github" target="_blank"><i class="bi bi-github" style="font-size: 1.75rem; color: #999;"></i></a>
             <a href="https://www.youtube.com/c/tudortodorescu" class="youtube" target="_blank"><i class="bi bi-youtube" style="font-size: 1.75rem; color: #999;"></i></a>
             <a href="https://www.instagram.com/tudortodorescu" class="instagram" target="_blank"><i class="bi bi-instagram" style="font-size: 1.75rem; color: #999;"></i></a>
-            <a href="https://www.github.com/tudortodorescu" class="github" target="_blank"><i class="bi bi-github" style="font-size: 1.75rem; color: #999;"></i></a>
+            <a href="https://www.tiktok.com/@t0dorescu" class="tiktok" target="_blank"><i class="bi bi-tiktok" style="font-size: 1.75rem; color: #999;"></i></a>
           </div>
         </div>
       </div>

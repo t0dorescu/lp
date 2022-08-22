@@ -6,7 +6,7 @@ include php_root() . 'php/lp-header.php';
 ?>
 
 <main id="main">
-    <section id="hero" class="hero" style="padding-bottom: 0">
+    <section class="hero" style="padding-bottom: 0">
         <div class="container" style="margin-top: 50px; text-align: center;">
             <h1 style="color: #fa643f;font-size: 2.25rem;">
                 Unlimited projects at your choosing.
@@ -16,7 +16,7 @@ include php_root() . 'php/lp-header.php';
             </h2>
         </div>
     </section>
-    <section id="results" class="results">
+    <section class="results">
         <div class="row" style="padding: 0 1rem;">
             <div class="col-lg-3 col-md-6 col-sm-12 flex-middle">
                 <img src="<?= root() . 'assets/img/offers/offer38.png' ?>" class="offer-img-bottom-results" />
