@@ -12,5 +12,5 @@
     return 'https://'.$_SERVER['HTTP_HOST'].'/';
   }
   function v_lp() {
-    echo '?v='.$GLOBALS['version_lp'];
+    return '?v='.$GLOBALS['version_lp'];
   }

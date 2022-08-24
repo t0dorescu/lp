@@ -1,46 +1,48 @@
 
-<footer id="footer" class="footer" style="border: 0; margin-top: 20px;">
-  <?php include php_root()."php/templates/forms/newsletter-signup.php"; ?>
+<?php if (!$optin_page) : ?>
+  <footer id="footer" class="footer">
+    <?php include php_root()."php/templates/forms/newsletter-signup.php"; ?>
 
-  <div class="footer-top">
-    <div class="container">
-      <div class="row gy-4">
-        <div class="col-12 footer-info" style="margin-top: 0;">
-          <div class="social-links mt-3" style="text-align: center;">
-            <a href="https://www.facebook.com/tudor.t0dorescu" class="facebook" target="_blank"><i class="bi bi-facebook" style="font-size: 1.75rem; color: #999;"></i></a>
-            <a href="https://www.linkedin.com/in/tudortodorescu/" class="linkedin" target="_blank"><i class="bi bi-linkedin" style="font-size: 1.75rem; color: #999;"></i></a>
-            <a href="https://www.github.com/tudortodorescu" class="github" target="_blank"><i class="bi bi-github" style="font-size: 1.75rem; color: #999;"></i></a>
-            <a href="https://www.youtube.com/c/tudortodorescu" class="youtube" target="_blank"><i class="bi bi-youtube" style="font-size: 1.75rem; color: #999;"></i></a>
-            <a href="https://www.instagram.com/tudortodorescu" class="instagram" target="_blank"><i class="bi bi-instagram" style="font-size: 1.75rem; color: #999;"></i></a>
-            <a href="https://www.tiktok.com/@t0dorescu" class="tiktok" target="_blank"><i class="bi bi-tiktok" style="font-size: 1.75rem; color: #999;"></i></a>
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-12 footer-info">
+            <div class="social-links mt-3 text-center">
+              <a href="https://www.facebook.com/tudor.t0dorescu" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.linkedin.com/in/tudortodorescu/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.github.com/tudortodorescu" class="github" target="_blank"><i class="bi bi-github"></i></a>
+              <a href="https://www.youtube.com/c/tudortodorescu" class="youtube" target="_blank"><i class="bi bi-youtube"></i></a>
+              <a href="https://www.instagram.com/tudortodorescu" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.tiktok.com/@t0dorescu" class="tiktok" target="_blank"><i class="bi bi-tiktok"></i></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center">
-  <i class="bi bi-arrow-up-short"></i>
-</a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+<?php endif ?>
 
 <!-- Vendor JS Files -->
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js<?= v_lp() ?>"></script>
-<script src="assets/vendor/php-email-form/php-email-form.js<?= v_lp() ?>"></script>
-<script src="assets/vendor/crypto-js/crypto-js.min.js<?= v_lp() ?>"></script>
+<script src="<?= root().'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'.v_lp() ?>"></script>
+<script src="<?= root().'assets/vendor/php-email-form/php-email-form.js'.v_lp() ?>"></script>
+<script src="<?= root().'assets/vendor/crypto-js/crypto-js.min.js'.v_lp() ?>"></script>
 
 <!-- JS files -->
 <script>
   const API_URL = "<?= root().'api/' ?>"
 </script>
-<script src="assets/js/main.js<?= v_lp() ?>"></script>
-<script src="assets/js/utils/utils.js<?= v_lp() ?>"></script>
-<script src="assets/js/utils/validators.js<?= v_lp() ?>"></script>
-<script src="assets/js/utils/forms.js<?= v_lp() ?>"></script>
-<script src="assets/js/services/api.js<?= v_lp() ?>"></script>
+<script src="<?= root().'assets/js/main.js'.v_lp() ?>"></script>
+<script src="<?= root().'assets/js/utils/utils.js'.v_lp() ?>"></script>
+<script src="<?= root().'assets/js/utils/validators.js'.v_lp() ?>"></script>
+<script src="<?= root().'assets/js/utils/forms.js'.v_lp() ?>"></script>
+<script src="<?= root().'assets/js/services/api.js'.v_lp() ?>"></script>
 
 <!-- Cookie consent -->
-<script src="assets/vendor/cookieconsent/cookieconsent.js<?= v_lp() ?>"></script>
+<script src="<?= root().'assets/vendor/cookieconsent/cookieconsent.js'.v_lp() ?>"></script>
 <script>
     initCookieConsent().run({
         languages: {

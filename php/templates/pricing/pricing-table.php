@@ -1,11 +1,11 @@
 <section id="pricing" class="pricing">
-    <div class="container" data-aos="fade-up">
+    <div class="container">
         <header class="section-header">
             <h2>PLANS</h2>
             <p class="font-family-2">Pricing</p>
         </header>
-        <div class="row gy-4" data-aos="fade-left">
-            <!-- <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+        <div class="row gy-4">
+            <!-- <div class="col-lg-3 col-md-6">
                 <div class="box">
                     <h3 style="color: #07d5c0;">Free plan</h3>
                     <div class="price"><sup>$</sup>0<span> / mo</span></div>
@@ -28,7 +28,7 @@
                     >Try it now</a>
                 </div>
             </div> -->
-            <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="col-lg-4 col-md-6">
                 <div class="box">
                     <h3 style="color: #65c600;">Junior plan</h3>
                     <div class="price"><sup>$</sup>479<span> / mo</span></div>
@@ -50,7 +50,7 @@
                     >Not available</a>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="col-lg-4 col-md-6">
                 <div class="box black">
                     <span class="featured">POPULAR</span>
                     <h3 style="color: #ff901c;">Mid-level plan</h3>
@@ -73,7 +73,7 @@
                     >Not available</a>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="col-lg-4 col-md-6">
                 <div class="box">
                     <h3 style="color: #ff0071;">Senior-level plan</h3>
                     <div class="price"><sup>$</sup>2699<span> / mo</span></div>

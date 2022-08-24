@@ -6,18 +6,18 @@ include php_root() . 'php/lp-header.php';
 ?>
 
 <main id="main">
-    <section class="hero" style="padding-bottom: 0">
-        <div class="container" style="margin-top: 50px; text-align: center;">
-            <h1 style="color: #fa643f;font-size: 2.25rem;">
+    <section class="hero">
+        <div class="container main-container">
+            <h1>
                 Unlimited projects at your choosing.
             </h1>
-            <h2 style="color: white;font-size: 1.5rem;">
+            <h2>
                 So many offers you'll suddenly start interviewing companies.
             </h2>
         </div>
     </section>
     <section class="results">
-        <div class="row" style="padding: 0 1rem;">
+        <div class="row padding-0-1-rem">
             <div class="col-lg-3 col-md-6 col-sm-12 flex-middle">
                 <img src="<?= root() . 'assets/img/offers/offer38.png' ?>" class="offer-img-bottom-results" />
             </div>

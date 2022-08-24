@@ -6,7 +6,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <div class="alert alert-success d-none js_confirm_message" role="alert" style="text-align: center;">
+          <div class="alert alert-success d-none text-center js_confirm_message" role="alert">
             <strong>We've generated a reset password link!</strong> 
             <br>
             Check your inbox (SPAM folder as well) to reset your password</strong>

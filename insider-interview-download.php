@@ -1,25 +1,23 @@
 <?php
 include $_SERVER['DOCUMENT_ROOT'] . "/api/light.php";
+$optin_page = true;
 
 $title = "Buy your freedom back! Learn how to score premium dev jobs - Todorescu.com";
 include php_root() . 'php/lp-header.php';
 ?>
 
+
+
 <main id="main">
   <section class="hero">
-    <div class="container main-container">
+    <div class="container main-container optin">
       <h1>
-        Unlimited premium web-dev projects.
+        qweqwe
+         Unlqwewqeqev projects.
       </h1>
       <h2>
-        Be so in demand, you get to choose based on passion.
+        Be so in qweqweqwed on passion.
       </h2>
-      <br><br>
-      <a href="<?= root() . 'story' ?>" class="btn-read-more">
-        <span>Find out more</span>
-        <i class="bi bi-arrow-right"></i>
-      </a>
-      <br><br>
     </div>
   </section>
 </main>

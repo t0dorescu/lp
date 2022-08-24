@@ -35,12 +35,3 @@ function validate_get($get) {
 function redirect_home() {
     echo "<script>window.location = '../'</script>";die;
 }
-function php_root() {
-    return $_SERVER['DOCUMENT_ROOT']."/";
-}
-function root() {
-    return 'https://'.$_SERVER['HTTP_HOST'].'/';
-}
-function v_lp() {
-    echo '?v='.$GLOBALS['version_lp'];
-}

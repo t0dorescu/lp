@@ -6,12 +6,12 @@ include php_root() . 'php/lp-header.php';
 ?>
 
 <main id="main">
-  <section class="about" style="padding-bottom: 0;margin-top:60px;">
-    <div class="container" data-aos="fade-up">
+  <section class="about">
+    <div class="container main-container">
       <div class="row gx-0">
-        <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-          <div class="content" style="opacity: .9;">
-            <h3 style="margin-top: 10px;">Tudor's story</h3>
+        <div class="col-lg-12 d-flex flex-column justify-content-center">
+          <div class="content">
+            <h3 class="mt-3">Tudor's story</h3>
             <div class="row">
               <div class="col-lg-9 col-md-7 col-12 flex-middle">
                 <p>
@@ -32,12 +32,12 @@ include php_root() . 'php/lp-header.php';
             </div>
               <div class="col-lg-3 col-md-5 col-12 flex-middle">
                 <img src="<?= root() .'assets/img/team/todorescu-tudor.jpg' ?>" class="img-fluid" alt="">
-                <p style="line-height: 1.35rem;font-size: .95rem;">
+                <p class="fb-text-desc">
                   He actively posts daily on his <br><a href="https://www.facebook.com/tudor.t0dorescu" target="_blank" class="link">personal facebook profile <i class="bi bi-linkedin"></i></a>
                 </p>
               </div>
             </div>
-            <a href="<?= root() . 'students' ?>" class="btn-read-more" style="font-weight: bold;">
+            <a href="<?= root() . 'students' ?>" class="btn-read-more">
               <span>Video testimonials</span>
               <i class="bi bi-arrow-right"></i>
             </a>

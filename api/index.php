@@ -3,6 +3,7 @@
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: *");
 
+include $_SERVER['DOCUMENT_ROOT']."/api/light.php"; 
 include $_SERVER['DOCUMENT_ROOT']."/api/config/config.php"; 
 include $_SERVER['DOCUMENT_ROOT']."/api/includes/functions.php"; 
 include $_SERVER['DOCUMENT_ROOT']."/api/includes/api.php"; 
@@ -252,7 +253,7 @@ class Api {
                     <head>
                         <title></title>
                         <style>
-                            * { font-family: "Arial"; }
+                            * { font-family: Arial, Helvetica, sans-serif; }
                             small { font-size: .5rem; }
                         </style>
                     </head>

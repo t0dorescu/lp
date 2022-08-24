@@ -2,12 +2,6 @@
 
 $version_lp = '0.0.1';
 
-$isDev = (
-    $_SERVER['SERVER_NAME'] == 'dev.todorescu.com' || 
-    $_SERVER['SERVER_NAME'] == 'localhost' ||
-    $_SERVER['SERVER_NAME'] == '127.0.0.1'
-);
-
 $mysql_host = 'localhost';
 $mysql_user = $isDev ? '***********' : ''***********_live';
 $mysql_pass = $isDev ? '***********' : '***********';
