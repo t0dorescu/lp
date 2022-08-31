@@ -14,7 +14,7 @@ include php_root() . 'php/lp-header.php';
                     <h1 style="font-size: 1.7rem;">
                         We're giving away $43,890. Want some of it ?
                     </h1>
-                    <h2>
+                    <h2 style="font-weight: 300;">
                         Gonna split it up between 21 people over 21 days, $1791 + $299 each.
                     </h2>
                     <br>
@@ -22,13 +22,15 @@ include php_root() . 'php/lp-header.php';
                         **HERE'S THE DEAL**
                     </h3>
                     <p style="color: white;">
-                        We truly believe the "WebDev Employeed Roadmap" is the greatest program ever created, and we want to prove it and have some fun. So we're doing something a little crazy...
+                        We truly believe that<br> 
+                        <b>WebDev Employeed Roadmap™</b> is the greatest program ever created, and we want to prove it and have some fun. So we're doing something a little crazy...
                         <br><br>
                         We're giving away $43,890 in actual value over the next 21 days.
                         <br><br>
-                        Every single day, one new person will get:
+                        Every single day, <br>
+                        one new person will get:
                         <br><br>
-                        A zoom session with Tudor worth $299 for FREE, 9x of our web-dev courses worth $1791<br>
+                        A zoom session with Tudor worth $299 for FREE, 9x of our web-dev courses worth $1791<br><br>
                         One new person. Every day. 21 days.
                     </p>
                 <!-- <h3 style="color: var(--primary-color); font-weight: bold;">
@@ -68,13 +70,15 @@ include php_root() . 'php/lp-header.php';
                         - Stuck and can't figure out why?<br>
                         - You are not super annoying?
                         <br><br>
-                        CONGRATULATIONS YOU QUALIFY
+                        <b>CONGRATULATIONS YOU QUALIFY</b>
+                        <br><br>
                     </p>
                     <h3 style="color: var(--primary-color); font-weight: bold;">
                         **WHAT TO DO NEXT**
                     </h3>
                     <p style="color: white;">
-                        Send an email to our address: <a href="mailto:want@todorescu.com">want@todorescu.com</a>
+                    
+                        Send an email to our address: <a href="mailto:want@todorescu.com" style="text-decoration: underline;">want@todorescu.com</a>
                         <br><br>
                         Our team will reply and give you a number between 1 and 21.
                         <br><br>
@@ -82,7 +86,7 @@ include php_root() . 'php/lp-header.php';
                         <br><br>
                         I recommend you ask for your number quickly to avoid being too far down the queue.
                         <br><br>
-                        Lets get you WebDev Employeed!
+                        Lets get you <b>WebDev Employeed</b>!
                         <br><br>
                         <img src="<?= root() . 'assets/img/tudor-todorescu.jpg' ?>" style="width: 30px;" />
 
