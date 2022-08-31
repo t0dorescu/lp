@@ -27,7 +27,7 @@
 <?php endif ?>
 
 <?php if ($optin_page) : ?>
-    <ul style="text-align: center;">
+    <ul style="text-align: center;padding: 0;margin-top: -15px;">
       <li style="display: inline;padding-right: 15px;"><a href="<?= root().'terms-of-service' ?>" target="_blank">Terms of service</a></li>
       <li style="display: inline;padding-right: 15px;"><a href="<?= root().'privacy-policy' ?>" target="_blank">Privacy policy</a></li>
       <li style="display: inline;padding-right: 15px;"><a href="<?= root().'cookie-policy' ?>" target="_blank">Cookie policy</a></li>

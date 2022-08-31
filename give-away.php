@@ -28,37 +28,37 @@ include php_root() . 'php/lp-header.php';
                         <br><br>
                         Every single day, one new person will get:
                         <br><br>
-                        A zoom session with Tudor worth $299, 9x of our web-dev courses worth $1791<br>
+                        A zoom session with Tudor worth $299 for FREE, 9x of our web-dev courses worth $1791<br>
                         One new person. Every day. 21 days.
                     </p>
+                <!-- <h3 style="color: var(--primary-color); font-weight: bold;">
+                    **WHY WE ARE DOING THIS**
+                </h3>
+                <p style="color: white;">
+                    1. Almost all of you will become advocates after receiving this and spread the word about us better than we can.
+                    <br><br>
+                    2. Many people will want more help from us and join the "WebDev Employeed Roadmap"
+                    <br><br>
+                    3. We make $43,890 by first giving $43,890 of value to the market
+                    <br><br>
+                    4. Helping devs at their start is fulfilling and we get better everytime I do it
+                    <br><br>
+                    5. This is way more fun than posting a 2 long boring hours of technical content.
+                </p>
+                <h3 style="color: var(--primary-color); font-weight: bold;">
+                    **WHY YOU SHOULD DO THIS**
+                </h3>
+                <p style="color: white;">
+                    1. So you don't accidentally waste half of year going down the wrong path.
+                    <br><br>
+                    2. So you can get inspired and break out of a rut
+                    <br><br>
+                    3. Personal advice from Tudor is better than going to the spa.
+                    <br><br>
+                    4. You'd be insane not to
+                </p> -->
                     <h3 style="color: var(--primary-color); font-weight: bold;">
-                        **WHY WE ARE DOING THIS**
-                    </h3>
-                    <p style="color: white;">
-                        1. Almost all of you will become advocates after receiving this and spread the word about us better than we can.
-                        <br><br>
-                        2. Many people will want more help from us and join the "WebDev Employeed Roadmap"
-                        <br><br>
-                        3. We make $43,890 by first giving $43,890 of value to the market
-                        <br><br>
-                        4. Helping devs at their start is fulfilling and we get better everytime I do it
-                        <br><br>
-                        5. This is way more fun than posting a 2 long boring hours of technical content.
-                    </p>
-                    <h3 style="color: var(--primary-color); font-weight: bold;">
-                        **WHY YOU SHOULD DO THIS**
-                    </h3>
-                    <p style="color: white;">
-                        1. So you don't accidentally waste half of year going down the wrong path.
-                        <br><br>
-                        2. So you can get inspired and break out of a rut
-                        <br><br>
-                        3. Personal advice from Tudor is better than going to the spa.
-                        <br><br>
-                        4. You'd be insane not to
-                    </p>
-                    <h3 style="color: var(--primary-color); font-weight: bold;">
-                        **HOW TO QUALIFY FOR A SPOT**
+                        **HOW TO QUALIFY**
                     </h3>
                     <p style="color: white;">
                         - Are you a human?<br>
@@ -78,7 +78,7 @@ include php_root() . 'php/lp-header.php';
                         <br><br>
                         Our team will reply and give you a number between 1 and 21.
                         <br><br>
-                        Your number will give you lifetime access to our entire product suite and a private zoom call with Tudor worth $299, to take place on the date that comes with your number.
+                        Your number will give you lifetime access to our entire product suite and a private zoom call with Tudor worth $299 for FREE, to take place on the date that comes with your number.
                         <br><br>
                         I recommend you ask for your number quickly to avoid being too far down the queue.
                         <br><br>
