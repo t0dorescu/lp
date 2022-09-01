@@ -11,11 +11,11 @@ include php_root() . 'php/lp-header.php';
         <div class="container main-container" style="margin-top: 0;">
             <div class="row">
                 <div class="col-lg-6 col-12" style="text-align: left;">
-                    <h1 style="font-size: 1.7rem;">
+                    <h1 style="font-size: 1.7rem; margin-bottom: 20px;">
                         We're giving away $43,890. Want some of it ?
                     </h1>
                     <h2 style="font-weight: 300;">
-                        Gonna split it up between 21 people over 21 days, $1791 + $299 each.
+                        Gonna split it up between <br>21 people over 21 days, <br><b>$1791 + $299 each.</b>
                     </h2>
                     <br>
                     <h3 style="color: var(--primary-color); font-weight: bold;">

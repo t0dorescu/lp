@@ -11,11 +11,11 @@ include php_root() . 'php/lp-header.php';
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-12 flex-middle">
                     <div class="confession-new-item">
-                        <video controls="controls" poster="<?= root() . 'assets/img/radu-thumb_.jpg' ?>">
-                            <source src="<?= root() . 'assets/video/interviu-radu.mp4' ?>" type="video/mp4">
+                        <video controls="controls" poster="<?= root() . 'assets/img/cristi-thumb_.jpg' ?>">
+                            <source src="<?= root() . 'assets/video/interviu-cristi.mp4' ?>" type="video/mp4">
                         </video>
                         <div class="text">
-                            Radu went from mediocre job to <strong>getting hired today</strong>. Watch his impressive story.
+                            Cristi saved his soul from tutorial hell and skyrocketed his skills.
                         </div>
                     </div>
                 </div>
@@ -72,11 +72,11 @@ include php_root() . 'php/lp-header.php';
                 <div class="col-lg-4 col-md-6 col-sm-12"></div>
                 <div class="col-lg-4 col-md-6 col-12 flex-middle">
                     <div class="confession-new-item">
-                        <video controls="controls" poster="<?= root() . 'assets/img/cristi-thumb_.jpg' ?>">
-                            <source src="<?= root() . 'assets/video/interviu-cristi.mp4' ?>" type="video/mp4">
+                        <video controls="controls" poster="<?= root() . 'assets/img/radu-thumb_.jpg' ?>">
+                            <source src="<?= root() . 'assets/video/interviu-radu.mp4' ?>" type="video/mp4">
                         </video>
                         <div class="text">
-                            Cristi saved his soul from tutorial hell and skyrocketed his skills.
+                            Radu went from mediocre job to <strong>getting hired today</strong>. Watch his impressive story.
                         </div>
                     </div>
                 </div>

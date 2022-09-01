@@ -1,10 +1,9 @@
 <!doctype html>
 <html lang="en">
-
 <head>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
   <?php if (!$isDev) : ?>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122326504-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
