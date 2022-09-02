@@ -61,7 +61,7 @@
             <li><a class="nav-link" href="<?= root() . 'support' ?>">Support</a></li>
             <li><a class="getstarted scrollto" href="#footer">Waiting list</a></li>
           </ul>
-          <i class="bi bi-list mobile-nav-toggle color-white"></i>
+          <i class="bi bi-list mobile-nav-toggle color-white" style="color: white;"></i>
         </nav>
       </div>
     </header>
