@@ -15,7 +15,7 @@ include php_root() . 'php/lp-header.php';
                             <source src="<?= root() . 'assets/video/interviu-cristi.mp4' ?>" type="video/mp4">
                         </video>
                         <div class="text">
-                            Cristi saved his soul from tutorial hell and skyrocketed his skills.
+                            Using our consulting calls, Cristi <b>significantly upgraded his programming skills</b>, making him more desirable for companies
                         </div>
                     </div>
                 </div>
@@ -25,7 +25,7 @@ include php_root() . 'php/lp-header.php';
                             <source src="<?= root() . 'assets/video/interviu-robert.mp4' ?>" type="video/mp4">
                         </video>
                         <div class="text">
-                            Tudor helped Robert <strong>kickstart his programming journey</strong> and got him focused on javascript.
+                            Tudor helped Robert <strong>kickstart his programming journey</strong> and got him focused on what matters, JavaScript.
                         </div>
                     </div>
                 </div>
@@ -35,7 +35,7 @@ include php_root() . 'php/lp-header.php';
                             <source src="<?= root() . 'assets/video/interviu-mihnea.mp4' ?>" type="video/mp4">
                         </video>
                         <div class="text">
-                            Mihnea got help with thinking. Concepts that take one month to grasp, <strong>took one week</strong>.
+                            Mihnea got help with thinking. Concepts that take one month to grasp, <strong>now take less than a week</strong>.
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@ include php_root() . 'php/lp-header.php';
                             <source src="<?= root() . 'assets/video/interviu-ovidiu.mp4' ?>" type="video/mp4">
                         </video>
                         <div class="text">
-                            "From Tudor I've learned directly senior developer stuff" - Ovidiu.
+                            "Tudor taught me directly how a senior developer operates" - Ovidiu.
                         </div>
                     </div>
                 </div>
@@ -76,7 +76,7 @@ include php_root() . 'php/lp-header.php';
                             <source src="<?= root() . 'assets/video/interviu-radu.mp4' ?>" type="video/mp4">
                         </video>
                         <div class="text">
-                            Radu went from mediocre job to <strong>getting hired today</strong>. Watch his impressive story.
+                            Radu went from a junior job to <strong>getting his first mid-level position</strong>, using our methodologies.
                         </div>
                     </div>
                 </div>

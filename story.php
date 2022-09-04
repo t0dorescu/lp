@@ -22,24 +22,23 @@ include php_root() . 'php/lp-header.php';
               <br><br>
               Because of this, I’ve gained widespread notoriety; many asked me to reveal my secrets and show them how to get the same results as myself. Close to 6-figure yearly salaries while having unlimited freedom.
               <br><br>
-              Initially, I was reluctant to teach any of this, but seeing many developers from the community struggling, I started to feel like my stomach was shrinking; a sense of guilt hit me right in the heart. Why am I being so lucky and others still struggling even to get a simple junior job? I was asking myself with tears in my eyes.
+              Initially, I was reluctant to teach any of this, but seeing many developers from the community struggling, I started to feel like my stomach was shrinking; a sense of guilt hit me right in the heart. Why am I being so lucky and others still struggling even to get a simple junior job? 
               <br><br>
               That sense of guilt haunted me for many days, making it hard to enjoy all the material things I bought whit that hard-worked money. It is not fair for me to enjoy life while others are in need.
               <br><br>
               I’ve decided to help other people achieve a piece of this glory. I opened some spots and didn’t expect any sparks to fly, but it worked, to my surprise; it just clicked for others as well. Some of my students got similar results really quickly. 
               <br><br>
-              Since it’s unjust not to make this available, I’ve decided to reveal my secrets publicly.
               </p>
             </div>
               <div class="col-lg-3 col-md-5 col-12 flex-middle">
                 <img src="<?= root() .'assets/img/facebook-profile-pic.jpg' ?>" class="img-fluid" alt="">
                 <p class="fb-text-desc">
-                Tudor earns his living doing premium Vue3 projects.<br> <a href="https://www.linkedin.com/in/tudortodorescu/" target="_blank" class="link">View them on Linkedin <i class="bi bi-linkedin"></i></a>
+                View Tudor's impressive portfolio.<br> <a href="https://www.linkedin.com/in/tudortodorescu/" target="_blank" class="link">View now <i class="bi bi-linkedin"></i></a>
                 </p>
               </div>
             </div>
             <a href="<?= root() . 'students' ?>" class="btn-read-more">
-              <span>Video testimonials</span>
+              <span>Student testimonials</span>
               <i class="bi bi-arrow-right"></i>
             </a>
             <br><br>

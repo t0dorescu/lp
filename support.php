@@ -13,7 +13,8 @@ include php_root() . 'php/lp-header.php';
                     Student support
                 </h1>
                 <p class="gray-text">
-                    Use this form only if you're in the paid program. Sign-up for the waiting list and we will contact you
+                    Use this form only if you're a paid client. <br>
+                    New prospects must sign-up to our waiting list<br><br>
                 </p>
             </header>
             <div class="row gy-4">
