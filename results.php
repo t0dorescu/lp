@@ -6,7 +6,7 @@ include php_root() . 'php/lp-header.php';
 ?>
 
 <main id="main">
-    <section class="hero">
+    <section class="hero" style="padding-bottom: 0;">
         <div class="container main-container">
             <h1>
                 Unlimited projects at your choosing.
