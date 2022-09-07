@@ -9,10 +9,10 @@ include php_root() . 'php/lp-header.php';
     <section class="hero" style="padding-bottom: 0;">
         <div class="container main-container">
             <h1>
-                Unlimited projects at your choosing.
+                Unlimited projects at your choosing
             </h1>
             <h2>
-                So many offers you'll suddenly start interviewing companies.
+                So many offers you'll suddenly start interviewing companies
             </h2>
         </div>
     </section>

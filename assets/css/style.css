@@ -18,6 +18,10 @@
   --secondary-color: #012970;
   --third-color: #444444;
 }
+::selection {
+  color: white;
+  background: var(--primary-color);
+}
 .modal {
   z-index: 99999 !important;
 }

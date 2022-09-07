@@ -1,7 +1,7 @@
 <?php
 include $_SERVER['DOCUMENT_ROOT'] . "/api/light.php";
 
-$title = "Buy your freedom back! Learn how to score premium dev jobs - Todorescu.com";
+$title = "Unlimited premium web-dev projects - Todorescu.com";
 include php_root() . 'php/lp-header.php';
 ?>
 
@@ -9,10 +9,10 @@ include php_root() . 'php/lp-header.php';
   <section class="hero">
     <div class="container main-container">
       <h1>
-        Unlimited premium web-dev projects.
+        Unlimited premium web-dev projects
       </h1>
       <h2>
-        Be so in demand, you get to choose based on passion.
+        Be so in demand, you get to choose based on passion
       </h2>
       <br><br>
       <a href="<?= root() . 'story' ?>" class="btn-read-more">

@@ -44,7 +44,7 @@
   <link href="<?= root() . 'assets/css/style.css' . v_lp() ?>" rel="stylesheet" />
 </head>
 
-<body style="background: url('<?= root().'assets/img/bg2.jpg' ?>');background-size: 100%;">
+<body style="background: url('<?= root().'assets/img/bg5.jpg' ?>');background-size: 100%;">
   <?php if (!$optin_page) : ?>
     <header id="header" class="header fixed-top">
       <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
