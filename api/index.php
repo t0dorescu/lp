@@ -260,7 +260,7 @@ class Api {
                     <body>
                         <div style="text-align: center;">
                             <img 
-                                src="'.root().'assets/img/tudor-todorescu.jpg" 
+                                src="'.root().'assets/img/tt-small.jpg" 
                                 style="width: 50px;height:50px;margin: 10px auto;"
                             />
                             <h3>How to reset your password</h3>

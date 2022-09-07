@@ -7,7 +7,7 @@
         </div>
         <div class="modal-body">
           <div class="input-group mb-3">
-            <img src="assets/img/tudor-todorescu.jpg" style="width: 100px;margin: 10px auto;" />
+            <img src="assets/img/tt-small.jpg" style="width: 100px;margin: 10px auto;" />
           </div>
           <form class="row js_form">
             <div class="input-group mb-3">

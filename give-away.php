@@ -88,7 +88,7 @@ include php_root() . 'php/lp-header.php';
                         <br><br>
                         Lets get you <b>WebDev Employeed</b>!
                         <br><br>
-                        <img src="<?= root() . 'assets/img/tudor-todorescu.jpg' ?>" style="width: 30px;" />
+                        <img src="<?= root() . 'assets/img/tt-small.jpg' ?>" style="width: 30px;" />
 
                     </p>
                 </div>

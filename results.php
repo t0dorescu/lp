@@ -8,21 +8,29 @@ include php_root() . 'php/lp-header.php';
 <main id="main">
     <section class="hero" style="padding-bottom: 0;">
         <div class="container main-container">
-            <h1>
-                Unlimited projects at your choosing
-            </h1>
-            <h2>
-                So many offers you'll suddenly start interviewing companies
-            </h2>
+            <p style="color: white;text-align:center;font-size:1.25rem">
+            Tudor invested well over <b>20,000 hours</b> understanding front-end for commercial projects. 
+            <br><br>
+            Working on projects with well over <b>400,000+</b> lines of code.
+            </p>
+            <p style="color: var(--primary-color);text-align:center;font-size:1.5rem;font-weight:bold;">
+            Through that amount of unhealthy dedication, he signs <span style="color:white;">$75,000 contracts</span> per PWA frontend architecture working only with top companies. 
+            <br><br>
+            Companies that generate well over <span style="color:white;">$20,000,000</span> per year through their SaaS solutions. 
+            </p>
+            <br>
+            <p style="color: white;text-align:center;font-size:1.25rem">
+                Companies are begging Tudor to work for them. He gets so many offers that he has to interview them first.
+            </p>
         </div>
     </section>
     <section class="results">
         <div class="row padding-0-1-rem">
             <div class="col-lg-3 col-md-6 col-sm-12 flex-middle">
-                <img src="<?= root() . 'assets/img/offers/offer38.png' ?>" class="offer-img-bottom-results" />
+                <img src="<?= root() . 'assets/img/offers/offer39.png' ?>" class="offer-img-bottom-results" />
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 flex-middle">
-                <img src="<?= root() . 'assets/img/offers/offer39.png' ?>" class="offer-img-bottom-results" />
+                <img src="<?= root() . 'assets/img/offers/offer38.png' ?>" class="offer-img-bottom-results" />
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 flex-middle">
                 <img src="<?= root() . 'assets/img/offers/offer1.png' ?>" class="offer-img-bottom-results" />

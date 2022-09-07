@@ -1,7 +1,7 @@
 <?php
 include $_SERVER['DOCUMENT_ROOT'] . "/api/light.php";
 
-$title = "Results, recruitment offers, unlimited job opportunities";
+$title = "Here's how it all started - Todorescu.com";
 include php_root() . 'php/lp-header.php';
 ?>
 
@@ -15,18 +15,12 @@ include php_root() . 'php/lp-header.php';
             <div class="row">
               <div class="col-lg-9 col-md-7 col-12 flex-middle">
                 <p style="text-align: left;">
-                  <b>Coding is way too CONFUSING. Wish you had a little HELP?</b>
-                  <br><br>
-                  Hello friend… yes you, the one who reads this and asks him why is he reading this, I have an important message that will blow your mind. But first, let me ask you something…
-                  <br><br>
-                  What if someone gave you a dollar every time you quit or thought of leaving programming for something better or maybe something easier?
-                  <br><br>
                   <b>Be HONEST. You’re kind of embarrassed by your own code. Aren’t you?</b>
                   <br><br>
                   I know I was.
                   <br><br>
                   <b style="font-size: 1.5rem; color: var(--primary-color);">
-                  Here’s What It’s All About
+                  Here's how it all started
                   </b>
                   <br><br>
                   I remember the year was 2011. It was, I think, the end of November, close to my birthday. While I was sitting in my parent's house, melting my eyes into that bright 15” screen in my dark room, I suddenly had a sobering realization. My life will be one giant endless howling winter when I arrive in my 30s. It’s going to be cold, lonely, and without any color. Then I’ll die.
@@ -140,7 +134,10 @@ include php_root() . 'php/lp-header.php';
               <div class="col-lg-3 col-md-5 col-12 flex-middle" style="justify-content: start;">
                 <img src="<?= root() .'assets/img/facebook-profile-pic.jpg' ?>" class="img-fluid" alt="">
                 <p class="fb-text-desc">
-                View Tudor's impressive portfolio.<br> <a href="https://www.linkedin.com/in/tudortodorescu/" target="_blank" class="link">View now <i class="bi bi-linkedin"></i></a>
+                View Tudor's impressive portfolio.<br> 
+                <a href="https://www.linkedin.com/in/tudortodorescu/" target="_blank" class="link">
+                  LinkedIn <i class="bi bi-linkedin"></i>
+                </a>
                 </p>
               </div>
             </div>

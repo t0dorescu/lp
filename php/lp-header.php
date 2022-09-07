@@ -33,7 +33,7 @@
 
   <!-- Favicons -->
   <link href="<?= root() . 'assets/img/favicon.jpg' ?>" rel="icon">
-  <link href="<?= root() . 'assets/img/tudor-todorescu.jpg' ?>" rel="apple-touch-icon">
+  <link href="<?= root() . 'assets/img/tt-small.jpg' ?>" rel="apple-touch-icon">
 
   <!-- Vendor CSS Files -->
   <link href="<?= root() . 'assets/vendor/bootstrap/css/bootstrap.min.css' . v_lp() ?>" rel="stylesheet" />
@@ -50,7 +50,7 @@
       <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
         <div class="align-items-center">&nbsp;</div>
         <a href="<?= root() ?>">
-          <img src="<?= root() . 'assets/img/tudor-todorescu.jpg' ?>" />
+          <img src="<?= root() . 'assets/img/tt-small.jpg' ?>" />
         </a>
         <nav id="navbar" class="navbar">
           <ul>
