@@ -49,9 +49,27 @@
     <header id="header" class="header fixed-top">
       <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
         <div class="align-items-center">&nbsp;</div>
-        <a href="<?= root() ?>">
-          <img src="<?= root() . 'assets/img/tt-small.jpg' ?>" />
+
+        <a href="<?= root() ?>" style="display: flex;">
+          <img src="<?= root() ?>assets/img/tt-small.jpg" style="
+            margin-right: 15px;
+            margin-top: 7px;
+            border-radius: 3px;
+          "> 
+          <p style="
+            font-weight: bold;
+            color: white;
+            font-size: 1.5rem;
+            margin: 0;
+            padding-top: 5px;
+          ">TODORESCU</p>
         </a>
+        
+        <!-- 
+          <a href="<?= root() ?>">
+            <img src="<?= root() . 'assets/img/tt-small.jpg' ?>" />
+          </a>
+        -->
         <nav id="navbar" class="navbar">
           <ul>
             <li><a class="nav-link" href="<?= root() ?>">Home</a></li>
