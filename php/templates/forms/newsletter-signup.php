@@ -3,7 +3,7 @@
     <div class="container" style="background: black;padding: 30px;">
         <div class="row justify-content-center">
             <div class="col-lg-12 text-center">
-                <h4 style="color: var(--primary-color)">Waiting list</h4>
+                <h4 style="color: var(--primary-color);font-family: 'oswald';letter-spacing: 1px;">Waiting list</h4>
                 <p style="color: #ccc; margin-bottom: 0">
                     <strong style="color: white;">No consulting oppenings at this time.</strong> <br>Join our waiting list and we'll notify you on future oppenings.
                 </p>

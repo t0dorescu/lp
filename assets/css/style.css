@@ -9,6 +9,10 @@
 /*--------------------------------------------------------------
 # GENERAL
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'oswald';
+  src: url('../fonts/oswald.ttf')  format('truetype'); /* Legacy iOS */
+}
 * { 
   font-family: Arial, Helvetica, sans-serif;
 }

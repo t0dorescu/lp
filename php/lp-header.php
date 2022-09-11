@@ -32,8 +32,8 @@
   <title><?= $title ?></title>
 
   <!-- Favicons -->
-  <link href="<?= root() . 'assets/img/favicon.jpg' ?>" rel="icon">
-  <link href="<?= root() . 'assets/img/tt-small.jpg' ?>" rel="apple-touch-icon">
+  <link href="<?= root() . 'assets/img/tudor-todorescu.jpg' ?>" rel="icon">
+  <link href="<?= root() . 'assets/img/tudor-todorescu.jpg' ?>" rel="apple-touch-icon">
 
   <!-- Vendor CSS Files -->
   <link href="<?= root() . 'assets/vendor/bootstrap/css/bootstrap.min.css' . v_lp() ?>" rel="stylesheet" />
@@ -51,8 +51,8 @@
         <div class="align-items-center">&nbsp;</div>
 
         <a href="<?= root() ?>" style="display: flex;">
-          <img src="<?= root() ?>assets/img/tt-small.jpg" style="
-            margin-right: 15px;
+          <img src="<?= root() ?>assets/img/tudor-todorescu.jpg" style="
+            margin-right: 10px;
             margin-top: 7px;
             border-radius: 3px;
           "> 
@@ -62,14 +62,10 @@
             font-size: 1.5rem;
             margin: 0;
             padding-top: 5px;
+            font-family: oswald;
+            letter-spacing: 2px;
           ">TODORESCU</p>
         </a>
-        
-        <!-- 
-          <a href="<?= root() ?>">
-            <img src="<?= root() . 'assets/img/tt-small.jpg' ?>" />
-          </a>
-        -->
         <nav id="navbar" class="navbar">
           <ul>
             <li><a class="nav-link" href="<?= root() ?>">Home</a></li>
@@ -77,7 +73,9 @@
             <li><a class="nav-link" href="<?= root() . 'students' ?>">Students</a></li>
             <li><a class="nav-link" href="<?= root() . 'results' ?>">Results</a></li>
             <li><a class="nav-link" href="<?= root() . 'support' ?>">Support</a></li>
-            <li><a class="getstarted scrollto" href="#footer">Waiting list</a></li>
+            <?php if (!$hidewaitinglist) : ?>
+              <li><a class="getstarted scrollto" href="#footer">Waiting list</a></li>
+            <?php endif ?>
           </ul>
           <i class="bi bi-list mobile-nav-toggle color-white" style="color: white;"></i>
         </nav>
