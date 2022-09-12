@@ -65,7 +65,7 @@ include php_root() . 'php/lp-header.php';
                             <source src="<?= root() . 'assets/video/interviu-ovidiu.mp4' ?>" type="video/mp4">
                         </video>
                         <div class="text">
-                            "Tudor taught me directly how a senior developer operates" - Ovidiu.
+                            "Tudor taught me directly how a <strong>senior developer</strong> operates" - Ovidiu.
                         </div>
                     </div>
                 </div>

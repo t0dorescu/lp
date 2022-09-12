@@ -5,21 +5,46 @@ $title = "Results, recruitment offers, unlimited job opportunities";
 include php_root() . 'php/lp-header.php';
 ?>
 
+<style>
+    .main-container {
+        max-width: 55vw;
+    }
+
+    p.first {
+        color: white;
+        text-align:center;
+        font-size: 1.1rem
+    }
+
+    p.second {
+        color: var(--primary-color);
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    
+    @media (max-width: 768px) {
+        .main-container {
+            max-width: 95vw;
+        }
+    }
+</style>
+
 <main id="main">
-    <section class="hero" style="padding-bottom: 0;">
+    <section class="hero pb-0">
         <div class="container main-container">
-            <p style="color: white;text-align:center;font-size:1.25rem">
-            Tudor invested well over <b>20,000 hours</b> understanding front-end for commercial projects. 
-            <br><br>
-            Working on projects with well over <b>400,000+</b> lines of code.
+            <p class="first">
+                Tudor invested well over <b>20,000 hours</b> understanding front-end for commercial projects. 
+                <br><br>
+                Working on projects with well over <b>400,000+</b> lines of code.
             </p>
-            <p style="color: var(--primary-color);text-align:center;font-size:1.5rem;font-weight:bold;">
-            Through that amount of unhealthy dedication, he signs <span style="color:white;">$75,000 contracts</span> per PWA frontend architecture working only with top companies. 
-            <br><br>
-            Companies that generate well over <span style="color:white;">$20,000,000</span> per year through their SaaS solutions. 
+            <p class="second">
+                Through that amount of unhealthy dedication, he signs <span class="color-white">$75,000 contracts</span> per PWA frontend architecture working only with top companies. 
+                <br><br>
+                Companies that generate well over <span class="color-white">$20,000,000</span> per year through their SaaS solutions. 
             </p>
             <br>
-            <p style="color: white;text-align:center;font-size:1.25rem">
+            <p class="first">
                 Companies are begging Tudor to work for them. He gets so many offers that he has to interview them first.
             </p>
         </div>

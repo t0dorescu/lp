@@ -9,5 +9,6 @@ $mysql_db = $isDev ? '''***********' : '''***********_live';
 
 $emailoctopus_all_members = '********-****-****-****-*************';
 $emailoctopus_newsletter = '********-****-****-****-*************';
+$emailoctopus_vsl = '********-****-****-****-*************';
 $emailoctopus_api_url = 'https://emailoctopus.com/api/1.6';
 $emailoctopus_api_key = '********-****-****-****-*************';

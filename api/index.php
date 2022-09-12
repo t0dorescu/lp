@@ -199,6 +199,24 @@ class Api {
         ));
         
     }
+    public function optin_vsl() {
+        $name = escape_post('name');
+        $email = escape_post('email');
+        
+        $emailoctopus_response = eo_post('lists', $GLOBALS['emailoctopus_vsl'], 'contacts', array(
+            'tags' => array( 'vsl_subscription' ),
+            'email_address' => $email,
+            'fields' => array(
+                'FirstName' => $name
+            )
+        ));
+
+        if ( !isset($emailoctopus_response['id']) ) {
+            output(array( 'success' => false ));
+        }
+
+        output(array('success' => true));
+    }
     public function newsletter() {
         $gravatar_url = escape_post('gravatar_url');
         $email = escape_post('email');

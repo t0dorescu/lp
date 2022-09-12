@@ -5,21 +5,35 @@ $title = "Here's how it all started - Todorescu.com";
 include php_root() . 'php/lp-header.php';
 ?>
 
+<style>
+  .content {
+    opacity: .9;
+  }
+  .bulletpoint {
+    font-size: 1.5rem; 
+    color: var(--primary-color);
+  }
+  .strongpoint {
+    text-decoration: underline; 
+    font-weight:bold;
+  }
+</style>
+
 <main id="main">
   <section class="about">
     <div class="container main-container">
       <div class="row gx-0">
         <div class="col-lg-12 d-flex flex-column">
-          <div class="content" style="text-align: left; opacity: .90;">
-            <h3 class="mt-3" style="text-align: left;">Tudor's story</h3>
+          <div class="content text-left">
+            <h3 class="mt-3 text-left">Tudor's story</h3>
             <div class="row">
               <div class="col-lg-9 col-md-7 col-12 flex-middle">
-                <p style="text-align: left;">
+                <p class="text-left">
                   <b>Be HONEST. You’re kind of embarrassed by your own code. Aren’t you?</b>
                   <br><br>
                   I know I was.
                   <br><br>
-                  <b style="font-size: 1.5rem; color: var(--primary-color);">
+                  <b class="bulletpoint">
                   Here's how it all started
                   </b>
                   <br><br>
@@ -29,7 +43,7 @@ include php_root() . 'php/lp-header.php';
                   <br><br>
                   I had to do something. I had to move quickly. It was already 3-4 years since I started then quit a bunch of programming languages… JavaScript, PHP, Ruby, C++, Visual Basic even… but everything was still illogical. 
                   <br><br>
-                  I felt discouraged. The more I tried, the worse it was. <b style="text-decoration: underline; font-weight:bold;">It felt like quicksand</b>. 
+                  I felt discouraged. The more I tried, the worse it was. <b class="strongpoint">It felt like quicksand</b>. 
                   <br><br>
                   The only project I got paid for was a client in 2008 who was a family friend btw.
                   <br><br>
@@ -41,7 +55,7 @@ include php_root() . 'php/lp-header.php';
                   <br><br>
                   by the following year's end of summer, I’ll be a fully-employed software developer. That was the dream.
                   <br><br>
-                  <b style="font-size: 1.5rem; color: var(--primary-color);">“It was crucial to come up with a way to get industry experience 
+                  <b class="bulletpoint">“It was crucial to come up with a way to get industry experience 
                   without having industry experience.”</b>
                   <br><br>
                   Let’s get real here for a second. Nobody in the history of mankind has hired someone for a developer role, just because he made flappy birds from a youtube video. Be honest, guys.
@@ -66,7 +80,7 @@ include php_root() . 'php/lp-header.php';
                   <br><br>
                   This got me so so excited because I was finally doing a real-life project for which companies pay top money.
                   <br><br>
-                  <b style="font-size: 1.5rem; color: var(--primary-color);">Productivity and performance 
+                  <b class="bulletpoint">Productivity and performance 
                   went through the roof!</b>
                   <br><br>
                   I’ve finally cracked it.
@@ -103,7 +117,7 @@ include php_root() . 'php/lp-header.php';
                   <br><br>
                   I’ve always used my analytical consulting way of asking the right questions and <b>applied true problem-solving.</b>
                   <br><br>
-                  <b style="font-size: 1.5rem; color: var(--primary-color);">True problem-solving is 
+                  <b class="bulletpoint">True problem-solving is 
                   concernedly misunderstood</b>
                   <br><br>
                   It’s never about the actual code or algorithms. It’s always about understanding requirements. That’s where everybody gets it wrong.
@@ -127,11 +141,11 @@ include php_root() . 'php/lp-header.php';
                   <br><br>
                   Radu worked for me on a few commercial startups, and because of that, he got the proper experience (+guidance) to land his first mid-level front-end developer job. 
                   <br><br>
-                  <b style="font-size: 1.25rem; color: var(--primary-color);">…and that’s how Todorescu.com was born</b>
+                  <b class="bulletpoint">…and that’s how Todorescu.com was born</b>
                   <br><br>
                 </p>
               </div>
-              <div class="col-lg-3 col-md-5 col-12 flex-middle" style="justify-content: start;">
+              <div class="col-lg-3 col-md-5 col-12 flex-top">
                 <img src="<?= root() .'assets/img/facebook-profile-pic.jpg' ?>" class="img-fluid" alt="">
                 <p class="fb-text-desc">
                 View Tudor's impressive portfolio.<br> 

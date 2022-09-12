@@ -1,3 +1,14 @@
+
+<style>
+    .waitinglist-agreement {
+        font-size: .75rem;
+        color: #ccc; 
+        max-width: 350px; 
+        margin: 0.5rem auto;
+        text-align: center;
+    }
+</style>
+
 <div class="footer-newsletter js_newsletter_signup" 
     style="background: none; opacity: .9; border: 0; padding: 30px 0 0 0;">
     <div class="container" style="background: black;padding: 30px;">
@@ -38,8 +49,8 @@
                         Please email us at <a href="mailTo:support@todorescu.com" class="text-decoration-underline color-secondary">support@todorescu.com</a> for manual newsletter subsription.
                     </div>
                 </div>
-                <p class="text-center" style="font-size: .75rem; color: #ccc; max-width: 350px; margin: 0.5rem auto;">
-                    By signing up, you agree to our <a href="<?= root().'terms-of-service' ?>" target="_blank" class="text-decoration-underline">Terms of service</a> and acknowledge our <a href="<?= root().'privacy-policy' ?>" target="_blank" class="text-decoration-underline">Privacy policy</a>
+                <p class="waitinglist-agreement">
+                    By joinning the waiting list, you agree to our <a href="<?= root().'terms-of-service' ?>" target="_blank" class="text-decoration-underline">Terms of service</a> and acknowledge our <a href="<?= root().'privacy-policy' ?>" target="_blank" class="text-decoration-underline">Privacy policy</a>
                 </p>
             </div>
         </div>

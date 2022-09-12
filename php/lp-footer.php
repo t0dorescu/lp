@@ -1,4 +1,5 @@
 <?php if (!$isDev) : ?>
+  <!-- linkedin pixel -->
   <script type="text/javascript">
     _linkedin_partner_id = "4663353";
     window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
@@ -25,7 +26,7 @@
   </noscript>
 <?php endif ?>
 
-<?php if (!$optin_page) : ?>
+<?php if (!$hidefooter) : ?>
   <footer id="footer" class="footer">
     <?php if (!$hidewaitinglist) : ?>
       <?php include php_root() . "php/templates/forms/newsletter-signup.php"; ?>
@@ -35,22 +36,26 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-12 footer-info">
-            <div class="social-links mt-3 text-center">
-              <a href="https://www.facebook.com/tudor.t0dorescu" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
-              <a href="https://www.linkedin.com/in/tudortodorescu/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
-              <a href="https://www.github.com/tudortodorescu" class="github" target="_blank"><i class="bi bi-github"></i></a>
-              <a href="https://www.youtube.com/c/tudortodorescu" class="youtube" target="_blank"><i class="bi bi-youtube"></i></a>
-              <a href="https://www.instagram.com/tudortodorescu" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.tiktok.com/@t0dorescu" class="tiktok" target="_blank"><i class="bi bi-tiktok"></i></a>
-            </div>
+
+            <?php if (!$hidesocials) : ?>
+              <div class="social-links mt-3 text-center">
+                <a href="https://www.facebook.com/tudor.t0dorescu" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/tudortodorescu/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.github.com/tudortodorescu" class="github" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://www.youtube.com/c/tudortodorescu" class="youtube" target="_blank"><i class="bi bi-youtube"></i></a>
+                <a href="https://www.instagram.com/tudortodorescu" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.tiktok.com/@t0dorescu" class="tiktok" target="_blank"><i class="bi bi-tiktok"></i></a>
+              </div>
+            <?php endif ?>
 
             <?php if ($showterms) : ?>
-              <ul style="text-align: center;padding: 0;margin-top: 35px;">
-                <li style="list-style: none;padding: 5px;"><a href="<?= root() . 'terms-of-service' ?>" target="_blank" style="font-family: oswald;color: white;">Terms of service</a></li>
-                <li style="list-style: none;padding: 5px;"><a href="<?= root() . 'privacy-policy' ?>" target="_blank" style="font-family: oswald;color: white;">Privacy policy</a></li>
-                <li style="list-style: none;padding: 5px;"><a href="<?= root() . 'cookie-policy' ?>" target="_blank" style="font-family: oswald;color: white;">Cookie policy</a></li>
+              <ul class="terms">
+                <li><a href="<?= root() . 'terms-of-service' ?>" target="_blank">Terms of service</a></li>
+                <li><a href="<?= root() . 'privacy-policy' ?>" target="_blank">Privacy policy</a></li>
+                <li><a href="<?= root() . 'cookie-policy' ?>" target="_blank">Cookie policy</a></li>
               </ul>
             <?php endif ?>
+
           </div>
         </div>
       </div>
@@ -61,8 +66,6 @@
     <i class="bi bi-arrow-up-short"></i>
   </a>
 <?php endif ?>
-
-
 
 <!-- Vendor JS Files -->
 <script src="<?= root() . 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' . v_lp() ?>"></script>
@@ -79,7 +82,7 @@
 <script src="<?= root() . 'assets/js/utils/forms.js' . v_lp() ?>"></script>
 <script src="<?= root() . 'assets/js/services/api.js' . v_lp() ?>"></script>
 
-<?php if (!$optin_page) : ?>
+<?php if (!$hidecookieconset) : ?>
   <!-- Cookie consent -->
   <script src="<?= root() . 'assets/vendor/cookieconsent/cookieconsent.js' . v_lp() ?>"></script>
   <script>
@@ -129,5 +132,4 @@
 <?php endif ?>
 
 </body>
-
 </html>

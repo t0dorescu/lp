@@ -8,6 +8,7 @@
         * {
             font-family: Arial, Helvetica, sans-serif;
             color: #ccc;
+            text-shadow: 2px 0 #000;
         }
 
         h1,
@@ -23,7 +24,7 @@
 
         body {
             padding: 2rem;
-            background: #222;
+            background: #000;   
         }
         @media (max-width: 768px) {
             body {
