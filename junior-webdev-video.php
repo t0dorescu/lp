@@ -88,7 +88,7 @@ include php_root() . 'php/lp-header.php';
             <br><br><br>
             <a href="<?= root() . 'information-call' ?>" class="btn-read-more" target="_blank">
                 <i class="bi bi-calendar-date"></i>
-                <span>Schedule information call</span>
+                <span style="font-family: oswald;">SCHEDULE MY INFORMATION CALL</span>
             </a>
             <br><br><br><br>
             <h1 class="title">

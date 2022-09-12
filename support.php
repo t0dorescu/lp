@@ -1,6 +1,8 @@
 <?php
 include $_SERVER['DOCUMENT_ROOT'] . "/api/light.php";
 
+$showterms = true;
+
 $title = "Get premium support from our team - Todorescu.com";
 include php_root() . 'php/lp-header.php';
 ?>

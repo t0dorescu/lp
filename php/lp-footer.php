@@ -38,7 +38,7 @@
           <div class="col-12 footer-info">
 
             <?php if (!$hidesocials) : ?>
-              <div class="social-links mt-3 text-center">
+              <div class="social-links mt-3 text-center" style="padding-bottom: 20px;">
                 <a href="https://www.facebook.com/tudor.t0dorescu" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
                 <a href="https://www.linkedin.com/in/tudortodorescu/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
                 <a href="https://www.github.com/tudortodorescu" class="github" target="_blank"><i class="bi bi-github"></i></a>

@@ -1,6 +1,8 @@
 <?php
 include $_SERVER['DOCUMENT_ROOT'] . "/api/light.php";
 
+$showterms = true;
+
 $title = "Here's how it all started - Todorescu.com";
 include php_root() . 'php/lp-header.php';
 ?>
@@ -156,7 +158,7 @@ include php_root() . 'php/lp-header.php';
               </div>
             </div>
             <a href="<?= root() . 'students' ?>" class="btn-read-more">
-              <span>Student testimonials</span>
+              <span style="font-family: oswald;">CLIENT RESULTS</span>
               <i class="bi bi-arrow-right"></i>
             </a>
             <br><br>

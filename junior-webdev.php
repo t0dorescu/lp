@@ -115,7 +115,7 @@ include php_root() . 'php/lp-header.php';
                     </h1>
                     <button class="btn-read-more" onclick="openOptinModal()">
                         <i class="bi bi-envelope"></i>
-                        <span>Email me the video</span>
+                        <span style="font-family: oswald;">EMAIL ME THE VIDEO</span>
                     </button>
                 </div>
                 <div class="col-lg-6 col-12">
@@ -130,7 +130,7 @@ include php_root() . 'php/lp-header.php';
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title color-secondary-color">Yes! Send Me The Video Training Now</h5>
+                <h5 class="modal-title color-secondary-color">Yes! Send Me The Video Now</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body text-center">
@@ -164,7 +164,7 @@ include php_root() . 'php/lp-header.php';
                 <div class="spinner-border js_spinner d-none"></div>
                 <button type="button" class="btn btn-read-more js_optin" style="margin: 0 auto;" onclick="optin()">
                     <i class="bi bi-envelope"></i>
-                    <span>Email me the video</span>
+                    <span style="font-family: oswald;">EMAIL ME THE VIDEO</span>
                 </button>
             </div>
         </div>

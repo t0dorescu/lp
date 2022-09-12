@@ -108,7 +108,7 @@ include php_root() . 'php/lp-header.php';
             </span>
             <br><br>
             <p class="color-white">PS. If our available spots don't work for your timezone, please email us directly at <a href="mailto:support@todorescu.com">support@todorescu.com</a> and we'll coordinate and schedule a time that works.</p>
-            <br><br>
+            <br>
             <iframe src="https://calendly.com/todorescu/methodology?embed_domain=todorescu.com&amp;embed_type=Inline" frameborder="0"></iframe>
         </div>
     </section>

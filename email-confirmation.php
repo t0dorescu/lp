@@ -20,6 +20,9 @@ include php_root() . 'php/lp-header.php';
         font-family: oswald;
         color: var(--primary-color) !important;
     }
+    .footer {
+      display: none !important;
+    }
 </style>
 
 <main id="main">
