@@ -6,6 +6,7 @@ $showterms = false;
 $hidemenu = true;
 $hidesocials = true;
 $disabletopmenulink = true;
+$hidecookieconset = true;
 
 $title = "Confirm your email address - Todorescu.com";
 include php_root() . 'php/lp-header.php';

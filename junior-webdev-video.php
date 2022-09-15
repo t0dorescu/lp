@@ -6,6 +6,7 @@ $showterms = true;
 $hidemenu = true;
 $hidesocials = true;
 $disabletopmenulink = true;
+$hidecookieconset = true;
 
 $title = "Junior WebDev Video - Todorescu.com";
 include php_root() . 'php/lp-header.php';

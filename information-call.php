@@ -7,6 +7,7 @@ $hidecookieconset = true;
 $hidemenu = true;
 $hidesocials = true;
 $disabletopmenulink = true;
+$hidecookieconset = true;
 
 $title = "Schedule Information Call - Todorescu.com";
 include php_root() . 'php/lp-header.php';

@@ -6,6 +6,7 @@ $showterms = true;
 $hidesocials = true;
 $hidemenu = true;
 $disabletopmenulink = true;
+$hidecookieconset = true;
 
 $title = "Available only for under-valued & under-paid junior web-developers - Todorescu.com";
 include php_root() . 'php/lp-header.php';
@@ -137,10 +138,10 @@ include php_root() . 'php/lp-header.php';
                 </div>
                 <div class="col-lg-6 col-12">
                     <img src="<?= root() . 'assets/img/training.jpg' ?>" class="optin-img" />
-                    <br>
+                    <!-- <br>
                     <h3 class="subtitle">
                         Available only for an under-valued / under-paid junior web-developer
-                    </h3>
+                    </h3> -->
                 </div>
             </div>
         </div>

@@ -3,7 +3,7 @@ include $_SERVER['DOCUMENT_ROOT'] . "/api/light.php";
 
 $showterms = true;
 
-$title = "Results, recruitment offers, unlimited job opportunities";
+$title = "Results, recruitment offers, unlimited job opportunities - Todorescu.com";
 include php_root() . 'php/lp-header.php';
 ?>
 

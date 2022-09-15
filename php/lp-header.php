@@ -87,9 +87,10 @@
               <li><a class="nav-link" href="<?= root() . 'story' ?>">Story</a></li>
               <li><a class="nav-link" href="<?= root() . 'students' ?>">Students</a></li>
               <li><a class="nav-link" href="<?= root() . 'results' ?>">Results</a></li>
+              <li><a class="nav-link" href="<?= root() . 'portfolio' ?>">Portfolio</a></li>
               <li><a class="nav-link" href="<?= root() . 'support' ?>">Support</a></li>
               <?php if (!$hidewaitinglist) : ?>
-                <li><a class="getstarted scrollto" href="#footer">Waiting list</a></li>
+                <li><a class="getstarted scrollto" href="#footer" style="font-family: oswald;">Waiting list</a></li>
               <?php endif ?>
           </ul>
           <i class="bi bi-list mobile-nav-toggle" style="color: white;"></i>
