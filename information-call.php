@@ -12,6 +12,14 @@ $title = "Schedule Information Call - Todorescu.com";
 include php_root() . 'php/lp-header.php';
 ?>
 
+<?php if (!$isDev) : ?>
+    <script>
+        setTimeout(async () => {
+            await window.lintrk('track', { conversion_id: 10422737 });
+        }, 5000)
+    </script>
+<?php endif ?>
+
 <style>
     .main-container {
         max-width: 55vw;

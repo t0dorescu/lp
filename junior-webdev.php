@@ -7,9 +7,17 @@ $hidesocials = true;
 $hidemenu = true;
 $disabletopmenulink = true;
 
-$title = "Limited training video - Todorescu.com";
+$title = "Available only for under-valued & under-paid junior web-developers - Todorescu.com";
 include php_root() . 'php/lp-header.php';
 ?>
+
+<?php if (!$isDev) : ?>
+    <script>
+        setTimeout(async () => {
+            await window.lintrk('track', { conversion_id: 10422705 });
+        }, 5000)
+    </script>
+<?php endif ?>
 
 <style>
     h1.title {
@@ -28,6 +36,15 @@ include php_root() . 'php/lp-header.php';
     h1 span {
         font-family: oswald;
         color: var(--primary-color);
+    }
+
+    h3.subtitle {
+        font-size: 1.25rem;
+        font-family: oswald;
+        color: var(--primary-color);
+        width: 90%;
+        padding: 15px;
+        margin: 0 auto;
     }
 
     .btn-read-more {
@@ -111,7 +128,7 @@ include php_root() . 'php/lp-header.php';
                     <h1 class="title">
                         “They Laughed When I Applied For A <br>
                         <span>Mid-Level Position With A 80% Raise.</span><br>
-                        Then I Showed Them This Email…”
+                        Then I Showed Them This Video…”
                     </h1>
                     <button class="btn-read-more" onclick="openOptinModal()">
                         <i class="bi bi-envelope"></i>
@@ -120,6 +137,10 @@ include php_root() . 'php/lp-header.php';
                 </div>
                 <div class="col-lg-6 col-12">
                     <img src="<?= root() . 'assets/img/training.jpg' ?>" class="optin-img" />
+                    <br>
+                    <h3 class="subtitle">
+                        Available only for under-valued & under-paid junior web-developers
+                    </h3>
                 </div>
             </div>
         </div>
@@ -186,7 +207,10 @@ include php_root() . 'php/lp-header.php';
         qsvalue('#inputEmail', ``)
     }
 
-    function openOptinModal() {
+    async function openOptinModal() {
+        <?php if (!$isDev) : ?>
+            await window.lintrk('track', { conversion_id: 10422713 });
+        <?php endif ?>
         new bootstrap.Modal(optinModal).show()
     }
 
@@ -219,6 +243,10 @@ include php_root() . 'php/lp-header.php';
         //////////
 
         if (status.isValid === true) {
+            <?php if (!$isDev) : ?>
+                await window.lintrk('track', { conversion_id: 10422721 });
+            <?php endif ?>
+
             const data = {
                 name: name,
                 email: email.toLowerCase()

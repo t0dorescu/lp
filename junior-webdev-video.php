@@ -11,6 +11,14 @@ $title = "Junior WebDev Video - Todorescu.com";
 include php_root() . 'php/lp-header.php';
 ?>
 
+<?php if (!$isDev) : ?>
+    <script>
+        setTimeout(async () => {
+            await window.lintrk('track', { conversion_id: 10422729 });
+        }, 5000)
+    </script>
+<?php endif ?>
+
 <style>
     .main-container {
         max-width: 65vw;

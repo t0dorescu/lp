@@ -3,7 +3,7 @@ function isValidName(name = '') {
     return !!String(name)
         .trim()
         .match(
-            /^[a-z\']+[A-Z\-]{0,2}[a-z\']*$/
+            /^[a-z\sA-Z\-\']+$/
         )
 }
 

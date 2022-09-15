@@ -9,7 +9,7 @@
     return $_SERVER['DOCUMENT_ROOT']."/";
   }
   function root() {
-    return 'https://'.$_SERVER['HTTP_HOST'].'/';
+    return $_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].'/';
   }
   function v_lp() {
     return '?v='.$GLOBALS['version_lp'];
