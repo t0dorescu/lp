@@ -139,7 +139,7 @@ include php_root() . 'php/lp-header.php';
                     <img src="<?= root() . 'assets/img/training.jpg' ?>" class="optin-img" />
                     <br>
                     <h3 class="subtitle">
-                        Available only for under-valued & under-paid junior web-developers
+                        Available only for an under-valued / under-paid junior web-developer
                     </h3>
                 </div>
             </div>
