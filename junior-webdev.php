@@ -16,7 +16,7 @@ include php_root() . 'php/lp-header.php';
     <script>
         setTimeout(async () => {
             await window.lintrk('track', { conversion_id: 10422705 });
-        }, 5000)
+        }, 1000)
     </script>
 <?php endif ?>
 
@@ -137,7 +137,7 @@ include php_root() . 'php/lp-header.php';
                     </button>
                 </div>
                 <div class="col-lg-6 col-12">
-                    <img src="<?= root() . 'assets/img/training.jpg' ?>" class="optin-img" />
+                    <img src="<?= root() . 'assets/img/training_2.jpg' ?>" class="optin-img" />
                     <!-- <br>
                     <h3 class="subtitle">
                         Available only for an under-valued / under-paid junior web-developer

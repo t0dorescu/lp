@@ -17,7 +17,7 @@ include php_root() . 'php/lp-header.php';
     <script>
         setTimeout(async () => {
             await window.lintrk('track', { conversion_id: 10422737 });
-        }, 5000)
+        }, 1000)
     </script>
 <?php endif ?>
 
