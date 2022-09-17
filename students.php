@@ -47,7 +47,7 @@ include php_root() . 'php/lp-header.php';
                             <source src="<?= root() . 'assets/video/interviu-alina.mp4' ?>" type="video/mp4">
                         </video>
                         <div class="text">
-                            Alina switched from a marketing career to a <strong>fulltime junior web developer position.</strong>.
+                            Alina switched from a marketing career to a <strong>fulltime junior web developer position.</strong>
                         </div>
                     </div>
                 </div>

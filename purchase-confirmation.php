@@ -61,7 +61,7 @@ include php_root() . 'php/lp-header.php';
             <small style="color: red; font-weight: bold;">IMPORTANT: save the link above ☝️</small>
             <br><br><br><br>
             <span class="color-white">
-                You're now a paid student, you now <br>have access to our support email: <a href="mailto:support@todorescu.com">support@todorescu.com</a>
+                <strong>Congratulations!</strong> You're now a paid student, you now <br>have access to our support email: <a href="mailto:support@todorescu.com">support@todorescu.com</a>
             </span>
             </h2>
             <br><br><br><br>
