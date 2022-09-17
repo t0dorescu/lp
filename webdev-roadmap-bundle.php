@@ -13,14 +13,6 @@ $title = "WebDevelopment RoadMap Bundle™ - Todorescu.com";
 include php_root() . 'php/lp-header.php';
 ?>
 
-<!-- 
-    start checkout    
-    window.lintrk('track', { conversion_id: 10422785 }); 
-
-    purchase
-    window.lintrk('track', { conversion_id: 10422769 });
--->
-
 <?php if (!$isDev) : ?>
     <script>
         setTimeout(async () => {
@@ -30,6 +22,18 @@ include php_root() . 'php/lp-header.php';
         }, 1000)
     </script>
 <?php endif ?>
+
+<script>
+    async function startCheckout() {
+        <?php if (!$isDev) : ?>
+            await window.lintrk('track', {
+                conversion_id: 10422785
+            });
+        <?php endif ?>
+
+        window.location = 'https://buy.stripe.com/dR6cMY2N1gUX2e4bIL';
+    }
+</script>
 
 <style>
     .main-container {
@@ -92,7 +96,7 @@ include php_root() . 'php/lp-header.php';
                 <span style="color: lightgreen; font-size: 2.5rem">$80</span>
             </h1>
             <br><br>
-            <a href="https://buy.stripe.com/dR6cMY2N1gUX2e4bIL" class="btn-read-more" target="_blank">
+            <a href="#" class="btn-read-more" onclick="startCheckout()" target="_blank">
                 <span style="font-family: oswald;">ENROLL NOW</span>
                 <i class="bi bi-arrow-right"></i>
             </a>
@@ -131,7 +135,7 @@ include php_root() . 'php/lp-header.php';
                 </div>
             </div>
             <br>
-            <a href="https://buy.stripe.com/dR6cMY2N1gUX2e4bIL" class="btn-read-more" target="_blank">
+            <a href="#" class="btn-read-more" onclick="startCheckout()" target="_blank">
                 <span style="font-family: oswald;">ENROLL NOW</span>
                 <i class="bi bi-arrow-right"></i>
             </a>
@@ -223,7 +227,7 @@ include php_root() . 'php/lp-header.php';
                 <span style="color: lightgreen; font-size: 2.5rem">$80</span>
             </h1>
             <br><br>
-            <a href="https://buy.stripe.com/dR6cMY2N1gUX2e4bIL" class="btn-read-more" target="_blank">
+            <a href="#" class="btn-read-more" onclick="startCheckout()" target="_blank">
                 <span style="font-family: oswald;">ENROLL NOW</span>
                 <i class="bi bi-arrow-right"></i>
             </a>
@@ -320,7 +324,7 @@ include php_root() . 'php/lp-header.php';
                 </h1>
                 <br><br>
                 <div class="text-center">
-                    <a href="https://buy.stripe.com/dR6cMY2N1gUX2e4bIL" class="btn-read-more" target="_blank">
+                    <a href="#" class="btn-read-more" onclick="startCheckout()" target="_blank">
                         <span style="font-family: oswald;">ENROLL NOW</span>
                         <i class="bi bi-arrow-right"></i>
                     </a>
@@ -388,7 +392,7 @@ include php_root() . 'php/lp-header.php';
                         <span style="color: lightgreen; font-size: 2.5rem">$80</span>
                     </h1>
                     <br><br>
-                    <a href="https://buy.stripe.com/dR6cMY2N1gUX2e4bIL" class="btn-read-more" target="_blank">
+                    <a href="#" class="btn-read-more" onclick="startCheckout()" target="_blank">
                         <span style="font-family: oswald;">ENROLL NOW</span>
                         <i class="bi bi-arrow-right"></i>
                     </a>
