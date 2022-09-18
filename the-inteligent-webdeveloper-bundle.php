@@ -188,19 +188,35 @@ include php_root() . 'php/lp-header.php';
                         </p>
                     </div>
                     <div class="col-sm-12 col-lg-4 bundleitem">
-                        <img src="<?= root() ?>assets\img\courses\course2_thumb.jpg" />
+                        <img src="<?= root() ?>assets\img\courses\course4_thumb.jpg" />
                         <p>
                             <strong>➤ COURSE 2</strong> <br>
+                            CSS Hacking - 12 Innovative Challenges
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-lg-4 bundleitem">
+                        <img src="<?= root() ?>assets\img\courses\course5_thumb.jpg" />
+                        <p>
+                            <strong>➤ COURSE 3</strong> <br>
+                            Path Finding Algorithms With JavaScript
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-lg-2">&nbsp;</div>
+                    <div class="col-sm-12 col-lg-4 bundleitem">
+                        <img src="<?= root() ?>assets\img\courses\course2_thumb.jpg" />
+                        <p>
+                            <strong>➤ COURSE 4</strong> <br>
                             The Miracles Of HTML Canvas Element
                         </p>
                     </div>
                     <div class="col-sm-12 col-lg-4 bundleitem">
                         <img src="<?= root() ?>assets\img\courses\course3_thumb.jpg" />
                         <p>
-                            <strong>➤ COURSE 3</strong> <br>
+                            <strong>➤ COURSE 5</strong> <br>
                             Matrix Magic Falling Symbols With JS
                         </p>
                     </div>
+                    <div class="col-sm-12 col-lg-2">&nbsp;</div>
                 </div>
             </div>
             <div class="text-center mt-5">
