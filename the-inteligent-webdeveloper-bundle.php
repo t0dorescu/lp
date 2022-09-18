@@ -201,7 +201,7 @@ include php_root() . 'php/lp-header.php';
                             Path Finding Algorithms With JavaScript
                         </p>
                     </div>
-                    <div class="col-sm-12 col-lg-2">&nbsp;</div>
+                    <div class="col-sm-12 col-lg-2 hidden-sm">&nbsp;</div>
                     <div class="col-sm-12 col-lg-4 bundleitem">
                         <img src="<?= root() ?>assets\img\courses\course2_thumb.jpg" />
                         <p>
@@ -216,7 +216,7 @@ include php_root() . 'php/lp-header.php';
                             Matrix Magic Falling Symbols With JS
                         </p>
                     </div>
-                    <div class="col-sm-12 col-lg-2">&nbsp;</div>
+                    <div class="col-sm-12 col-lg-2 hidden-sm">&nbsp;</div>
                 </div>
             </div>
             <div class="text-center mt-5">
@@ -305,7 +305,46 @@ include php_root() . 'php/lp-header.php';
                 <span style="font-family: oswald;">ENROLL NOW</span>
                 <i class="bi bi-arrow-right"></i>
             </a>
-            <br><br><br><br>
+            <br><br>
+            <div class="text-center mt-5">
+                <h1 class="title color-orange" style="font-family: oswald; letter-spacing: 1px; font-size: 2rem;">
+                    HOW IS THIS DIFFERENT THAN EVERYTHING ELSE?
+                </h1>
+                <h1 class="subtitle2" style="padding-top: 0;">
+                    These projects don't exist anywhere online.
+                </h1>
+            </div>
+            <div class="text-center mt-5">
+                <h1 class="title color-orange" style="font-family: oswald; letter-spacing: 1px;">
+                    WHAT'S IN IT FOR ME?
+                </h1>
+                <h1 class="subtitle2" style="padding-top: 0;">
+                    You'll have behind the curtain access to my proprietary methods.
+                </h1>
+            </div>
+            <div class="text-center mt-5">
+                <h1 class="title color-orange" style="font-family: oswald; letter-spacing: 1px;">
+                    HOW DO I KNOW IT'S REAL?
+                </h1>
+                <h1 class="subtitle2" style="padding-top: 0;">
+                    You don't. You'll just have to take my word for it.
+                </h1>
+            </div>
+            <div class="text-center mt-5">
+                <h1 class="title color-orange" style="font-family: oswald; letter-spacing: 1px;">
+                    WHAT'S HOLDING ME BACK?
+                </h1>
+                <h1 class="subtitle2" style="padding-top: 0;">
+                    These courses are fast. No 20 hours non-sense. I'll get into it right away.
+                </h1>
+            </div>
+            <br><br>
+            <a href="#" class="btn-read-more" onclick="startCheckout()" target="_blank">
+                <span style="font-family: oswald;">ENROLL NOW</span>
+                <i class="bi bi-arrow-right"></i>
+            </a>
+            <br><br>
+            <br><br>
             <div class="text-left">
                 <div class="row">
                     <div class="col-sm-12 col-lg-6 text-center">
