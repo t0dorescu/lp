@@ -9,14 +9,14 @@ $hidesocials = true;
 $disabletopmenulink = true;
 $hidecookieconset = true;
 
-$title = "WebDevelopment RoadMap Bundle™ - Todorescu.com";
+$title = "The Inteligent WebDeveloper Bundle™ - Todorescu.com";
 include php_root() . 'php/lp-header.php';
 ?>
 
 <script>
     window.VIEW_CONTENT_EVENT = 10422777
     window.START_CHECKOUT_EVENT = 10422785
-    window.STRIPE_PAYMENT_LINK = 'https://buy.stripe.com/dR6cMY2N1gUX2e4bIL'
+    window.STRIPE_PAYMENT_LINK = 'https://buy.stripe.com/00g9AM0ET0VZ1a0bIM'
 </script>
 
 <?php if (!$isDev) : ?>
@@ -46,20 +46,58 @@ include php_root() . 'php/lp-header.php';
         max-width: 55vw;
         opacity: .95;
     }
+
     h1 {
-        font-family: oswald;
         color: white !important;
-        font-size: 1.5rem !important;
     }
-    .maintitle {
+
+    h1.maintitle {
+        font-size: 2rem !important;
         font-family: oswald;
-        font-size: 2.5rem !important;
+        margin-bottom: 25px;
     }
 
-    
+    .subtitle {
+        color: white;
+        font-size: 1.25rem !important;
+        padding: 25px 0;
+    }
 
-    h1.subtitle {
+    .subtitle2 {
         color: var(--primary-color) !important;
+        font-size: 2rem !important;
+        padding: 20px 0;
+        font-weight: bold;
+        font-family: oswald;
+    }
+
+    .discount-price {
+        color: red;
+        font-size: 2rem;
+    }
+
+    .promo-price {
+        color: lime;
+        font-size: 2.5rem
+    }
+
+    .btn-read-more span {
+        font-family: oswald;
+    }
+
+    p.bulletpoint {
+        color: white;
+        font-family: coolvetica;
+        font-size: 1.5rem;
+    }
+
+    p.centertitle {
+        font-family: oswald;
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.25rem;
+        padding: 15px 0;
+        color: white;
     }
 
     .warning-span {
@@ -71,18 +109,25 @@ include php_root() . 'php/lp-header.php';
         line-height: 1rem;
     }
 
-    .fucking-p {
-        padding-left: 0px;
-        margin-left: -10px;
+    .bundleitem img {
+        width: 80%;
+        height: auto;
+        border: 2px solid white;
+        border-radius: 5px;
+        margin-top: 25px;
+    }
+
+    .bundleitem p {
+        color: white;
+        text-align: center;
+        font-family: oswald;
+        font-size: 1.25rem;
+        margin-top: 25px;
     }
 
     @media (max-width: 768px) {
         .main-container {
             max-width: 95vw;
-        }
-
-        .fucking-p {
-            padding-left: 35px;
         }
     }
 </style>
@@ -90,71 +135,87 @@ include php_root() . 'php/lp-header.php';
 <main id="main">
     <section class="hero pb-0">
         <div class="container main-container">
-            <h1 class="maintitle">
-                WebDevelopment RoadMap Bundle™
-            </h1>
-            <br>
-            <span class="warning-span" style="font-size: 1.25rem !important;">
-                80% DISCOUNT <br> ONE-TIME LIMITED OFFER
-            </span>
-            <br><br>
-            <h1 class="subtitle" style="color: white !important; text-align: center;">
-                ALL FOR JUST<br>
-                <strike style="color: red; font-size: 1.5rem;">$399</strike>
-                <span style="color: lime; font-size: 2.5rem">$80</span>
-            </h1>
-            <br><br>
-            <a href="#" class="btn-read-more" onclick="startCheckout()" target="_blank">
-                <span style="font-family: oswald;">YES! SIGN-ME UP</span>
-                <i class="bi bi-arrow-right"></i>
-            </a>
-            <br><br><br>
-            <h1 class="subtitle text-center" style="font-size: 2rem !important;">
-                YOUR BUNDLE INCLUDES:
-            </h1>
-            <div class="row">
-                <div class="col-sm-12 col-lg-4">
-                    <br>
-                    <img src="<?= root() ?>assets\img\courses\course1_thumb.jpg" style="width: 80%; height: auto; border: 2px solid white; border-radius: 5px;" />
-                    <br><br>
-                    <p class="color-white text-center" style="font-family: oswald; font-size: 1.25rem;">
-                        <strong>➤ COURSE 1</strong> <br>
-                        Four (4) Unique Portfolio Web-Dev Projects
+            <div class="text-center">
+                <h1 class="maintitle">
+                    The Inteligent WebDeveloper Bundle™
+                </h1>
+                <span class="warning-span">
+                    ATTENTION <br> ONLY FOR CREATIVE ENGINEERS
+                </span>
+                <h1 class="subtitle">
+                    ALL FOR JUST<br>
+                    <strike class="discount-price">$399</strike>
+                    <span class="promo-price">$77</span>
+                </h1>
+                <a href="#" class="btn-read-more" onclick="startCheckout()" target="_blank">
+                    <span>I WANT TO BE SMART</span>
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+            <div class="row text-left mt-4">
+                <div class="col-lg-4 col-12">&nbsp;</div>
+                <div class="col-lg-6 col-12">
+                    <h1 class="subtitle">
+                        YOU WILL:
+                    </h1>
+                    <p class="bulletpoint">
+                        ✔️ Become a more creative web developer
+                    </p>
+                    <p class="bulletpoint">
+                        ✔️ Be seen as a smart web developer
+                    </p>
+                    <p class="bulletpoint">
+                        ✔️ Impress others with your new skills
                     </p>
                 </div>
-                <div class="col-sm-12 col-lg-4">
-                    <br>
-                    <img src="<?= root() ?>assets\img\courses\course2_thumb.jpg" style="width: 80%; height: auto; border: 2px solid white; border-radius: 5px;" />
-                    <br><br>
-                    <p class="color-white text-center" style="font-family: oswald; font-size: 1.25rem;">
-                        <strong>➤ COURSE 2</strong> <br>
-                        The Miracles Of HTML Canvas Element
-                    </p>
-                </div>
-                <div class="col-sm-12 col-lg-4">
-                    <br>
-                    <img src="<?= root() ?>assets\img\courses\course3_thumb.jpg" style="width: 80%; height: auto; border: 2px solid white; border-radius: 5px;" />
-                    <br> <br>
-                    <p class="color-white text-center" style="font-family: oswald; font-size: 1.25rem;">
-                        <strong>➤ COURSE 3</strong> <br>
-                        Matrix Magic Falling Symbols With JS
-                    </p>
+                <div class="col-lg-2 col-12">&nbsp;</div>
+            </div>
+            <div class="mt-4">
+                <p class="centertitle">
+                    ’’It’s not enough to solve a problem, but to do so in the simplest way possible. Most often no one actually reads your code yet elegance is extremely satisfying.’’
+                </p>
+            </div>
+            <div class="text-center mt-0">
+                <h1 class="subtitle2">
+                    YOUR BUNDLE INCLUDES:
+                </h1>
+                <div class="row">
+                    <div class="col-sm-12 col-lg-4 bundleitem">
+                        <img src="<?= root() ?>assets\img\courses\course1_thumb.jpg" />
+                        <p>
+                            <strong>➤ COURSE 1</strong> <br>
+                            Four (4) Unique Portfolio Web-Dev Projects
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-lg-4 bundleitem">
+                        <img src="<?= root() ?>assets\img\courses\course2_thumb.jpg" />
+                        <p>
+                            <strong>➤ COURSE 2</strong> <br>
+                            The Miracles Of HTML Canvas Element
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-lg-4 bundleitem">
+                        <img src="<?= root() ?>assets\img\courses\course3_thumb.jpg" />
+                        <p>
+                            <strong>➤ COURSE 3</strong> <br>
+                            Matrix Magic Falling Symbols With JS
+                        </p>
+                    </div>
                 </div>
             </div>
-            <br>
-            <a href="#" class="btn-read-more" onclick="startCheckout()" target="_blank">
-                <span style="font-family: oswald;">SIGN-UP NOW</span>
-                <i class="bi bi-arrow-right"></i>
-            </a>
-            <br><br><br>
-            <h1 class="title">
-                SHOULD YOU REALLY SIGN-UP?
-            </h1>
-            <br>
-            <h1 class="subtitle">
-                JUST LOOK HOW IT TURNED OUT FOR OTHERS LIKE YOU...
-            </h1>
-            <br>
+            <div class="text-center mt-5">
+                <a href="#" class="btn-read-more" onclick="startCheckout()" target="_blank">
+                    <span>SIGN-UP NOW</span>
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+                <br><br><br>
+                <h1 class="title color-orange" style="font-family: oswald; letter-spacing: 1px;">
+                    SHOULD YOU REALLY SIGN-UP?
+                </h1>
+                <h1 class="subtitle2">
+                    JUST LOOK HOW IT TURNED OUT FOR OTHERS LIKE YOU...
+                </h1>
+            </div>
             <div class="confessions">
                 <div class="row">
                     <div class="col-lg-6 col-12 flex-middle">
@@ -163,7 +224,7 @@ include php_root() . 'php/lp-header.php';
                                 <source src="<?= root() . 'assets/video/interviu-petrisor.mp4' ?>" type="video/mp4">
                             </video>
                             <div class="text">
-                                Petrisor says Tudor's mentoring made a huge difference in his progress.<strong>"Tudor's a natural"</strong>.
+                                Petrisor says Tudor's made a <strong>huge difference</strong> in his creativity.
                             </div>
                         </div>
                     </div>
@@ -173,7 +234,7 @@ include php_root() . 'php/lp-header.php';
                                 <source src="<?= root() . 'assets/video/interviu-robert.mp4' ?>" type="video/mp4">
                             </video>
                             <div class="text">
-                                Tudor helped Robert <strong>kickstart his programming journey</strong> and got him focused on what matters, JavaScript.
+                                Tudor helped Robert <strong>kickstart his love for programming.</strong> He finally focused on what matters, JavaScript.
                             </div>
                         </div>
                     </div>
@@ -213,27 +274,17 @@ include php_root() . 'php/lp-header.php';
                                 <source src="<?= root() . 'assets/video/interviu-radu.mp4' ?>" type="video/mp4">
                             </video>
                             <div class="text">
-                                Radu went from a junior job to <strong>getting his first mid-level position</strong>, using our methodologies.
+                                Radu went from a junior job to <strong>getting his first mid-level position</strong>, using our courses.
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <br>
-            <h1>
-                WebDevelopment RoadMap Bundle™
-            </h1>
-            <br>
-            <span class="warning-span">
-                80% DISCOUNT <br> ONE-TIME LIMITED OFFER
-            </span>
-            <br><br>
             <h1 class="subtitle" style="color: white !important; text-align: center;">
                 ALL FOR JUST<br>
-                <strike style="color: red; font-size: 1.5rem;">$399</strike>
-                <span style="color: lime; font-size: 2.5rem">$80</span>
+                <strike class="discount-price">$399</strike>
+                <span class="promo-price">$77</span>
             </h1>
-            <br><br>
             <a href="#" class="btn-read-more" onclick="startCheckout()" target="_blank">
                 <span style="font-family: oswald;">ENROLL NOW</span>
                 <i class="bi bi-arrow-right"></i>
@@ -293,7 +344,7 @@ include php_root() . 'php/lp-header.php';
                     </div>
                 </div>
                 <p class="color-white text-center">
-                    <span style="color: var(--primary-color); font-weight: bold; font-size: 1.5rem">
+                    <span style="color: var(--primary-color); font-family: oswald !important; font-weight: bold; font-size: 1.5rem">
                         5 REASONS TO START NOW
                     </span>
                 </p>
@@ -327,13 +378,11 @@ include php_root() . 'php/lp-header.php';
                         All of this while having a ton of FUN!
                     </span>
                 </p>
-                <br>
                 <h1 class="subtitle" style="color: white !important; text-align: center;">
                     START NOW FOR ONLY<br>
-                    <strike style="color: red; font-size: 1.5rem;">$399</strike>
-                    <span style="color: lime; font-size: 2.5rem">$80</span>
+                    <strike class="discount-price">$399</strike>
+                    <span class="promo-price">$77</span>
                 </h1>
-                <br><br>
                 <div class="text-center">
                     <a href="#" class="btn-read-more" onclick="startCheckout()" target="_blank">
                         <span style="font-family: oswald;">START NOW</span>
@@ -342,7 +391,7 @@ include php_root() . 'php/lp-header.php';
                 </div>
                 <br><br>
                 <div class="text-center">
-                    <h1 class="title">
+                    <h1 class="title" style="color: var(--primary-color) !important;font-family:oswald;">
                         YOU'RE STILL NOT SURE?
                     </h1>
                     <h1 class="subtitle">
@@ -394,7 +443,7 @@ include php_root() . 'php/lp-header.php';
                 </div>
                 <br><br>
                 <div class="text-center">
-                    <h1><span style="color: var(--primary-color);font-family: oswald;">LIMITED BONUS:</span> For every 10th enrollment I'll personally select one and give a FREE 30 minute 1on1 zoom mentoring call</h1>
+                    <h1 style="font-family: oswald;"><span style="color: var(--primary-color);font-family: oswald;">LIMITED BONUS:</span> For every 10th enrollment I'll personally select one and give a FREE 30 minute 1on1 zoom mentoring call</h1>
                     <br>
                     <small style="color: #eee;">(this bonus depends heavy on my availability, so don't wait, get started now!) </small>
                 </div>

@@ -11,7 +11,15 @@
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'oswald';
-  src: url('../fonts/oswald.ttf')  format('truetype'); /* Legacy iOS */
+  src: url('../fonts/oswald.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'codesaver';
+  src: url('../fonts/codesaver.otf')  format('opentype');
+}
+@font-face {
+  font-family: 'coolvetica';
+  src: url('../fonts/coolvetica.otf')  format('opentype');
 }
 * { 
   font-family: Arial, Helvetica, sans-serif;
@@ -46,6 +54,9 @@ body {
 }
 .color-white {
   color: white;
+}
+.color-orange {
+  color: var(--primary-color);
 }
 .mt-0 {
   margin-top: 0;
