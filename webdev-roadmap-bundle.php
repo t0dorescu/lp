@@ -82,27 +82,27 @@ include php_root() . 'php/lp-header.php';
 <main id="main">
     <section class="hero pb-0">
         <div class="container main-container">
-            <h1>
+            <h1 style="font-size: 2.5rem !important;">
                 WebDevelopment RoadMap Bundle™
             </h1>
             <br>
-            <span class="warning-span">
-                80% DISCOUNT <br> ONE TIME LIMITED OFFER
+            <span class="warning-span" style="font-size: 1.25rem !important;">
+                80% DISCOUNT <br> ONE-TIME LIMITED OFFER
             </span>
             <br><br>
             <h1 class="subtitle" style="color: white !important; text-align: center;">
                 ALL FOR JUST<br>
                 <strike style="color: red; font-size: 1.5rem;">$399</strike>
-                <span style="color: lightgreen; font-size: 2.5rem">$80</span>
+                <span style="color: lime; font-size: 2.5rem">$80</span>
             </h1>
             <br><br>
             <a href="#" class="btn-read-more" onclick="startCheckout()" target="_blank">
-                <span style="font-family: oswald;">ENROLL NOW</span>
+                <span style="font-family: oswald;">YES! SIGN-ME UP</span>
                 <i class="bi bi-arrow-right"></i>
             </a>
             <br><br><br>
-            <h1 class="subtitle text-center">
-                #3 UNIQUE SENIOR COURSES:
+            <h1 class="subtitle text-center" style="font-size: 2rem !important;">
+                YOUR BUNDLE INCLUDES:
             </h1>
 
             <div class="row">
@@ -110,33 +110,33 @@ include php_root() . 'php/lp-header.php';
                     <br>
                     <img src="<?= root() ?>assets\img\courses\course1_thumb.jpg" style="width: 80%; height: auto; border: 2px solid white; border-radius: 5px;" />
                     <br><br>
-                    <p class="color-white text-center">
+                    <p class="color-white text-center" style="font-family: oswald; font-size: 1.25rem;">
                         <strong>➤ COURSE 1</strong> <br>
-                        4 Unique Portfolio Web-Dev Projects
+                        Four (4) Unique Portfolio Web-Dev Projects
                     </p>
                 </div>
                 <div class="col-sm-12 col-lg-4">
                     <br>
                     <img src="<?= root() ?>assets\img\courses\course2_thumb.jpg" style="width: 80%; height: auto; border: 2px solid white; border-radius: 5px;" />
                     <br><br>
-                    <p class="color-white text-center">
+                    <p class="color-white text-center" style="font-family: oswald; font-size: 1.25rem;">
                         <strong>➤ COURSE 2</strong> <br>
-                        The Miracles Of Canvas Element
+                        The Miracles Of HTML Canvas Element
                     </p>
                 </div>
                 <div class="col-sm-12 col-lg-4">
                     <br>
                     <img src="<?= root() ?>assets\img\courses\course3_thumb.jpg" style="width: 80%; height: auto; border: 2px solid white; border-radius: 5px;" />
                     <br> <br>
-                    <p class="color-white text-center">
+                    <p class="color-white text-center" style="font-family: oswald; font-size: 1.25rem;">
                         <strong>➤ COURSE 3</strong> <br>
-                        Matrix Magic Falling Symbols
+                        Matrix Magic Falling Symbols With JS
                     </p>
                 </div>
             </div>
             <br>
             <a href="#" class="btn-read-more" onclick="startCheckout()" target="_blank">
-                <span style="font-family: oswald;">ENROLL NOW</span>
+                <span style="font-family: oswald;">SIGN-UP NOW</span>
                 <i class="bi bi-arrow-right"></i>
             </a>
             <br><br><br>
@@ -218,13 +218,13 @@ include php_root() . 'php/lp-header.php';
             </h1>
             <br>
             <span class="warning-span">
-                80% DISCOUNT <br> ONE TIME LIMITED OFFER
+                80% DISCOUNT <br> ONE-TIME LIMITED OFFER
             </span>
             <br><br>
             <h1 class="subtitle" style="color: white !important; text-align: center;">
                 ALL FOR JUST<br>
                 <strike style="color: red; font-size: 1.5rem;">$399</strike>
-                <span style="color: lightgreen; font-size: 2.5rem">$80</span>
+                <span style="color: lime; font-size: 2.5rem">$80</span>
             </h1>
             <br><br>
             <a href="#" class="btn-read-more" onclick="startCheckout()" target="_blank">
@@ -234,112 +234,114 @@ include php_root() . 'php/lp-header.php';
             <br><br><br><br>
             <div class="text-left">
                 <div class="row">
-                    <div class="col-sm-12 col-lg-5">
-                        <img src="<?= root() ?>assets\img\courses\course1.jpg" style="width: 100%; height: auto; border: 2px solid white; border-radius: 5px;" />
+                    <div class="col-sm-12 col-lg-6 text-center">
+                        <img src="<?= root() ?>assets\img\courses\course1.jpg" style="width: 100%; height: auto; border: 2px solid white; border-radius: 5px; width: 70%;" />
                         <br><br>
                     </div>
-                    <div class="col-sm-12 col-lg-7 flex-middle">
+                    <div class="col-sm-12 col-lg-6 flex-middle">
                         <p class="color-white">
-                            Get ready to skyrocket your web development skills. Every aspiring or existing frontend developer should get this courses.
+                            <span style="font-family: oswald;">Get ready to skyrocket your web development skills. Every aspiring or existing frontend developer should get this courses.</span>
                             <br><br>
-                            <strong>Here's why:</strong>
+                            <strong style="color: var(--primary-color);font-family:oswald;">Here's why:</strong>
                             <br><br>
-                            Build real-life useful projects you can add to your portfolio
-                            <br>
-                            Get tons of experience in html CSS and JavaScript
+                            💻 You'll know how to build real-life useful projects, that you need for your portfolio.
                             <br><br>
-                            Code comprehensive projects from zero to completion
-                            <br>
-                            Master the most basic of basic building blocks of JavaScript
+                            💻 You'll get astronomical experience in HTML, CSS, JS.
+                            <br><br>
+                            💻 You'll code by yourself comprehensive projects, from 0 to 100.
                         </p>
                     </div>
                 </div>
                 <br>
                 <p class="color-white text-center">
-                    <span style="color: var(--primary-color); font-weight: bold;">I will walk you through each small and confusing detail and make it clear for you. It will be a friendly one-to-one digital experience and I will give you as many metaphors as you need to truly understand JavaScript.</span>
-                </p>
-                <br>
-                <div class="row">
-                    <div class="col-sm-12 col-lg-5">
-                        <img src="<?= root() ?>assets\img\courses\course2.jpg" style="width: 100%; height: auto; border: 2px solid white; border-radius: 5px;" />
-                        <br><br>
-                    </div>
-                    <div class="col-sm-12 col-lg-7 flex-middle">
-                        <p class="color-white">
-                            <strong>Benefits:</strong>
-                            <br><br>
-                            ✔️ You will be able to properly read JavaScript code
-                            <br><br>
-                            ✔️ You'll be half way of landing that junior developer dream job you've always wanted
-                            <br><br>
-                            ✔️ Great to have for your college exams
-                            <br><br>
-                            ✔️ Have great projects for your portfolio
-                            <br><br>
-                        </p>
-                    </div>
-                </div>
-                <br>
-                <p class="color-white text-center">
+                    ☕☕☕<br><br>
                     <span style="color: var(--primary-color); font-weight: bold;">
-                        TOP 5 REASONS TO START NOW
+                        <span class="color-white">I will walk you</span> through each small and confusing detail.
+                        <br><br>
+                        <span class="color-white">It will be a</span> friendly one-to-one digital experience.
+                        <br><br>
+                        <span class="color-white">I will reveal unique ways</span> in which you'll truly understand JavaScript.
                     </span>
                 </p>
                 <br>
                 <div class="row">
-                    <div class="col-sm-12 col-lg-5">
-                        <img src="<?= root() ?>assets\img\courses\course3.jpg" style="width: 100%; height: auto; border: 2px solid white; border-radius: 5px;" />
+                    <div class="col-sm-12 col-lg-6 text-center">
+                        <img src="<?= root() ?>assets\img\courses\course2.jpg" style="width: 100%; height: auto; border: 2px solid white; border-radius: 5px; width: 70%;" />
                         <br><br>
                     </div>
-                    <div class="col-sm-12 col-lg-7 flex-middle">
+                    <div class="col-sm-12 col-lg-6 flex-middle">
                         <p class="color-white">
-                            🏆 1. A great JavaScript developer will earn more than $70,000 per year ( imagine the possibilities )
+                            <br>
+                            <span style="color: var(--primary-color); font-weight: bold; font-size: 1.5rem">BENEFITS:</span>
                             <br><br>
-                            🏆 2. Ability to work remote and in your own time.
+                            ✔️ You will be able to properly read any web-dev code.
+                            <br><br>
+                            ✔️ You'll be significantly more prepared at your next tech interview.
+                            <br><br>
+                            ✔️ You'll have magnificient projects that'll impress your college professors.
+                            <br><br>
+                            ✔️ You'll have one-of-a-kind projects inside your CV (resume).
+                            <br><br>
+                        </p>
+                    </div>
+                </div>
+                <p class="color-white text-center">
+                    <span style="color: var(--primary-color); font-weight: bold; font-size: 1.5rem">
+                        5 REASONS TO START NOW
+                    </span>
+                </p>
+                <br>
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6 text-center">
+                        <img src="<?= root() ?>assets\img\courses\course3.jpg" style="width: 100%; height: auto; border: 2px solid white; border-radius: 5px; width: 70%;" />
+                        <br><br>
+                    </div>
+                    <div class="col-sm-12 col-lg-6 flex-middle">
+                        <p class="color-white">
+                            🏆 1. A great JavaScript developer will earn more than $70,000 per year.
+                            <br><br>
+                            🏆 2. Ability to work remotely from anywhere (at your choosing).
                             <br><br>
                             🏆 3. Biggest companies in the world are looking constantly for JavaScript developers.
                             <br><br>
                             🏆 4. Create projects that you can be incredibly proud of.
                             <br><br>
-                            🏆 5. Helps you think critically and will impact all areas of your life, not just coding
+                            🏆 5. Helps you think critically and will impact all areas of your life, not just coding.
                             <br><br>
                         </p>
                     </div>
                 </div>
-
                 <p class="color-white text-center">
                     <span style="color: var(--primary-color); font-weight: bold;">
-                        <strong>START FROM ABSOLUTE ZERO</strong>
+                        <strong>START FROM GROUND UP</strong>
                         <br>
-                        <span class="color-white">You don't need to know anything about JavaScript. I will teach all of the important fundamentals and basics straight from the start. You'll learn everything you need step-by-step.</span>
+                        <span class="color-white">I will teach all of the important fundamentals straight from the start. You'll learn in a step-by-step style.</span>
                         <br><br>
                         All of this while having a ton of FUN!
                     </span>
                 </p>
                 <br>
                 <h1 class="subtitle" style="color: white !important; text-align: center;">
-                    ALL FOR JUST<br>
+                    START NOW FOR ONLY<br>
                     <strike style="color: red; font-size: 1.5rem;">$399</strike>
-                    <span style="color: lightgreen; font-size: 2.5rem">$80</span>
+                    <span style="color: lime; font-size: 2.5rem">$80</span>
                 </h1>
                 <br><br>
                 <div class="text-center">
                     <a href="#" class="btn-read-more" onclick="startCheckout()" target="_blank">
-                        <span style="font-family: oswald;">ENROLL NOW</span>
+                        <span style="font-family: oswald;">START NOW</span>
                         <i class="bi bi-arrow-right"></i>
                     </a>
                 </div>
                 <br><br>
                 <div class="text-center">
                     <h1 class="title">
-                        STILL NOT SURE?
+                        YOU'RE STILL NOT SURE?
                     </h1>
-                    <br>
                     <h1 class="subtitle">
-                        MORE STUDENT TESTIMONIALS:
+                        HERE'S MORE STUDENT TESTIMONIALS:
                     </h1>
                 </div>
-                <br><br>
                 <div class="row">
                     <div class="col-lg-6 col-sm-12">
                         <br>
@@ -378,24 +380,16 @@ include php_root() . 'php/lp-header.php';
                 </div>
                 <br><br>
                 <div class="text-center">
-                    <h1>
-                        WebDevelopment RoadMap Bundle™
-                    </h1>
-                    <br>
-                    <span class="warning-span">
-                        80% DISCOUNT <br> ONE TIME LIMITED OFFER
-                    </span>
-                    <br><br>
-                    <h1 class="subtitle" style="color: white !important; text-align: center;">
-                        ALL FOR JUST<br>
-                        <strike style="color: red; font-size: 1.5rem;">$399</strike>
-                        <span style="color: lightgreen; font-size: 2.5rem">$80</span>
-                    </h1>
-                    <br><br>
                     <a href="#" class="btn-read-more" onclick="startCheckout()" target="_blank">
-                        <span style="font-family: oswald;">ENROLL NOW</span>
+                        <span style="font-family: oswald;">GET STARTED NOW</span>
                         <i class="bi bi-arrow-right"></i>
                     </a>
+                </div>
+                <br><br>
+                <div class="text-center">
+                    <h1><span style="color: var(--primary-color);font-family: oswald;">LIMITED BONUS:</span> For every 10th enrollment I'll personally select one and give a FREE 30 minute 1on1 zoom mentoring call</h1>
+                    <br>
+                    <small style="color: #eee;">(this bonus depends heavy on my availability, so don't wait, get started now!) </small>
                 </div>
                 <br><br>
             </div>

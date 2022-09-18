@@ -21,6 +21,10 @@ include php_root() . 'php/lp-header.php';
 <?php endif ?>
 
 <style>
+    .main-container {
+        max-width: 50vw;
+    }
+
     h1 {
         font-family: oswald;
         color: white !important;
@@ -43,14 +47,20 @@ include php_root() . 'php/lp-header.php';
         font-size: 1.5rem;
         font-family: oswald;
     }
+
+    @media (max-width: 768px) {
+        .main-container {
+            max-width: 95vw;
+        }
+    }
 </style>
 
 <main id="main">
     <section class="hero">
         <div class="container main-container">
-            <br><br> 
+            <br>
             <h1>
-                We've received your purchase. <br>You'll be granted access to the materials shortly.
+                We've received your purchase. You'll be granted access to the materials shortly.
             </h1>
             <br><br>
             <a href="https://drive.google.com/drive/folders/1b5W2NlGxai_EH2II4ItFxisrWNa2TwSr?usp=sharing" class="btn-read-more" target="_blank">
@@ -61,10 +71,10 @@ include php_root() . 'php/lp-header.php';
             <small style="color: red; font-weight: bold;">IMPORTANT: save the link above ☝️</small>
             <br><br><br><br>
             <span class="color-white">
-                <strong>Congratulations!</strong> You're now a paid student, you now <br>have access to our support email: <a href="mailto:support@todorescu.com">support@todorescu.com</a>
+                <strong>Congratulations!</strong> You're now a paid student, you now have access to our support email: <a href="mailto:support@todorescu.com">support@todorescu.com</a>
             </span>
             </h2>
-            <br><br><br><br>
+            <br><br>
         </div>
     </section>
 </main>

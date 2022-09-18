@@ -65,10 +65,14 @@ include php_root() . 'php/lp-header.php';
         }
 
         .btn-read-more {
+            width: 100%;
             padding: 25px 15px;
         }
+        .btn-read-more i {
+            display: none;
+        }
         .btn-read-more span {
-            font-size: 1rem;
+            font-size: .8rem;
         }
 
         iframe {
