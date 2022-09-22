@@ -142,38 +142,29 @@ include php_root() . 'php/lp-header.php';
                 <span class="warning-span">
                     ATTENTION <br> ONLY FOR CREATIVE ENGINEERS
                 </span>
-                <h1 class="subtitle">
-                    ALL FOR JUST<br>
-                    <strike class="discount-price">$399</strike>
-                    <span class="promo-price">$77</span>
-                </h1>
-                <a href="#" class="btn-read-more" onclick="startCheckout()" target="_blank">
-                    <span>I WANT TO BE SMART</span>
-                    <i class="bi bi-arrow-right"></i>
-                </a>
             </div>
             <div class="row text-left mt-4">
-                <div class="col-lg-4 col-12">&nbsp;</div>
+                <div class="col-lg-6 col-12">
+                    <div class="mt-4">
+                        <p class="centertitle">
+                            ’’It’s not enough to solve a problem, but to do so in the simplest way possible. Most often no one actually reads your code yet elegance is extremely satisfying.’’
+                        </p>
+                    </div>
+                </div>
                 <div class="col-lg-6 col-12">
                     <h1 class="subtitle">
                         YOU WILL:
                     </h1>
-                    <p class="bulletpoint">
+                    <p class="bulletpoint" style="margin-bottom: 0">
                         ✔️ Become a more creative web developer
                     </p>
-                    <p class="bulletpoint">
+                    <p class="bulletpoint" style="margin-bottom: 0" >
                         ✔️ Be seen as a smart web developer
                     </p>
                     <p class="bulletpoint">
                         ✔️ Impress others with your new skills
                     </p>
                 </div>
-                <div class="col-lg-2 col-12">&nbsp;</div>
-            </div>
-            <div class="mt-4">
-                <p class="centertitle">
-                    ’’It’s not enough to solve a problem, but to do so in the simplest way possible. Most often no one actually reads your code yet elegance is extremely satisfying.’’
-                </p>
             </div>
             <div class="text-center mt-0">
                 <h1 class="subtitle2">
@@ -201,7 +192,6 @@ include php_root() . 'php/lp-header.php';
                             Path Finding Algorithms With JavaScript
                         </p>
                     </div>
-                    <div class="col-sm-12 col-lg-2 hidden-sm">&nbsp;</div>
                     <div class="col-sm-12 col-lg-4 bundleitem">
                         <img src="<?= root() ?>assets\img\courses\course2_thumb.jpg" />
                         <p>
@@ -216,7 +206,13 @@ include php_root() . 'php/lp-header.php';
                             Matrix Magic Falling Symbols With JS
                         </p>
                     </div>
-                    <div class="col-sm-12 col-lg-2 hidden-sm">&nbsp;</div>
+                    <div class="col-sm-12 col-lg-4 bundleitem">
+                        <img src="<?= root() ?>assets\img\courses\course6_thumb.jpg" />
+                        <p>
+                            <strong>➤ COURSE 6</strong> <br>
+                            The Ultimate Vue Crash Course (ideal for angular/react developers)
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="text-center mt-5">

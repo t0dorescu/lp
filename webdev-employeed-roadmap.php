@@ -9,7 +9,7 @@ $hidesocials = true;
 $disabletopmenulink = true;
 $hidecookieconset = true;
 
-$title = "The Inteligent WebDeveloper Bundle™ - Todorescu.com";
+$title = "The WebDev Employeed Roadmap™ - Todorescu.com";
 include php_root() . 'php/lp-header.php';
 ?>
 
@@ -38,6 +38,10 @@ include php_root() . 'php/lp-header.php';
         font-size: 1.5rem !important;
         font-family: oswald;
         margin-bottom: 25px;
+    }
+
+    .btn-read-more {
+        padding: 15px 25px !important;
     }
 
     .btn-read-more span {
@@ -76,6 +80,11 @@ include php_root() . 'php/lp-header.php';
     ul.terms li a {
         font-family: oswald;
         color: black;
+    }
+
+    .confession-new-item,
+    .confessions .confession-new-item video {
+        padding: 0 !important;
     }
 
     @media (max-width: 768px) {
@@ -313,9 +322,8 @@ include php_root() . 'php/lp-header.php';
                     <br><br>
                     Then, you have all tools and are equipped to go out there in the world to really solve problems. You’ll make jealousy-provoking money on your own terms.
                     <br><br>
-                    <a href="<?= root() . 'information-call' ?>" class="btn-read-more">
+                    <a href="https://calendly.com/todorescu/methodology" class="btn-read-more" target="_blank">
                         <span style="font-family: oswald;">Book my FREE information call</span>
-                        <i class="bi bi-arrow-right"></i>
                     </a>
                     <br><br><br>
                     <span style="font-family: oswald;">DOES THIS SOUND LIKE YOU?</span>
@@ -350,9 +358,8 @@ include php_root() . 'php/lp-header.php';
                     </li>
                 </ul>
                 
-                <a href="<?= root() . 'information-call' ?>" class="btn-read-more">
+                <a href="https://calendly.com/todorescu/methodology" class="btn-read-more" target="_blank">
                     <span style="font-family: oswald;">Book my FREE information call</span>
-                    <i class="bi bi-arrow-right"></i>
                 </a>
                 <br><br>
                 <br><br>
@@ -384,9 +391,8 @@ include php_root() . 'php/lp-header.php';
                     <br><br>
                     Imagine being your boss and commanding your hourly rate.
                     <br><br>
-                    <a href="<?= root() . 'information-call' ?>" class="btn-read-more">
+                    <a href="https://calendly.com/todorescu/methodology" class="btn-read-more" target="_blank">
                         <span style="font-family: oswald;">Book my FREE information call</span>
-                        <i class="bi bi-arrow-right"></i>
                     </a>
                     <br><br><br>
                     <span>WHY YOU’RE FAILING</span>
@@ -401,9 +407,8 @@ include php_root() . 'php/lp-header.php';
                     <br><br>
                     Stop doing dog-shit projects from YouTubers instructors that are confused just as much as you.
                     <br><br>
-                    <a href="<?= root() . 'information-call' ?>" class="btn-read-more">
+                    <a href="https://calendly.com/todorescu/methodology" class="btn-read-more" target="_blank">
                         <span style="font-family: oswald;">Book my FREE information call</span>
-                        <i class="bi bi-arrow-right"></i>
                     </a>
                     <br><br><br>
                     <span>WHY SO EXPENSIVE? WHY ISN’T IT FREE?</span>
@@ -424,9 +429,8 @@ include php_root() . 'php/lp-header.php';
                     <br><br>
                     That’s the mentality a true winner has, and since you already invested this much time (and probably emotions) in this, I know you’re the rare one that takes his career seriously…
                     <br><br>
-                    <a href="<?= root() . 'information-call' ?>" class="btn-read-more">
+                    <a href="https://calendly.com/todorescu/methodology" class="btn-read-more" target="_blank">
                         <span style="font-family: oswald;">Book my FREE information call</span>
-                        <i class="bi bi-arrow-right"></i>
                     </a>
                     <br><br><br>
                     <span>TWO CHOICES</span>
@@ -515,9 +519,8 @@ include php_root() . 'php/lp-header.php';
                     </div>
                 </div>
                 <br><br>
-                <a href="<?= root() . 'information-call' ?>" class="btn-read-more">
+                <a href="https://calendly.com/todorescu/methodology" class="btn-read-more" target="_blank">
                     <span style="font-family: oswald;">Book my FREE information call</span>
-                    <i class="bi bi-arrow-right"></i>
                 </a>
                 <br><br>
                 <ul class="terms">

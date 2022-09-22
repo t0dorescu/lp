@@ -15,7 +15,7 @@ include php_root() . 'php/lp-header.php';
 <?php if (!$isDev) : ?>
     <script>
         setTimeout(async () => {
-            await window.lintrk('track', { conversion_id: 10422769 });
+            await window.lintrk('track', { conversion_id: 10525985 });
         }, 1000)
     </script>
 <?php endif ?>
@@ -60,11 +60,11 @@ include php_root() . 'php/lp-header.php';
         <div class="container main-container">
             <br>
             <h1>
-                We've received your purchase. You'll be granted access to the materials shortly.
+                Purchase completed. You'll be granted access shortly.
             </h1>
             <br><br>
-            <a href="https://drive.google.com/drive/folders/1b5W2NlGxai_EH2II4ItFxisrWNa2TwSr?usp=sharing" class="btn-read-more" target="_blank">
-                <span style="font-family: oswald;">DOWNLOAD COURSES</span>
+            <a href="https://drive.google.com/drive/folders/1IyCdqrqIMa_wkkB8zg6ARwzUx2we6Yt5?usp=sharing" class="btn-read-more" target="_blank">
+                <span style="font-family: oswald;">DOWNLOAD</span>
                 <i class="bi bi-arrow-right"></i>
             </a>
             <br><br>
