@@ -158,7 +158,7 @@ include php_root() . 'php/lp-header.php';
               </div>
             </div>
             <a href="<?= root() . 'students' ?>" class="btn-read-more">
-              <span style="font-family: oswald;">CLIENT RESULTS</span>
+              <span style="font-family: oswald;">TESTIMONIALS</span>
               <i class="bi bi-arrow-right"></i>
             </a>
             <br><br>

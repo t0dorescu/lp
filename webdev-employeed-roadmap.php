@@ -142,7 +142,7 @@ include php_root() . 'php/lp-header.php';
                     <strong>“Who’s the person behind this written letter?”</strong>
                     <br><br>
                     If you allow me, let me introduce myself briefly.
-                    I’m Tudor Todorescu. I’ve let programming enhance my lifestyle for the last 2.5 years.
+                    I’m Tudor Todorescu. I’ve let programming enhance my lifestyle.
                     <br><br>
                     I’ve sterilized all my financial problems just by crafting source code for companies. I’m a bit contrarian, which is the secret advantage that allows me to get sunshine-clarity on the solutions I provide for the companies I work for.
                     <br><br>
@@ -387,7 +387,7 @@ include php_root() . 'php/lp-header.php';
                     <br><br>
                     Imagine being so at ease, knowing you got the right training, knowing true professionals have your back, even cheering with you, celebrating your wins.
                     <br><br>
-                    Imagine finally getting financial independence. Imagine getting a killer high-paying skill. Imagine Getting the bragging rights that come from doing something that matters.
+                    Imagine finally getting financial independence. Imagine getting a killer high-paying skill. Imagine getting the bragging rights that come from doing something that matters.
                     <br><br>
                     Imagine being your boss and commanding your hourly rate.
                     <br><br>

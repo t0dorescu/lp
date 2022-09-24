@@ -13,11 +13,9 @@
             <?php if (!$hidesocials) : ?>
               <div class="social-links mt-3 text-center" style="padding-bottom: 20px;">
                 <a href="https://www.facebook.com/tudor.t0dorescu" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
-                <a href="https://www.linkedin.com/in/tudortodorescu/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
                 <a href="https://www.github.com/tudortodorescu" class="github" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/tudortodorescu/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
                 <a href="https://www.youtube.com/c/tudortodorescu" class="youtube" target="_blank"><i class="bi bi-youtube"></i></a>
-                <a href="https://www.instagram.com/tudortodorescu" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
-                <a href="https://www.tiktok.com/@t0dorescu" class="tiktok" target="_blank"><i class="bi bi-tiktok"></i></a>
               </div>
             <?php endif ?>
 

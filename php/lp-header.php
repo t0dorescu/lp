@@ -85,8 +85,8 @@
             <?php if (!$hidemenu) : ?>
               <li><a class="nav-link" href="<?= root() ?>">Home</a></li>
               <li><a class="nav-link" href="<?= root() . 'story' ?>">Story</a></li>
-              <li><a class="nav-link" href="<?= root() . 'students' ?>">Students</a></li>
-              <li><a class="nav-link" href="<?= root() . 'results' ?>">Results</a></li>
+              <li><a class="nav-link" href="<?= root() . 'testimonials' ?>">Testimonials</a></li>
+              <li><a class="nav-link" href="<?= root() . 'my-results' ?>">My Results</a></li>
               <li><a class="nav-link" href="<?= root() . 'portfolio' ?>">Portfolio</a></li>
               <li><a class="nav-link" href="<?= root() . 'support' ?>">Support</a></li>
               <?php if (!$hidewaitinglist) : ?>
