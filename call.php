@@ -9,7 +9,7 @@ $hidesocials = true;
 $disabletopmenulink = true;
 $hidecookieconset = true;
 
-$title = "Schedule Information Call - Todorescu.com";
+$title = "Book MY Information Call - Todorescu.com";
 include php_root() . 'php/lp-header.php';
 ?>
 
@@ -65,7 +65,7 @@ include php_root() . 'php/lp-header.php';
     <section class="hero pb-0">
         <div class="container main-container">
             <h1>
-                BOOK YOUR TODORESCU WEBDEV METHODOLOGY™<br> INFORMATION CALL BELOW
+                BOOK YOUR TODORESCU PROCEDURE™<br> INFORMATION CALL BELOW
             </h1>
             <br>
             <span class="warning-span">
@@ -79,7 +79,7 @@ include php_root() . 'php/lp-header.php';
                 </h1>
                 <br>
                 <p class="color-white">
-                    ➤ If you are brand new to web-development or do not have money to invest in a program, PLEASE DO NOT BOOK A CALL AND TAKE UP A SLOT.
+                    ➤ If you do not have money to invest in a program, PLEASE DO NOT BOOK A CALL AND TAKE UP A SLOT.
                 </p>
                 <p class="color-white">
                     ➤ If you do not show up for your booked call and you don’t reschedule, you will NOT get a second chance because we hate people that waste our time.
