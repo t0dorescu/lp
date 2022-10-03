@@ -1,5 +1,4 @@
 <?php
-die();
 include $_SERVER['DOCUMENT_ROOT'] . "/api/light.php";
 
 $hidewaitinglist = true;
@@ -9,7 +8,7 @@ $hidemenu = true;
 $disabletopmenulink = true;
 $hidecookieconset = true;
 
-$title = "Available only for under-valued & under-paid junior web-developers - Todorescu.com";
+$title = "START HERE - Todorescu.com";
 include php_root() . 'php/lp-header.php';
 ?>
 
@@ -127,10 +126,11 @@ include php_root() . 'php/lp-header.php';
         <div class="container main-container">
             <div class="row">
                 <div class="col-lg-6 col-12 flex-middle">
-                    <h1 class="title">
-                        “They Laughed When I Applied For A <br>
-                        <span>Mid-Level Position With A 80% Raise.</span><br>
-                        Then I Showed Them This Video…”
+                    
+                    <h1 class="title" style="color: white;">
+                        Learn programming with the<br>
+                        TODORESCU METHOD™ and win your first developer
+                        job in under 10 weeks
                     </h1>
                     <button class="btn-read-more" onclick="openOptinModal()">
                         <i class="bi bi-envelope"></i>
@@ -138,11 +138,11 @@ include php_root() . 'php/lp-header.php';
                     </button>
                 </div>
                 <div class="col-lg-6 col-12">
-                    <img src="<?= root() . 'assets/img/training_2.jpg' ?>" class="optin-img" />
-                    <!-- <br>
-                    <h3 class="subtitle">
-                        Available only for an under-valued / under-paid junior web-developer
-                    </h3> -->
+                    <img src="<?= root() . 'assets/img/training_3.jpg' ?>" class="optin-img" />
+                    <br>
+                    <h3 class="subtitle" style="color: var(--primary-color) !important;">
+                        Only for those who have a burning ambition for radical career growth 🔥
+                    </h3>
                 </div>
             </div>
         </div>

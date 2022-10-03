@@ -9,7 +9,7 @@ $hidesocials = true;
 $disabletopmenulink = true;
 $hidecookieconset = true;
 
-$title = "The WebDev Employeed Roadmap™ - Todorescu.com";
+$title = "Todorescu Method™ - Todorescu.com";
 include php_root() . 'php/lp-header.php';
 ?>
 
@@ -153,7 +153,7 @@ include php_root() . 'php/lp-header.php';
                     That consuming thought made it hard for me to just enjoy the hard-earned material things I’ve bought. It wasn’t fair for me to enjoy life while others are in need.
                     <br><br>
                     I’ve decided to at least try to help someone achieve a piece of this glory. Opened some spots and didn’t expect any sparks to fly, but to my surprise, it worked. It just clicked for others as well. A few of my trial students got similar results fast.
-                    <br><br>
+                    <br>
                 <div class="confessions">
                     <div class="confession-new-item">
                         <video controls="controls" poster="<?= root() . 'assets/img/robert-thumb_.jpg' ?>">
@@ -164,7 +164,7 @@ include php_root() . 'php/lp-header.php';
                         </div>
                     </div>
                 </div>
-                <br><br>
+                <br>
                 <div style="text-align: left; font-family: coolvetica; letter-spacing: 1px; font-size: 1.25rem;">
                 Since it’s a disservice not to make this available, I’ve decided to reveal my secrets publicly.
                 <br><br>
@@ -299,14 +299,14 @@ include php_root() . 'php/lp-header.php';
                             <source src="<?= root() . 'assets/video/interviu-radu.mp4' ?>" type="video/mp4">
                         </video>
                         <div class="text">
-                            Radu went from a junior job to <strong>getting his first mid-level position</strong>, using our procedure.
+                            Radu went from a junior job to <strong>getting his first mid-level position</strong>, using our method.
                         </div>
                     </div>
                 </div>
 
                 <br>
                 <div style="text-align: left; font-family: coolvetica; letter-spacing: 1px; font-size: 1.25rem;">
-                    We created a procedure like anything out there.
+                    We created a method like anything out there.
                     <br><br>
                     It’s not a boot camp where we teach you basics, oh no no.
                     <br><br>
@@ -347,12 +347,11 @@ include php_root() . 'php/lp-header.php';
                     You’ll get to practice dummy-consulting with us, and other students to become comfortable in simulated environments.
                     <br><br>
                     Then, you have all tools and are equipped to go out there in the world to really solve problems. You’ll make jealousy-provoking money on your own terms.
-                    <br><br>
+                    <!-- <br><br>
                     <a href="<?= root() ?>call" class="btn-read-more" target="_blank">
                         <span style="font-family: oswald;">Book my FREE information call</span>
-                    </a>
-                    <br>
-                    <br>
+                    </a> -->
+                    <br><br>
                     <div class="confessions">
                         <div class="confession-new-item">
                             <video controls="controls" poster="<?= root() . 'assets/img/cristi-thumb_.jpg' ?>">
@@ -390,28 +389,28 @@ include php_root() . 'php/lp-header.php';
                     <span>WHAT WE’RE OFFERING</span>
                     <br>
                     <ul>
-                        <li style="text-align: left; font-family: oswald; padding: 15px 0;">
+                        <li style="text-align: left; font-family: coolvetica; font-size: 1.25rem; letter-spacing: 1px; padding: 15px 0;">
                             We’ll help you build/launch your unique/personal start-up, code it from start to finish, and then leverage it straight into a mid-level developer position.
                         </li>
-                        <li style="text-align: left; font-family: oswald; padding: 15px 0;">
+                        <li style="text-align: left; font-family: coolvetica; font-size: 1.25rem; letter-spacing: 1px; padding: 15px 0;">
                             Our proprietary method of analysis and consulting, from researching the project to breaking down tasks for you to achieve. To full support along the way by doing it together.
                         </li>
-                        <li style="text-align: left; font-family: oswald; padding: 15px 0;">
+                        <li style="text-align: left; font-family: coolvetica; font-size: 1.25rem; letter-spacing: 1px; padding: 15px 0;">
                             We also train you in real-life situational interviews. We’ll also, as a bonus show you some sneaky ways to go about it that will make you stand out. We’ll even tell you what to say to blow the technical interviewers' socks of (they will be the ones who learn stuff from you, imagine that)
                         </li>
-                        <li style="text-align: left; font-family: oswald; padding: 15px 0;">
+                        <li style="text-align: left; font-family: coolvetica; font-size: 1.25rem; letter-spacing: 1px; padding: 15px 0;">
                             If you play your cards right, we have access to a network of 5000 recruiters/companies that love to hire talented developers like yourself (once we are done with you, of course)
                         </li>
-                        <li style="text-align: left; font-family: oswald; padding: 15px 0;">
+                        <li style="text-align: left; font-family: coolvetica; font-size: 1.25rem; letter-spacing: 1px; padding: 15px 0;">
                             We also offer 1 year of student access to bi-weekly calls for support after they get hired.
                         </li>
                     </ul>
 
+                    <!-- <br><br>
                     <a href="<?= root() ?>call" class="btn-read-more" target="_blank">
                         <span style="font-family: oswald;">Book my FREE information call</span>
-                    </a>
-                    <br><br>
-                    <br><br>
+                    </a> -->
+                    <br>
                     <div style="font-family: coolvetica; letter-spacing: 1px; font-size: 1.25rem; text-align: left;">
                         If you are so close to breaking through, you can almost taste it…
                         <br><br>
@@ -439,10 +438,10 @@ include php_root() . 'php/lp-header.php';
                         Imagine finally getting financial independence. Imagine getting a killer high-paying skill. Imagine getting the bragging rights that come from doing something that matters.
                         <br><br>
                         Imagine being your boss and commanding your hourly rate.
-                        <br><br>
+                        <!-- <br><br>
                         <a href="<?= root() ?>call" class="btn-read-more" target="_blank">
                             <span style="font-family: oswald;">Book my FREE information call</span>
-                        </a>
+                        </a> -->
                         <br><br>
                         <div class="confessions">
                             <div class="confession-new-item">
@@ -478,14 +477,14 @@ include php_root() . 'php/lp-header.php';
                                 </div>
                             </div>
                         </div>
-                        <br><br>
+                        <!-- <br><br>
                         <a href="<?= root() ?>call" class="btn-read-more" target="_blank">
                             <span style="font-family: oswald;">Book my FREE information call</span>
-                        </a>
-                        <br><br><br>
+                        </a> -->
+                        <br><br>
                         <span>WHY SO EXPENSIVE? WHY ISN’T IT FREE?</span>
                         <br><br>
-                        I’m earning $100.000 per year from full-time remote vue project.
+                        I’m earning approximately $91.000 yearly contractor on PWA with Vue3.
                         <br><br>
                         I’ve been doing this for a few years now, and I’ve built a certain life-style that I’m not willing to give up.
                         <br><br>
@@ -493,17 +492,17 @@ include php_root() . 'php/lp-header.php';
                         <br><br>
                         If you really want this, you’ll make the investment in yourself, and in my decade of knowledge, and support. If you want this,
                         <br><br>
-                        Charging for this procedure permits me to do it full-time with passion and dedication; it also pays my team's salaries and gives me time to offer premium support.
+                        Charging for this method permits me to do it full-time with passion and dedication; it also pays my team's salaries and gives me time to offer premium support.
                         <br><br>
                         It buys me zen time to reflect and gave you guys the right answers, else I’ll be doing you a disservice.
                         <br><br>
                         This is not a soup kitchen, we really take it seriously and go hard at it, so you gotta come in and bet on yourself, it will make all difference when you got skin in the game.
                         <br><br>
                         That’s the mentality a true winner has, and since you already invested this much time (and probably emotions) in this, I know you’re the rare one that takes his career seriously…
-                        <br><br>
+                        <!-- <br><br>
                         <a href="<?= root() ?>call" class="btn-read-more" target="_blank">
                             <span style="font-family: oswald;">Book my FREE information call</span>
-                        </a>
+                        </a> -->
                         <br><br>
                         <div class="confessions">
                             <div class="confession-new-item">
@@ -521,10 +520,10 @@ include php_root() . 'php/lp-header.php';
                         1. I’ve told you the secret of how clever devs get hired fast. Now you can go at it alone and try to build unique projects nobody ever builds without support. You might make it, or you might get lost again in tutorial land.
                         <br><br>
                         2. You can apply to join our new exclusive club, where we build together start-ups the world has never seen before. Projects so cool it will instantly attract the attention of important companies in your area. We have limited spots open, so snag it now and let’s win.
-                        <br><br>
+                        <!-- <br><br>
                         <a href="<?= root() ?>call" class="btn-read-more" target="_blank">
                             <span style="font-family: oswald;">Book my FREE information call</span>
-                        </a>
+                        </a> -->
                         <br><br>
 
                     </div>

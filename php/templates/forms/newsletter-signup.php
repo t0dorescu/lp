@@ -13,7 +13,7 @@
     style="background: none; opacity: .9; border: 0; padding: 30px 0 0 0;">
     <div class="container" style="background: black;padding: 30px;">
         <div class="row justify-content-center">
-            <div class="col-lg-12 text-center">
+            <div class="col-lg-12 text-center js_waiting_top">
                 <h4 style="color: var(--primary-color);font-family: 'oswald';letter-spacing: 1px;">Waiting list</h4>
                 <p style="color: #ccc; margin-bottom: 0">
                     <strong style="color: white;">No availability at this time.</strong> <br>Join the queue, we'll email you soon.
@@ -25,16 +25,16 @@
                     role="alert" 
                     style="text-align: center; margin-top: 20px;"
                 >
-                    <img class="js_gravatar_img d-none" src="" style="width: 100px; margin: 0 auto;" />
-                    <div class="row">&nbsp;</div>
-                    <strong>You've joined the queue <span class="js_name_congrats"></span></strong>
+                    <img class="js_gravatar_img d-none" src="" style="width: 100px; margin: 0 auto; display: none !important;" />
+                    <div class="row" style=" display: none !important;">&nbsp;</div>
                     <br>
-                    You're one step away from getting to the good stuff! 🍖
+                    <span class="js_name_congrats"></span>
+                    <span style="font-size: 1.25rem; font-family: oswald;">To finalize your registration, we've sent you a confirmation link. </span>
+                    <br>( if you haven't received it, check SPAM folder also )
                     <br><br>
-                    Please check your email inbox first to confirm. <strong>(SPAM folder as well)</strong>
                 </div>
                 <form class="js_form">
-                    <input type="email" id="inputEmail" name="email" class="is-invalid" style="outline: 0;" />
+                    <input type="email" id="inputEmail" name="email" class="is-invalid" placeholder="Your email address..." style="outline: 0;" />
                     <div class="spinner-border js_spinner d-none" style="float: right;"></div>
                     <input type="submit" value="Join" class="js_subscribe" onclick="newsletterSignup()" />
                 </form>
@@ -49,7 +49,7 @@
                         Please email us at <a href="mailTo:support@todorescu.com" class="text-decoration-underline color-secondary">support@todorescu.com</a> for manual newsletter subsription.
                     </div>
                 </div>
-                <p class="waitinglist-agreement">
+                <p class="waitinglist-agreement js_waiting_agreement">
                     By joinning the waiting list, you agree to our <a href="<?= root().'terms-of-service' ?>" target="_blank" class="text-decoration-underline">Terms of service</a> and acknowledge our <a href="<?= root().'privacy-policy' ?>" target="_blank" class="text-decoration-underline">Privacy policy</a>
                 </p>
             </div>
@@ -107,6 +107,9 @@
                 toggleElements(newsletterForm, '.js_confirm_message', '.js_form', true)
                 disableButton('.js_subscribe')
                 welcomeMessage(newsletterForm, data)
+                
+                document.querySelector('.js_waiting_top').style.display = 'none'
+                document.querySelector('.js_waiting_agreement').style.display = 'none'
             }
 
             newsletterForm.querySelector('.js_confirm_message').scrollIntoView({block:'center'})

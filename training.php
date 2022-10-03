@@ -1,5 +1,4 @@
 <?php
-die();
 include $_SERVER['DOCUMENT_ROOT'] . "/api/light.php";
 
 $hidewaitinglist = true;
@@ -9,14 +8,16 @@ $hidesocials = true;
 $disabletopmenulink = true;
 $hidecookieconset = true;
 
-$title = "Junior WebDev Video - Todorescu.com";
+$title = "TRAINING - Todorescu.com";
 include php_root() . 'php/lp-header.php';
 ?>
 
 <?php if (!$isDev) : ?>
     <script>
         setTimeout(async () => {
-            await window.lintrk('track', { conversion_id: 10422729 });
+            await window.lintrk('track', {
+                conversion_id: 10422729
+            });
         }, 1000)
     </script>
 <?php endif ?>
@@ -61,7 +62,9 @@ include php_root() . 'php/lp-header.php';
     }
 
     @media (max-width: 768px) {
-        h1.title, h2.title {
+
+        h1.title,
+        h2.title {
             font-size: 1.5rem;
         }
 
@@ -69,9 +72,11 @@ include php_root() . 'php/lp-header.php';
             width: 100%;
             padding: 25px 15px;
         }
+
         .btn-read-more i {
             display: none;
         }
+
         .btn-read-more span {
             font-size: .8rem;
         }
@@ -91,37 +96,45 @@ include php_root() . 'php/lp-header.php';
         <div class="container main-container mt-0">
             <br><br>
             <h1 class="title">
-                This material is available only for a junior web-developer who's under-valued & under-paid
+                Learn programming with the TODORESCU METHOD™<br>
             </h1>
-            <br>
             <h2 class="title">
-                ... and wants to make big moves in his career
+                ... and win your first developer job in under 10 weeks
             </h2>
             <br>
-            <iframe src="https://www.youtube-nocookie.com/embed/mvLsfdExVcI?modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/iEDdYhAx0C4?modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <br><br><br>
-            <a href="<?= root() . 'information-call' ?>" class="btn-read-more" target="_blank">
+            <a href="<?= root() . 'call' ?>" class="btn-read-more" target="_blank">
                 <i class="bi bi-calendar-date"></i>
-                <span style="font-family: oswald;">SCHEDULE MY INFORMATION CALL</span>
+                <span style="font-family: oswald;">BOOK MY INFORMATION CALL</span>
             </a>
-            <br><br><br><br>
-            <h1 class="title">
-                SHOULD YOU REALLY BOOK A CALL?
+            <br><br><br><br><br>
+            <h1 class="title" style="font-size: 2rem;">
+                CAN THIS WORK FOR ME?
             </h1>
-            <br>
             <h2 class="title">
-                JUST LOOK HOW IT TURNED OUT FOR OTHERS LIKE YOU...
+                LOOK HOW IT TURNED OUT FOR OTHERS JUST LIKE YOU...
             </h2>
             <br>
             <div class="confessions">
                 <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 flex-middle">
+                        <div class="confession-new-item">
+                            <video controls="controls" poster="<?= root() . 'assets/img/alina-thumb_.jpg' ?>">
+                                <source src="<?= root() . 'assets/video/interviu-alina.mp4' ?>" type="video/mp4">
+                            </video>
+                            <div class="text">
+                                Alina switched from a marketing career to a <strong>fulltime junior web developer position.</strong>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-lg-4 col-12 flex-middle">
                         <div class="confession-new-item">
                             <video controls="controls" poster="<?= root() . 'assets/img/radu-thumb_.jpg' ?>">
                                 <source src="<?= root() . 'assets/video/interviu-radu.mp4' ?>" type="video/mp4">
                             </video>
                             <div class="text">
-                                Radu went from a junior job to <strong>getting his first mid-level position</strong>, using our methodologies.
+                                Radu went from a junior job to <strong>getting his first mid-level position</strong>, using our method.
                             </div>
                         </div>
                     </div>
@@ -142,6 +155,26 @@ include php_root() . 'php/lp-header.php';
                             </video>
                             <div class="text">
                                 Tudor helped Robert <strong>kickstart his programming journey</strong> and got him focused on what matters.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 flex-middle">
+                        <div class="confession-new-item">
+                            <video controls="controls" poster="<?= root() . 'assets/img/mihnea-thumb_.jpg' ?>">
+                                <source src="<?= root() . 'assets/video/interviu-mihnea.mp4' ?>" type="video/mp4">
+                            </video>
+                            <div class="text">
+                                Mihnea got help with thinking. Concepts that take one month to grasp, <strong>now take less than a week</strong>.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 flex-middle">
+                        <div class="confession-new-item">
+                            <video controls="controls" poster="<?= root() . 'assets/img/petrisor-thumb_.jpg' ?>">
+                                <source src="<?= root() . 'assets/video/interviu-petrisor.mp4' ?>" type="video/mp4">
+                            </video>
+                            <div class="text">
+                                Petrisor says Tudor's mentoring made a huge difference in his progress.<strong>"Tudor's a natural"</strong>.
                             </div>
                         </div>
                     </div>
