@@ -85,10 +85,10 @@
             <?php if (!$hidemenu) : ?>
               <li><a class="nav-link" href="<?= root() ?>">Home</a></li>
               <li><a class="nav-link" href="<?= root() . 'story' ?>">Story</a></li>
-              <li><a class="nav-link" href="<?= root() . 'testimonials' ?>">Testimonials</a></li>
-              <li><a class="nav-link" href="<?= root() . 'my-results' ?>">My Results</a></li>
-              <li><a class="nav-link" href="<?= root() . 'portfolio' ?>">Portfolio</a></li>
-              <li><a class="nav-link" href="<?= root() . 'support' ?>">Support</a></li>
+              <li><a class="nav-link" href="<?= root() . 'clients' ?>">Clients</a></li>
+              <!-- <li><a class="nav-link" href="<?= root() . 'my-results' ?>">My Results</a></li> -->
+              <!-- <li><a class="nav-link" href="<?= root() . 'portfolio' ?>">Portfolio</a></li> -->
+              <li><a class="nav-link" href="<?= root() . 'contact' ?>">Contact</a></li>
               <?php if (!$hidewaitinglist) : ?>
                 <li><a class="getstarted scrollto" href="#footer" style="font-family: oswald;">Waiting list</a></li>
               <?php endif ?>

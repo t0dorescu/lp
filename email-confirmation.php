@@ -36,7 +36,7 @@ include php_root() . 'php/lp-header.php';
       </h1>
       <br>
       <h2>
-        (***FYI: Check Your SPAM/Junk Folder, Just In Case***) 
+        If you haven't received <br>it check your SPAM folder
       </h2>
       <br><br><br><br>
     </div>

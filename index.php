@@ -10,15 +10,19 @@ include php_root() . 'php/lp-header.php';
 <main id="main">
   <section class="hero">
     <div class="container main-container">
-      <h1>
-        Unlimited premium web-dev projects
+      <img src="<?= root() ?>assets/img/tudor-front.png" style="width: 300px; height: auto;" />
+      <br><br>
+      <h1 style="font-family: Oswald;font-weight: 400;">
+        Hi, I'm Tudor Todorescu
       </h1>
-      <h2>
-        Be so in demand, you get to choose based on passion
+      <h2 style="font-family: Oswald;font-weight: 400;">
+      ... and I help people get their <br>
+      first web development job fast<br> 
+      <small style="font-family: Oswald;">(under 10 weeks)</small>
       </h2>
       <br><br>
       <a href="<?= root() . 'story' ?>" class="btn-read-more">
-        <span style="font-family: oswald;">FIND OUT MORE</span>
+        <span style="font-family: oswald;">READ MY STORY</span>
         <i class="bi bi-arrow-right"></i>
       </a>
       <br><br>

@@ -36,7 +36,7 @@ include php_root() . 'php/lp-header.php';
     <section class="hero pb-0">
         <div class="container main-container">
             <p class="first">
-                Tudor invested well over <b>20,000 hours</b> understanding front-end for commercial projects. 
+                Tudor invested well over <b>50,000 hours</b> understanding front-end engineering for premium commercial projects. 
                 <br><br>
                 Working on projects with well over <b>400,000+</b> lines of code.
             </p>

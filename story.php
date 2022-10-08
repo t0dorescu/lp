@@ -19,6 +19,9 @@ include php_root() . 'php/lp-header.php';
     text-decoration: underline; 
     font-weight:bold;
   }
+  p, b, h3 {
+    font-family: Oswald;
+  }
 </style>
 
 <main id="main">
@@ -29,7 +32,7 @@ include php_root() . 'php/lp-header.php';
           <div class="content text-left">
             <h3 class="mt-3 text-left">Tudor's story</h3>
             <div class="row">
-              <div class="col-lg-9 col-md-7 col-12 flex-middle">
+              <div class="col-lg-7 col-md-7 col-12 flex-middle">
                 <p class="text-left">
                   <b>Be HONEST. You’re kind of embarrassed by your own code. Aren’t you?</b>
                   <br><br>
@@ -147,12 +150,12 @@ include php_root() . 'php/lp-header.php';
                   <br><br>
                 </p>
               </div>
-              <div class="col-lg-3 col-md-5 col-12 flex-top">
-                <img src="<?= root() .'assets/img/facebook-profile-pic.jpg' ?>" class="img-fluid" alt="">
-                <p class="fb-text-desc">
-                View Tudor's impressive portfolio.<br> 
-                <a href="https://www.linkedin.com/in/tudortodorescu/" target="_blank" class="link">
-                  LinkedIn <i class="bi bi-linkedin"></i>
+              <div class="col-lg-5 col-md-5 col-12 flex-top">
+                <img src="<?= root() .'assets/img/tudor-old.jpg' ?>" class="img-fluid" alt="">
+                <p class="fb-text-desc" style="font-weight: bold; font-family: Oswald; font-size: 1.25rem;">
+                Me in 2011 (where I started)<br> 
+                <a href="https://www.linkedin.com/in/tudortodorescu/" target="_blank" class="link"  style="font-weight: bold; font-family: Oswald; font-size: 1.25rem;">
+                  2022 Linkedin Portfolio <i class="bi bi-linkedin"></i>
                 </a>
                 </p>
               </div>

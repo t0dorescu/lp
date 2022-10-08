@@ -29,7 +29,7 @@ include php_root() . 'php/lp-header.php';
                             <source src="<?= root() . 'assets/video/interviu-cristi.mp4' ?>" type="video/mp4">
                         </video>
                         <div class="text">
-                            Using our consulting calls, Cristi <b>significantly upgraded his programming skills</b>, making him more desirable for companies
+                            While still student, Cristi landed his <b>first junior web-developer role</b>, with a one month internship first.
                         </div>
                     </div>
                 </div>

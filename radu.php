@@ -29,7 +29,7 @@ include php_root() . 'php/lp-header.php';
                             <source src="<?= root() . 'assets/video/interviu-radu.mp4' ?>" type="video/mp4">
                         </video>
                         <div class="text">
-                            Radu went from a junior job to <strong>getting his first mid-level position</strong>, using our methodologies.
+                            Radu went from a junior job to <strong>getting his first mid-level position</strong>, using our method.
                         </div>
                     </div>
                 </div>

@@ -257,7 +257,7 @@ include php_root() . 'php/lp-header.php';
                                 <source src="<?= root() . 'assets/video/interviu-mihnea.mp4' ?>" type="video/mp4">
                             </video>
                             <div class="text">
-                                Mihnea got help with thinking. Concepts that take one month to grasp, <strong>now take less than a week</strong>.
+                                Mihnea, while still in high-school, he got help with thinking and with his career path.   
                             </div>
                         </div>
                     </div>

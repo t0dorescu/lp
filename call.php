@@ -65,7 +65,7 @@ include php_root() . 'php/lp-header.php';
     <section class="hero pb-0">
         <div class="container main-container">
             <h1>
-                BOOK YOUR TODORESCU PROCEDURE™<br> INFORMATION CALL BELOW
+                BOOK YOUR TODORESCU METHOD™<br> INFORMATION CALL BELOW
             </h1>
             <br>
             <span class="warning-span">
@@ -118,7 +118,7 @@ include php_root() . 'php/lp-header.php';
             <br><br>
             <p class="color-white">PS. If our available spots don't work for your timezone, please email us directly at <a href="mailto:support@todorescu.com">support@todorescu.com</a> and we'll coordinate and schedule a time that works.</p>
             <br>
-            <iframe src="https://calendly.com/todorescu/methodology?embed_domain=todorescu.com&amp;embed_type=Inline" frameborder="0"></iframe>
+            <iframe src="https://calendly.com/todorescu/method?embed_domain=todorescu.com&amp;embed_type=Inline" frameborder="0"></iframe>
         </div>
     </section>
 </main>
