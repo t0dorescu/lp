@@ -2,8 +2,9 @@
 include $_SERVER['DOCUMENT_ROOT'] . "/api/light.php";
 
 $showterms = true;
-
+$hidewaitinglist = true;
 $title = "I help people get their first web development job fast - Todorescu.com";
+
 include php_root() . 'php/lp-header.php';
 ?>
 

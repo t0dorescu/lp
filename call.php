@@ -65,7 +65,7 @@ include php_root() . 'php/lp-header.php';
     <section class="hero pb-0">
         <div class="container main-container">
             <h1>
-                BOOK YOUR TODORESCU METHOD™<br> INFORMATION CALL BELOW
+                BOOK YOUR <br>TODORESCU METHOD™<br> INFORMATION CALL BELOW
             </h1>
             <br>
             <span class="warning-span">

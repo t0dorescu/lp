@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en">
 <head>
-<?php if (!$isDev) : ?>
+  
+  <?php if (!$isDev) : ?>
     <!-- google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122326504-1"></script>
     <script>
@@ -83,16 +84,19 @@
         <nav id="navbar" class="navbar">
           <ul>
             <?php if (!$hidemenu) : ?>
-              <li><a class="nav-link" href="<?= root() ?>">Home</a></li>
-              <li><a class="nav-link" href="<?= root() . 'story' ?>">Story</a></li>
-              <li><a class="nav-link" href="<?= root() . 'clients' ?>">Clients</a></li>
+              <li><a class="nav-link" href="<?= root() ?>">HOME</a></li>
+              <li><a class="nav-link" href="<?= root() . 'story' ?>">STORY</a></li>
+              <li><a class="nav-link" href="<?= root() . 'clients' ?>">CLIENTS</a></li>
               <!-- <li><a class="nav-link" href="<?= root() . 'my-results' ?>">My Results</a></li> -->
               <!-- <li><a class="nav-link" href="<?= root() . 'portfolio' ?>">Portfolio</a></li> -->
-              <li><a class="nav-link" href="<?= root() . 'contact' ?>">Contact</a></li>
+              <li><a class="nav-link" href="<?= root() . 'contact' ?>">CONTACT</a></li>
+              <li><a class="getstarted scrollto" href="<?= root() . 'wait' ?>" style="font-family: oswald;">WAITING LIST <i class="bi bi-arrow-right"></i></a></li>
+              <!--
               <?php if (!$hidewaitinglist) : ?>
                 <li><a class="getstarted scrollto" href="#footer" style="font-family: oswald;">Waiting list</a></li>
               <?php endif ?>
-          </ul>
+              -->
+            </ul>
           <i class="bi bi-list mobile-nav-toggle" style="color: white;"></i>
         <?php endif ?>
         </nav>

@@ -14,9 +14,14 @@
     <div class="container" style="background: black;padding: 30px;">
         <div class="row justify-content-center">
             <div class="col-lg-12 text-center js_waiting_top">
-                <h4 style="color: var(--primary-color);font-family: 'oswald';letter-spacing: 1px;">Waiting list</h4>
+                <h4 style="color: var(--primary-color);font-family: 'oswald';letter-spacing: 1px;">
+                    NO AVAILABILITY AT THIS TIME
+                </h4>
                 <p style="color: #ccc; margin-bottom: 0">
-                    <strong style="color: white;">No availability at this time.</strong> <br>Join the queue, we'll email you soon.
+                    <strong style="color: white;">
+                        Register the waiting list, we'll email <br>
+                        you back in the next 3-20 days 👇
+                    </strong>
                 </p>
             </div>
             <div class="col-lg-6">
@@ -36,7 +41,7 @@
                 <form class="js_form">
                     <input type="email" id="inputEmail" name="email" class="is-invalid" placeholder="Your email address..." style="outline: 0;" />
                     <div class="spinner-border js_spinner d-none" style="float: right;"></div>
-                    <input type="submit" value="Join" class="js_subscribe" onclick="newsletterSignup()" />
+                    <input type="submit" value="JOIN" class="js_subscribe" onclick="newsletterSignup()" />
                 </form>
                 <div class="input-group">
                     <input id="formError" class="form-control d-none" />
@@ -49,9 +54,9 @@
                         Please email us at <a href="mailTo:support@todorescu.com" class="text-decoration-underline color-secondary">support@todorescu.com</a> for manual newsletter subsription.
                     </div>
                 </div>
-                <p class="waitinglist-agreement js_waiting_agreement">
+                <!-- <p class="waitinglist-agreement js_waiting_agreement">
                     By joinning the waiting list, you agree to our <a href="<?= root().'terms-of-service' ?>" target="_blank" class="text-decoration-underline">Terms of service</a> and acknowledge our <a href="<?= root().'privacy-policy' ?>" target="_blank" class="text-decoration-underline">Privacy policy</a>
-                </p>
+                </p> -->
             </div>
         </div>
     </div>

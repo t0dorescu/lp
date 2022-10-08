@@ -2,8 +2,9 @@
 include $_SERVER['DOCUMENT_ROOT'] . "/api/light.php";
 
 $showterms = true;
-
+$hidewaitinglist = true;
 $title = "Here's how it all started - Todorescu.com";
+
 include php_root() . 'php/lp-header.php';
 ?>
 
@@ -11,16 +12,31 @@ include php_root() . 'php/lp-header.php';
   .content {
     opacity: .9;
   }
+
   .bulletpoint {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
     color: var(--primary-color);
   }
+
   .strongpoint {
-    text-decoration: underline; 
-    font-weight:bold;
+    text-decoration: underline;
+    font-weight: bold;
   }
-  p, b, h3 {
+
+  p,
+  b,
+  h3 {
     font-family: Oswald;
+  }
+
+  .main-container {
+    max-width: 55vw;
+  }
+
+  @media (max-width: 768px) {
+    .main-container {
+      max-width: 95vw;
+    }
   }
 </style>
 
@@ -32,36 +48,36 @@ include php_root() . 'php/lp-header.php';
           <div class="content text-left">
             <h3 class="mt-3 text-left">Tudor's story</h3>
             <div class="row">
-              <div class="col-lg-7 col-md-7 col-12 flex-middle">
+              <div class="col-12 flex-middle">
                 <p class="text-left">
                   <b>Be HONEST. You’re kind of embarrassed by your own code. Aren’t you?</b>
                   <br><br>
                   I know I was.
                   <br><br>
                   <b class="bulletpoint">
-                  Here's how it all started
+                    Here's how it all started
                   </b>
                   <br><br>
                   I remember the year was 2011. It was, I think, the end of November, close to my birthday. While I was sitting in my parent's house, melting my eyes into that bright 15” screen in my dark room, I suddenly had a sobering realization. My life will be one giant endless howling winter when I arrive in my 30s. It’s going to be cold, lonely, and without any color. Then I’ll die.
                   <br><br>
                   Worse than that, I’ll have to get a job… Ohhh boy, if I’m complaining about developer jobs now, I don’t even want to imagine the agony of working 10-hour shifts at our local convenience store.
                   <br><br>
-                  I had to do something. I had to move quickly. It was already 3-4 years since I started then quit a bunch of programming languages… JavaScript, PHP, Ruby, C++, Visual Basic even… but everything was still illogical. 
+                  I had to do something. I had to move quickly. It was already 3-4 years since I started then quit a bunch of programming languages… JavaScript, PHP, Ruby, C++, Visual Basic even… but everything was still illogical.
                   <br><br>
-                  I felt discouraged. The more I tried, the worse it was. <b class="strongpoint">It felt like quicksand</b>. 
+                  I felt discouraged. The more I tried, the worse it was. <b class="strongpoint">It felt like quicksand</b>.
                   <br><br>
                   The only project I got paid for was a client in 2008 who was a family friend btw.
                   <br><br>
                   There is a bright side, though.
                   <br><br>
-                  Back then, the internet wasn’t full of crap like today. I'm not sure how I’ve come up with this, but <b>out of desperation, I’ve had to invent a plan that I can execute</b>. 
+                  Back then, the internet wasn’t full of crap like today. I'm not sure how I’ve come up with this, but <b>out of desperation, I’ve had to invent a plan that I can execute</b>.
                   <br><br>
-                  The goal was this: 
+                  The goal was this:
                   <br><br>
                   by the following year's end of summer, I’ll be a fully-employed software developer. That was the dream.
                   <br><br>
-                  <b class="bulletpoint">“It was crucial to come up with a way to get industry experience 
-                  without having industry experience.”</b>
+                  <b class="bulletpoint">“It was crucial to come up with a way to get industry experience
+                    without having industry experience.”</b>
                   <br><br>
                   Let’s get real here for a second. Nobody in the history of mankind has hired someone for a developer role, just because he made flappy birds from a youtube video. Be honest, guys.
                   <br><br>
@@ -71,22 +87,22 @@ include php_root() . 'php/lp-header.php';
                   <br><br>
                   After I had eaten them, I decided to make my own website/app kinda-off. Instead of going in a million directions, I’ve done this project with a professional approach.
                   <br><br>
-                  I gave myself a tech project consultation. 
+                  I gave myself a tech project consultation.
                   <br><br>
                   I imagine I’m the client. Being in the position of the money man, what questions would I ask a developer? What would I expect, want from him?
                   <br><br>
                   Then I imagined being on the other receiving end. I imagine I’m the developer, and what type of questions would I ask my client to understand his needs better.
                   <br><br>
                   This weird approach made this whole thing more real. I then learned that imagination is everything. It’s part of being a developer. It’s what you get paid for. Remember this quote:
-                    <br><br>
+                  <br><br>
                   <i><b>“I see it when I believe it.”</b></i>
                   <br><br>
                   Let’s get back to our story. So, once I had down the questions and answers in a document, I designed wireframes, made them through photoshop, split the project into categories, and created tasks for each category.
                   <br><br>
                   This got me so so excited because I was finally doing a real-life project for which companies pay top money.
                   <br><br>
-                  <b class="bulletpoint">Productivity and performance 
-                  went through the roof!</b>
+                  <b class="bulletpoint">Productivity and performance
+                    went through the roof!</b>
                   <br><br>
                   I’ve finally cracked it.
                   <br><br>
@@ -102,7 +118,7 @@ include php_root() . 'php/lp-header.php';
                   <br><br>
                   However, I behaved like a professional when I stepped into meetings. I’ve redecorated my room to be more like an office. Believe it or not, I got clients to come by my house for consultations.
                   <br><br>
-                  I contacted companies through email, phone calls, and even going there in person with a clipboard. 
+                  I contacted companies through email, phone calls, and even going there in person with a clipboard.
                   <br><br>
                   <b>I was on a mission.</b>
                   <br><br>
@@ -122,8 +138,8 @@ include php_root() . 'php/lp-header.php';
                   <br><br>
                   I’ve always used my analytical consulting way of asking the right questions and <b>applied true problem-solving.</b>
                   <br><br>
-                  <b class="bulletpoint">True problem-solving is 
-                  concernedly misunderstood</b>
+                  <b class="bulletpoint">True problem-solving is
+                    concernedly misunderstood</b>
                   <br><br>
                   It’s never about the actual code or algorithms. It’s always about understanding requirements. That’s where everybody gets it wrong.
                   <br><br>
@@ -144,14 +160,15 @@ include php_root() . 'php/lp-header.php';
                   <br><br>
                   Seeing the students getting the results they’ve always wanted but were out of reach really filled my heart with joy.
                   <br><br>
-                  Radu worked for me on a few commercial startups, and because of that, he got the proper experience (+guidance) to land his first mid-level front-end developer job. 
+                  Radu worked for me on a few commercial startups, and because of that, he got the proper experience (+guidance) to land his first mid-level front-end developer job.
                   <br><br>
                   <b class="bulletpoint">…and that’s how Todorescu.com was born</b>
                   <br><br>
                 </p>
               </div>
+              <!--
               <div class="col-lg-5 col-md-5 col-12 flex-top">
-                <img src="<?= root() .'assets/img/tudor-old.jpg' ?>" class="img-fluid" alt="">
+                <img src="<?= root() . 'assets/img/tudor-old.jpg' ?>" class="img-fluid" alt="">
                 <p class="fb-text-desc" style="font-weight: bold; font-family: Oswald; font-size: 1.25rem;">
                 Me in 2011 👆<br> 
                 <a href="https://www.linkedin.com/in/tudortodorescu/" target="_blank" class="link"  style="font-weight: bold; font-family: Oswald; font-size: 1.25rem;">
@@ -159,9 +176,10 @@ include php_root() . 'php/lp-header.php';
                 </a>
                 </p>
               </div>
+              -->
             </div>
-            <a href="<?= root() . 'students' ?>" class="btn-read-more">
-              <span style="font-family: oswald;">TESTIMONIALS</span>
+            <a href="<?= root() . 'clients' ?>" class="btn-read-more">
+              <span style="font-family: oswald;">CLIENTS TESTIMONIALS</span>
               <i class="bi bi-arrow-right"></i>
             </a>
             <br><br>
@@ -173,4 +191,5 @@ include php_root() . 'php/lp-header.php';
 
 <?php include php_root() . 'php/lp-footer.php'; ?>
 </body>
+
 </html>
