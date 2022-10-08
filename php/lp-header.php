@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <?php if (!$isDev) : ?>
+<?php if (!$isDev) : ?>
     <!-- google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122326504-1"></script>
     <script>

@@ -450,7 +450,7 @@ section {
   background-color: white;
   overflow-y: auto;
   transition: 0.3s;
-  height: 340px;
+  height: 260px;
 }
 .navbar-mobile a, .navbar-mobile a:focus {
   padding: 10px 20px;

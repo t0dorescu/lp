@@ -153,9 +153,9 @@ include php_root() . 'php/lp-header.php';
               <div class="col-lg-5 col-md-5 col-12 flex-top">
                 <img src="<?= root() .'assets/img/tudor-old.jpg' ?>" class="img-fluid" alt="">
                 <p class="fb-text-desc" style="font-weight: bold; font-family: Oswald; font-size: 1.25rem;">
-                Me in 2011 (where I started)<br> 
+                Me in 2011 👆<br> 
                 <a href="https://www.linkedin.com/in/tudortodorescu/" target="_blank" class="link"  style="font-weight: bold; font-family: Oswald; font-size: 1.25rem;">
-                  2022 Linkedin Portfolio <i class="bi bi-linkedin"></i>
+                Me in 2022 👉 <i class="bi bi-linkedin"></i>
                 </a>
                 </p>
               </div>

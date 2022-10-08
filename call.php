@@ -9,7 +9,7 @@ $hidesocials = true;
 $disabletopmenulink = true;
 $hidecookieconset = true;
 
-$title = "Book MY Information Call - Todorescu.com";
+$title = "Book my information call - Todorescu.com";
 include php_root() . 'php/lp-header.php';
 ?>
 
