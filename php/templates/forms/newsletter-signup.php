@@ -1,16 +1,23 @@
-
 <style>
     .waitinglist-agreement {
         font-size: .75rem;
-        color: #ccc; 
-        max-width: 350px; 
+        color: #ccc;
+        max-width: 350px;
         margin: 0.5rem auto;
         text-align: center;
     }
+    form {
+        margin: 0 auto;
+        width: 400px !important;
+    }
+    @media (max-width: 768px) {
+       form {
+            width: 300px !important;
+       }
+    }
 </style>
 
-<div class="footer-newsletter js_newsletter_signup" 
-    style="background: none; opacity: .9; border: 0; padding: 30px 0 0 0;">
+<div class="footer-newsletter js_newsletter_signup" style="background: none; opacity: .9; border: 0; padding: 30px 0 0 0;">
     <div class="container" style="background: black;padding: 30px;">
         <div class="row justify-content-center">
             <div class="col-lg-12 text-center js_waiting_top">
@@ -25,11 +32,7 @@
                 </p>
             </div>
             <div class="col-lg-6">
-                <div 
-                    class="alert alert-success d-none js_confirm_message" 
-                    role="alert" 
-                    style="text-align: center; margin-top: 20px;"
-                >
+                <div class="alert alert-success d-none js_confirm_message" role="alert" style="text-align: center; margin-top: 20px;">
                     <img class="js_gravatar_img d-none" src="" style="width: 100px; margin: 0 auto; display: none !important;" />
                     <div class="row" style=" display: none !important;">&nbsp;</div>
                     <br>
@@ -55,7 +58,7 @@
                     </div>
                 </div>
                 <!-- <p class="waitinglist-agreement js_waiting_agreement">
-                    By joinning the waiting list, you agree to our <a href="<?= root().'terms-of-service' ?>" target="_blank" class="text-decoration-underline">Terms of service</a> and acknowledge our <a href="<?= root().'privacy-policy' ?>" target="_blank" class="text-decoration-underline">Privacy policy</a>
+                    By joinning the waiting list, you agree to our <a href="<?= root() . 'terms-of-service' ?>" target="_blank" class="text-decoration-underline">Terms of service</a> and acknowledge our <a href="<?= root() . 'privacy-policy' ?>" target="_blank" class="text-decoration-underline">Privacy policy</a>
                 </p> -->
             </div>
         </div>
@@ -76,7 +79,9 @@
         window.location.hash = ''
 
         toggleElements(newsletterForm, '.js_spinner', '.js_subscribe', true)
-        const status = { isValid: true }
+        const status = {
+            isValid: true
+        }
 
         const [
             [inputEmail, email],
@@ -88,13 +93,17 @@
 
         resetFormInputs(newsletterForm)
 
-        !isValidEmail(email) 
-            ? invalidInput(status, formError, 0) 
-        : (await Api.get('email_exists', { email: email.toLowerCase()})).valid 
-            ? invalidInput(status, formError, 1)
-        : (await Api.get('email_exists_newsletter', { email: email.toLowerCase() })).valid
-            ? invalidInput(status, formError, 2) 
-            : validInput(inputEmail)
+            !isValidEmail(email) ?
+            invalidInput(status, formError, 0) :
+            (await Api.get('email_exists', {
+                email: email.toLowerCase()
+            })).valid ?
+            invalidInput(status, formError, 1) :
+            (await Api.get('email_exists_newsletter', {
+                email: email.toLowerCase()
+            })).valid ?
+            invalidInput(status, formError, 2) :
+            validInput(inputEmail)
 
         ////
 
@@ -112,12 +121,14 @@
                 toggleElements(newsletterForm, '.js_confirm_message', '.js_form', true)
                 disableButton('.js_subscribe')
                 welcomeMessage(newsletterForm, data)
-                
+
                 document.querySelector('.js_waiting_top').style.display = 'none'
                 document.querySelector('.js_waiting_agreement').style.display = 'none'
             }
 
-            newsletterForm.querySelector('.js_confirm_message').scrollIntoView({block:'center'})
+            newsletterForm.querySelector('.js_confirm_message').scrollIntoView({
+                block: 'center'
+            })
         }
 
         toggleElements(newsletterForm, '.js_spinner', '.js_subscribe', false)
