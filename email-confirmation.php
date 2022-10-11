@@ -1,5 +1,4 @@
 <?php
-die();
 include $_SERVER['DOCUMENT_ROOT'] . "/api/light.php";
 
 $hidewaitinglist = true;
