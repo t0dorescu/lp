@@ -8,7 +8,7 @@ $hidesocials = true;
 $disabletopmenulink = true;
 $hidecookieconset = true;
 
-$title = "TRAINING - Todorescu.com";
+$title = "Training Video - Todorescu.com";
 include php_root() . 'php/lp-header.php';
 ?>
 
@@ -61,15 +61,20 @@ include php_root() . 'php/lp-header.php';
         width: 70%;
     }
 
-    @media (max-width: 768px) {
+    .confession-new-item .text,
+    .confession-new-item .text strong,
+    .confession-new-item .text b {
+        font-size: 1.25rem;
+        font-family: Oswald !important;
+    }
 
+    @media (max-width: 768px) {
         h1.title,
         h2.title {
             font-size: 1.5rem;
         }
 
         .btn-read-more {
-            width: 100%;
             padding: 25px 15px;
         }
 
@@ -96,13 +101,14 @@ include php_root() . 'php/lp-header.php';
         <div class="container main-container mt-0">
             <br><br>
             <h1 class="title">
-                Learn programming with the TODORESCU METHOD™<br>
+            GET HIRED AS A WEB DEVELOPER<br>
+                        IN UNDER 10 WEEKS<br>
             </h1>
             <h2 class="title">
-                ... and win your first developer job in under 10 weeks
+                ... BY USING THE TODORESCU METHOD™
             </h2>
             <br>
-            <iframe src="https://www.youtube-nocookie.com/embed/iEDdYhAx0C4?modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/yXvuctXgOYg?modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <br><br><br>
             <a href="<?= root() . 'call' ?>" class="btn-read-more" target="_blank">
                 <i class="bi bi-calendar-date"></i>

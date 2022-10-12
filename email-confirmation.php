@@ -8,7 +8,7 @@ $hidesocials = true;
 $disabletopmenulink = true;
 $hidecookieconset = true;
 
-$title = "Confirm your email address - Todorescu.com";
+$title = "Check Your Inbox - Todorescu.com";
 include php_root() . 'php/lp-header.php';
 ?>
 
@@ -31,11 +31,12 @@ include php_root() . 'php/lp-header.php';
     <div class="container main-container">
       <br><br>
       <h1>
-        We've sent a confirmation link to your e-mail.
+        CHECK YOUR INBOX
       </h1>
       <br>
       <h2>
-        If you haven't received <br>it check your SPAM folder
+        HAVEN'T RECEIVED IT? <br>
+        CHECK SPAM FOLDER
       </h2>
       <br><br><br><br>
     </div>

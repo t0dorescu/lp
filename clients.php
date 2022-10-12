@@ -57,7 +57,7 @@ include php_root() . 'php/lp-header.php';
                             <source src="<?= root() . 'assets/video/interviu-mihnea.mp4' ?>" type="video/mp4">
                         </video>
                         <div class="text">
-                            Mihnea is finishin high-school, he got help with <strong>computational thinking</strong>
+                            Mihnea is finishing high-school, he got help with <strong>computational thinking</strong>
                         </div>
                     </div>
                 </div>
