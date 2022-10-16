@@ -3,6 +3,7 @@ include $_SERVER['DOCUMENT_ROOT'] . "/api/light.php";
 
 $showterms = true;
 $hidewaitinglist = true;
+$page = 'clients';
 $title = "Testimonials - Todorescu.com";
 
 include php_root() . 'php/lp-header.php';

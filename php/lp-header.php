@@ -65,31 +65,27 @@
     <header id="header" class="header fixed-top">
       <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
         <div class="align-items-center">&nbsp;</div>
-
           <?php if (!$disabletopmenulink) : ?>
             <a href="<?= root() ?>" style="display: flex;">
           <?php else : ?>
             <div style="display: flex;">
           <?php endif ?>
-
               <img src="<?= root() ?>assets/img/tudor-todorescu.jpg" class="logo-img">
               <p class="logo-text">TODORESCU</p>
-
             <?php if (!$disabletopmenulink) : ?>
               </a>
             <?php else : ?>
               </div>
             <?php endif ?>
-
         <nav id="navbar" class="navbar">
           <ul>
             <?php if (!$hidemenu) : ?>
-              <li><a class="nav-link" href="<?= root() ?>">HOME</a></li>
-              <li><a class="nav-link" href="<?= root() . 'story' ?>">STORY</a></li>
-              <li><a class="nav-link" href="<?= root() . 'clients' ?>">CLIENTS</a></li>
+              <li><a class="nav-link" href="<?= root() ?>"<?= ($page == 'home' ? ' style="color: var(--primary-color);"' : '') ?>>HOME</a></li>
+              <li><a class="nav-link" href="<?= root() . 'story' ?>"<?= ($page == 'story' ? ' style="color: var(--primary-color);"' : '') ?>>STORY</a></li>
+              <li><a class="nav-link" href="<?= root() . 'clients' ?>"<?= ($page == 'clients' ? ' style="color: var(--primary-color);"' : '') ?>>CLIENTS</a></li>
               <!-- <li><a class="nav-link" href="<?= root() . 'my-results' ?>">My Results</a></li> -->
               <!-- <li><a class="nav-link" href="<?= root() . 'portfolio' ?>">Portfolio</a></li> -->
-              <li><a class="nav-link" href="<?= root() . 'contact' ?>">CONTACT</a></li>
+              <li><a class="nav-link" href="<?= root() . 'contact' ?>"<?= ($page == 'contact' ? ' style="color: var(--primary-color);"' : '') ?>>CONTACT</a></li>
               <li><a class="getstarted scrollto" href="<?= root() . 'wait' ?>" style="font-family: oswald;">WAITING LIST <i class="bi bi-arrow-right"></i></a></li>
               <!--
               <?php if (!$hidewaitinglist) : ?>
