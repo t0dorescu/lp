@@ -48,10 +48,10 @@
                 </form>
                 <div class="input-group">
                     <input id="formError" class="form-control d-none" />
-                    <div class="invalid-feedback d-none">Please provide a valid email address</div>
-                    <div class="invalid-feedback d-none">Email address already used as a member.</div>
-                    <div class="invalid-feedback d-none">Email address already used for a subscription, you're all set!</div>
-                    <div class="invalid-feedback d-none">
+                    <div class="invalid-feedback d-none" style="text-align: center;">Please provide a valid email address</div>
+                    <div class="invalid-feedback d-none" style="text-align: center;">Email address already used as a member.</div>
+                    <div class="invalid-feedback d-none" style="text-align: center;">Email address already used for a subscription, you're all set!</div>
+                    <div class="invalid-feedback d-none" style="text-align: center;">
                         Something went wrong while trying to register. We are sorry for the inconvenience.
                         <br /><br />
                         Please email us at <a href="mailTo:support@todorescu.com" class="text-decoration-underline color-secondary">support@todorescu.com</a> for manual newsletter subsription.
