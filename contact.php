@@ -71,7 +71,7 @@ include php_root() . 'php/lp-header.php';
             </div>
         </div>
     </section>
-    <section class="support" style="margin-top: 0;">
+    <section class="support" style="margin-top: -20px;">
         <div class="container main-container" style="margin-top: 0;">
             <header class="section-header">
                 <h1>

@@ -222,7 +222,7 @@ class Api {
         $email = escape_post('email');
 
         $emailoctopus_response = eo_post('lists', $GLOBALS['emailoctopus_newsletter'], 'contacts', array(
-            'tags' => array( 'newsletter_subscription' ),
+            'tags' => array( 'waitinglist_subscription' ),
             'email_address' => $email
         ));
 
