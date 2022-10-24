@@ -23,8 +23,8 @@ include php_root() . 'php/lp-header.php';
       <small style="font-family: Oswald;">(under 10 weeks)</small>
       </h2>
       <br><br>
-      <a href="<?= root() . 'story' ?>" class="btn-read-more">
-        <span style="font-family: oswald;">READ MY STORY</span>
+      <a href="<?= root() . 'about' ?>" class="btn-read-more">
+        <span style="font-family: oswald;">LEARN MORE</span>
         <i class="bi bi-arrow-right"></i>
       </a>
       <br><br>

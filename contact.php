@@ -19,8 +19,8 @@ include php_root() . 'php/lp-header.php';
 <main id="main">
     <section class="team" style="margin-top: 75px; margin-bottom: 0;">
         <div class="container">
-            <div class="row gy-4">
-                <div class="col-md-3 col-6 d-flex align-items-stretch">
+            <div class="row gy-4" style="padding-top: 15px;">
+                <div class="col-md-3 col-6 d-flex align-items-stretch" style="padding: 2px; margin: 0; cursor: pointer;">
                     <div class="member">
                         <div class="member-img">
                             <img src="<?= root() . 'assets/img/team/crisan-cristina.jpg' ?>" class="img-fluid" alt="">
@@ -32,7 +32,7 @@ include php_root() . 'php/lp-header.php';
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-6 d-flex align-items-stretch">
+                <div class="col-md-3 col-6 d-flex align-items-stretch" style="padding: 2px; margin: 0; cursor: pointer;">
                     <div class="member">
                         <div class="member-img">
                             <img src="<?= root() . 'assets/img/team/musat-radu.jpg' ?>" class="img-fluid" alt="">
@@ -44,7 +44,7 @@ include php_root() . 'php/lp-header.php';
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-6 d-flex align-items-stretch">
+                <div class="col-md-3 col-6 d-flex align-items-stretch" style="padding: 2px; margin: 0; cursor: pointer;">
                     <div class="member">
                         <div class="member-img">
                             <img src="<?= root() . 'assets/img/team/adina-minca.jpg' ?>" class="img-fluid" alt="">
@@ -56,7 +56,7 @@ include php_root() . 'php/lp-header.php';
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-6 d-flex align-items-stretch">
+                <div class="col-md-3 col-6 d-flex align-items-stretch" style="padding: 2px; margin: 0; cursor: pointer;">
                     <div class="member">
                         <div class="member-img">
                             <img src="<?= root() . 'assets/img/team/tao-robert.jpg' ?>" class="img-fluid" alt="">
